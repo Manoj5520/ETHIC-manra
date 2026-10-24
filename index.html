@@ -81,8 +81,11 @@
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
     @media print{.site-header{position:static}.nav-links,.menu-toggle,.hero-actions,.filter-group{display:none!important}.hero-inner{min-height:auto}.section{padding:35px 0;break-inside:avoid}.panel,.candidate-table-wrap,.gate-map{break-inside:avoid;box-shadow:none}.site-footer{print-color-adjust:exact}}
   
-    .hero-logo-panel{width:100%;aspect-ratio:1/1;display:block;padding:0;border:1px solid rgba(225,201,155,.22);border-radius:3px;background:#090908;overflow:hidden;box-shadow:0 24px 58px rgba(0,0,0,.28)}
-    .hero-logo-lockup{display:block;width:100%;height:100%;aspect-ratio:1/1;object-fit:cover}
+    .hero-logo-panel{width:100%;aspect-ratio:1/1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:5.5%;border:1px solid rgba(225,201,155,.22);border-radius:3px;background:radial-gradient(ellipse at 50% 30%,#23211c 0%,#11100e 50%,#070706 100%);overflow:hidden;box-shadow:0 24px 58px rgba(0,0,0,.28);text-align:center}
+    .hero-logo-fingerprint{display:block;width:76%;height:auto;max-height:55%;object-fit:contain;margin:0 auto 1%;filter:contrast(1.06);mix-blend-mode:screen}
+    .hero-logo-wordmark{font-size:clamp(32px,4.1vw,49px);line-height:1.05;font-weight:300;letter-spacing:.27em;padding-left:.27em;color:#e6ddce}
+    .hero-logo-category{margin-top:11px;font-size:clamp(6px,.74vw,9px);line-height:1.5;letter-spacing:.21em;padding-left:.21em;color:#d8b77e;white-space:nowrap}
+    .hero-logo-tagline{margin-top:15px;font-size:clamp(6px,.72vw,8.5px);line-height:1.5;letter-spacing:.18em;padding-left:.18em;color:#c8bcaa;white-space:nowrap}
     .brand-mark{background:#090908;border-color:rgba(225,201,155,.5)}
     .brand-mark img{display:block;width:100%;height:100%;object-fit:cover;border-radius:inherit}
     .ethic-manra-architecture{margin-top:26px;padding:26px;border:1px solid var(--line);background:var(--paper-2);border-radius:var(--radius)}
@@ -112,7 +115,7 @@
     .brand-name-note{margin-top:15px;padding:15px 17px;border-left:3px solid var(--gold);background:#ebe4d7;color:#4e483c;font-size:12px;line-height:1.7}
     .brand-name-note strong{color:#211f1a}
     @media(max-width:980px){.architecture-flow{grid-template-columns:1fr 22px 1fr;gap:10px}.architecture-flow .architecture-arrow:nth-of-type(4){display:none}.architecture-flow .architecture-node:nth-of-type(4){grid-column:1/-1}.brand-principles-grid{grid-template-columns:1fr}}
-    @media(max-width:620px){.ethic-manra-architecture{padding:17px}.architecture-flow{grid-template-columns:1fr;gap:8px}.architecture-arrow{transform:rotate(90deg);line-height:1;font-size:18px}.architecture-flow .architecture-arrow:nth-of-type(4){display:block}.architecture-flow .architecture-node:nth-of-type(4){grid-column:auto}.brand-principle{padding:18px}.hero-logo-lockup{object-fit:cover}}
+    @media(max-width:620px){.hero-logo-category{letter-spacing:.13em;padding-left:.13em;font-size:6px}.hero-logo-tagline{letter-spacing:.1em;padding-left:.1em;font-size:6px}.ethic-manra-architecture{padding:17px}.architecture-flow{grid-template-columns:1fr;gap:8px}.architecture-arrow{transform:rotate(90deg);line-height:1;font-size:18px}.architecture-flow .architecture-arrow:nth-of-type(4){display:block}.architecture-flow .architecture-node:nth-of-type(4){grid-column:auto}.brand-principle{padding:18px}.hero-logo-lockup{object-fit:cover}}
 
   </style>
 </head>
@@ -141,8 +144,11 @@
         <div class="hero-actions"><a class="btn btn-primary" href="#identity">Understand ETHIC × MANRA <span aria-hidden="true">↓</span></a><a class="btn btn-secondary" href="#method">Study the method</a></div>
       </div>
       <div class="hero-art">
-        <div class="hero-logo-panel">
-          <img class="hero-logo-lockup" src="assets/ethic-logo-lockup.webp" width="320" height="320" alt="ETHIC — Behavior Engineering Company. Identity Built Into Everything.">
+        <div class="hero-logo-panel" role="img" aria-label="ETHIC, Behavior Engineering Company. Identity Built Into Everything.">
+          <img class="hero-logo-fingerprint" src="assets/ethic-fingerprint-mark.webp" width="160" height="160" alt="">
+          <div class="hero-logo-wordmark">ETHIC</div>
+          <div class="hero-logo-category">BEHAVIOR ENGINEERING COMPANY</div>
+          <div class="hero-logo-tagline">IDENTITY BUILT INTO EVERYTHING</div>
         </div>
         <div class="art-caption"><span>Identity built into everything</span><span>ETHIC × MANRA</span></div>
       </div>
