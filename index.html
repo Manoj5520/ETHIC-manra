@@ -209,6 +209,18 @@ section{position:relative}.section{padding:80px 22px}.section.white{background:#
 .ethic-scroll-arc .arc-card:hover{transform:translateY(calc(var(--arc-y,0px) - 7px)) rotateX(var(--arc-rx,0deg)) rotateY(calc(var(--arc-ry,0deg) - 1.5deg))}
 @media(prefers-reduced-motion:reduce){.ethic-scroll-arc .arc-card{transform:none!important;will-change:auto}}
 
+
+/* Compact historical context and evidence note for oral-care format evolution */
+.oral-care-before{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:22px 0;padding:20px;border:1px solid #d7d2cc;background:#faf9f6}
+.oral-care-before h3{font-size:18px;line-height:1.2;margin:0 0 10px;color:#3b302d}
+.oral-care-before p,.oral-care-before li{font-size:12px;line-height:1.8;color:#625b55}
+.oral-care-before ul{padding-left:17px;margin:8px 0 0}
+.oral-care-before .history-tag{font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:#86585b;font-weight:750}
+.manual-powered-note{margin:16px 0 0;padding:18px 20px;border-left:2px solid #946f70;background:#f4f1ee}
+.manual-powered-note h4{margin:0 0 7px;font-size:15px;color:#423533}
+.manual-powered-note p{margin:0;font-size:12px;line-height:1.8;color:#625b55}
+@media(max-width:700px){.oral-care-before{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -302,10 +314,30 @@ section{position:relative}.section{padding:80px 22px}.section.white{background:#
 <section class="section white" id="evolution">
  <div class="inner">
   <div class="section-head reveal"><div class="secno">03 / Product evolution</div><div><h2>Tooth powder → toothpaste format → powered brushing → connected oral care.</h2><p class="lede">This is a useful example of how a familiar job can be served through changing product forms and technologies. It is <strong>not</strong> proof that one specific friction caused every change, or that older formats disappeared everywhere.</p></div></div>
+  <div class="oral-care-before reveal">
+  <div>
+   <span class="history-tag">Before mass-market branded formats</span>
+   <h3>People already had tools and routines.</h3>
+   <p>Oral hygiene was not waiting for one invention. Ancient communities used chew-sticks—twigs with frayed ends—while dentifrices varied by place and time. The Smithsonian documents commercial and homemade powders using ingredients such as chalk/calcium carbonate, powdered cuttlebone, baking soda and charcoal. Some historical products used harsh abrasives or made claims that were not proven.</p>
+   <ul><li>Chew-sticks and other simple cleaning implements.</li><li>Powders prepared at home or by druggists.</li><li>Rags/finger-applied cleaning and other local practices, which varied by culture and period.</li></ul>
+   <p class="ethic-source-line">Sources: <a href="https://www.loc.gov/everyday-mysteries/categories/technology/item/who-invented-the-toothbrush-and-when-was-it-invented/" target="_blank" rel="noopener noreferrer">Library of Congress · toothbrush history</a> · <a href="https://www.si.edu/spotlight/health-hygiene-and-beauty/oral-care" target="_blank" rel="noopener noreferrer">Smithsonian · oral-care history</a>.</p>
+  </div>
+  <div>
+   <span class="history-tag">What became a scalable format?</span>
+   <h3>Not just the substance—the whole routine.</h3>
+   <p>A jar or tube changes the package, but actual adoption also depends on formulation, preservation, dispensing, portability, cost, branding, access to shops, trust and advice from dental professionals. The collapsible tube enabled a different storage-and-dispensing routine; historical evidence does not identify one universally decisive friction.</p>
+   <p>Smithsonian’s U.S. context notes that toothpaste had become the more popular dentifrice by 1949, reaching roughly 75% of that market. That is a historical U.S. figure—not global market share. Tooth powder did not immediately disappear, and alternative formats still exist today.</p>
+   <p class="ethic-source-line">Timeline sources: <a href="https://www.colgatepalmolive.com/en-us/who-we-are/history" target="_blank" rel="noopener noreferrer">Colgate-Palmolive history</a> · <a href="https://www.si.edu/spotlight/health-hygiene-and-beauty/oral-care" target="_blank" rel="noopener noreferrer">Smithsonian oral care</a>.</p>
+  </div>
+ </div>
   <div class="evolution">
     <article class="evo-card reveal"><figure><img src="assets/research/tooth-powder-historic-reference.webp" alt="Historic Colgate dental powder bottle supplied as a design-history reference" loading="lazy"></figure><span class="tag silver">Earlier format</span><h3>Powder in a container</h3><p>Powders were used to clean teeth. Users still had to take the powder from its container and apply it to a brush or other cleaning tool. Exact routines varied by period and person.</p><p class="source">Historical reference: <a href="https://americanhistory.si.edu/collections/object/nmah_738122" target="_blank" rel="noopener noreferrer">Smithsonian National Museum of American History</a>.</p></article>
     <div class="evo-arrow" aria-hidden="true">→</div>
     <article class="evo-card reveal"><figure><img src="assets/research/toothpaste-tube-format-reference.webp" alt="Colgate toothpaste tube and carton, supplied as a product-format reference" loading="lazy"></figure><span class="tag">Product-format change</span><h3>Paste in a jar, then a tube</h3><p>The Smithsonian records that Colgate marketed toothpaste in jars in the 1870s and introduced collapsible tubes in the 1890s. Tooth powder continued to be sold well into the twentieth century; the tube did not immediately erase every alternative.</p><p class="source">History and object context: <a href="https://www.si.edu/object/colgate-tooth-powder%3Anmah_738122" target="_blank" rel="noopener noreferrer">Smithsonian collection record</a>.</p></article>
+  </div>
+  <div class="manual-powered-note reveal">
+   <h4>Manual vs powered brushing: a capability gain, not a universal replacement.</h4>
+   <p>A 2014 Cochrane review found that powered toothbrushes reduced plaque and gingivitis more than manual brushing on average in the included studies; the authors also noted that the clinical importance of the longer-term effects was unclear. Manual brushes remain useful, and a powered device adds cost, charging, replacement and maintenance. For ETHIC’s research, the question is which user or task benefits from the extra capability—and whether it improves routine outcomes enough to justify the complexity. <a href="https://www.cochrane.org/evidence/CD002281_poweredelectric-toothbrushes-compared-manual-toothbrushes-maintaining-oral-health" target="_blank" rel="noopener noreferrer">Cochrane review ↗</a></p>
   </div>
   <div class="timeline reveal" aria-label="Oral-care technology timeline">
     <div class="timeline-step"><b>c. 1780 · Mass-produced brush</b><small>William Addis is credited with an early mass-produced toothbrush in England.</small></div>
