@@ -150,6 +150,59 @@ section{position:relative}.section{padding:80px 22px}.section.white{background:#
 
 /* Muted silver treatment for the identity mark; keep the site's warm brown and white palette dominant. */
 .hero-logo-card img{filter:grayscale(1) brightness(.86)}
+
+/* ETHIC editorial visual system: restrained metallics, depth, and motion */
+:root{--gold:#796e65;--gold2:#bbb9b5;--burg:#382b2c;--burg2:#5b4445;--red:#8b5155;--silver:#a6a8a8;--silver2:#d8d9d7;--paper:#f1f1ee;--white:#fff}
+.meaning-logo img{filter:grayscale(.76) saturate(.26) contrast(.98) brightness(.94)}
+.hero-logo-card img{filter:grayscale(1) saturate(0) brightness(.88)}
+.friction-card figure img,.evo-card figure img,.reference-item img{transition:transform .9s cubic-bezier(.2,.7,.2,1),filter .6s ease}
+.friction-card:hover figure img,.evo-card:hover figure img,.reference-item:hover img{transform:scale(1.035);filter:saturate(.86)}
+.ethic-scroll-arc{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(132deg,#171615 0%,#24201e 54%,#312527 100%);color:#f3f1ed}
+.ethic-scroll-arc:before{content:"";position:absolute;inset:-12% -8%;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 74% 20%,rgba(160,164,166,.14),transparent 38%),radial-gradient(ellipse at 12% 70%,rgba(123,77,79,.2),transparent 35%)}
+.ethic-scroll-arc .section-head h2,.ethic-scroll-arc h3{color:#faf9f6}
+.ethic-scroll-arc .lede,.ethic-scroll-arc p{color:#c5c1bc}
+.ethic-scroll-arc .secno,.ethic-scroll-arc .arc-kicker{color:#c1b7b1}
+.ethic-scroll-arc .inner{position:relative;z-index:1}
+.ethic-scroll-arc .arc-intro{max-width:720px;margin:0 0 32px}
+.ethic-scroll-arc .arc-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;perspective:1200px}
+.ethic-scroll-arc .arc-card{min-height:320px;position:relative;overflow:hidden;padding:26px 24px;border:1px solid rgba(226,224,219,.2);border-radius:3px;background:linear-gradient(150deg,rgba(255,255,255,.095),rgba(255,255,255,.025));transform-style:preserve-3d;transition:transform .7s cubic-bezier(.2,.72,.18,1),border-color .5s ease,background .5s ease;box-shadow:0 22px 65px rgba(0,0,0,.14)}
+.ethic-scroll-arc .arc-card:nth-child(2){margin-top:30px}.ethic-scroll-arc .arc-card:nth-child(3){margin-top:60px}
+.ethic-scroll-arc .arc-card:hover{transform:translateY(-8px) rotateX(2deg) rotateY(-2deg);border-color:rgba(214,213,207,.58);background:linear-gradient(150deg,rgba(255,255,255,.14),rgba(255,255,255,.035))}
+.ethic-scroll-arc .arc-index{font-size:10px;letter-spacing:.18em;color:#d5c9c4;text-transform:uppercase}
+.ethic-scroll-arc .arc-card h3{font-size:clamp(24px,2.5vw,32px);line-height:1.08;letter-spacing:-.035em;margin:28px 0 12px;max-width:13ch;transform:translateZ(18px)}
+.ethic-scroll-arc .arc-card p{font-size:13px;line-height:1.8;transform:translateZ(10px)}
+.ethic-scroll-arc .arc-card .arc-answer{margin-top:18px;padding-top:14px;border-top:1px solid rgba(226,224,219,.2);font-size:11px;color:#f1eeea;letter-spacing:.02em}
+.ethic-scroll-arc .arc-wave{position:absolute;right:-35px;top:-35px;width:200px;height:200px;opacity:.7;pointer-events:none;transform:translateZ(28px)}
+.ethic-scroll-arc .arc-wave svg{width:100%;height:100%;overflow:visible}
+.ethic-scroll-arc .arc-wave path{fill:none;stroke:rgba(211,213,212,.48);stroke-width:.7;stroke-dasharray:3 5;animation:ethic-wave-drift 22s linear infinite;transform-origin:center}
+.ethic-scroll-arc .arc-card:nth-child(2) .arc-wave path{stroke:rgba(179,133,135,.57);animation-duration:27s;animation-direction:reverse}
+.ethic-scroll-arc .arc-card:nth-child(3) .arc-wave path{stroke:rgba(207,203,194,.56);animation-duration:32s}
+.ethic-scroll-arc .arc-foot{display:flex;gap:12px;align-items:flex-start;margin-top:28px;padding:18px 20px;border-left:2px solid #8f6568;background:rgba(255,255,255,.045);font-size:12px;line-height:1.7;color:#d7d3ce}
+.ethic-scroll-arc .arc-foot strong{color:#fff;white-space:nowrap}
+.tech-product .product-image img{max-height:470px;object-fit:contain;background:#f5f4f1}
+.tech-product .feature-list{padding-left:18px}.tech-product .manufacturer-note{border-left-color:#9c7677}
+.tech-product .fact-pills span{border-color:#c7b9b3;color:#5c4543;background:#f7f3f1}
+.ethic-kpi-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:26px}
+.ethic-kpi{padding:18px;border:1px solid #d2ceca;background:#fff;min-height:118px}
+.ethic-kpi b{display:block;font-size:clamp(23px,2.8vw,32px);letter-spacing:-.04em;color:#443233;font-weight:650;line-height:1.12}
+.ethic-kpi span{display:block;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:#736963;margin-top:10px}
+.ethic-kpi small{display:block;font-size:11px;line-height:1.55;color:#706a64;margin-top:5px}
+.ethic-competitor-note{margin-top:22px;padding:22px;border:1px solid #d3cfca;background:#faf9f7}
+.ethic-competitor-note h3{margin-top:0}
+.ethic-competitor-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:14px}
+.ethic-competitor{padding:16px;border-top:2px solid #8b7772;background:#fff}
+.ethic-competitor b{display:block;color:#453432;font-size:13px}
+.ethic-competitor p{font-size:11px;line-height:1.7;color:#68615b;margin:8px 0 0}
+.ethic-source-line{font-size:11px;line-height:1.7;color:#69635e}
+.tooth-format-note{display:grid;grid-template-columns:.8fr 1.2fr;gap:20px;padding:22px;margin-top:18px;border:1px solid #d5d0ca;background:#f8f7f4}
+.tooth-format-note h3{margin:0 0 10px}
+.tooth-format-note p{font-size:12px;line-height:1.8;color:#625c56;margin:0 0 10px}
+.tooth-format-note .inference-label{display:inline-block;color:#7c4e50;text-transform:uppercase;font-size:9px;letter-spacing:.13em;font-weight:750;margin-bottom:9px}
+@keyframes ethic-wave-drift{from{transform:rotate(0deg) scale(1)}to{transform:rotate(360deg) scale(1.03)}}
+@media(max-width:850px){.ethic-scroll-arc .arc-steps{grid-template-columns:1fr}.ethic-scroll-arc .arc-card,.ethic-scroll-arc .arc-card:nth-child(2),.ethic-scroll-arc .arc-card:nth-child(3){margin-top:0;min-height:260px}.ethic-scroll-arc .arc-wave{width:150px;height:150px}.ethic-kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ethic-competitor-grid{grid-template-columns:1fr}.tooth-format-note{grid-template-columns:1fr}}
+@media(max-width:480px){.ethic-kpi-grid{grid-template-columns:1fr 1fr;gap:8px}.ethic-kpi{padding:13px}.ethic-scroll-arc .arc-card{padding:22px 19px}.ethic-scroll-arc .arc-foot{display:block}.ethic-scroll-arc .arc-foot strong{display:block;margin-bottom:6px}}
+@media(prefers-reduced-motion:reduce){.ethic-scroll-arc .arc-wave path{animation:none}.ethic-scroll-arc .arc-card,.friction-card figure img,.evo-card figure img{transition:none}}
+
 </style>
 </head>
 <body>
@@ -226,18 +279,32 @@ section{position:relative}.section{padding:80px 22px}.section.white{background:#
  </div>
 </section>
 
+
+<section class="section ethic-scroll-arc" id="design-thesis">
+ <div class="inner">
+  <div class="section-head reveal"><div class="secno">02A / The ETHIC design thesis</div><div><h2>From a small repeated action to a product that travels.</h2><p class="lede">The visual sequence is a target operating path—not a claim that ETHIC has already validated or globally scaled a product. Scroll through the three layers: what happens, what changes, and what must be proven before scale.</p></div></div>
+  <div class="arc-intro reveal"><p>Think of friction as the force a person repeatedly has to overcome. It might be physical, like a cable slipping; behavioural, like trying to remember a conversation; or systemic, like a cleaning task that requires multiple tools. The intervention should fit the cause, not the trend.</p></div>
+  <div class="arc-steps">
+   <article class="arc-card reveal"><div class="arc-wave" aria-hidden="true"><svg viewBox="0 0 150 150"><path d="M75 8C115 20 143 52 139 79C133 112 101 145 72 139C38 134 11 108 15 73C20 35 48 13 75 8"/><path d="M75 16C108 25 132 54 129 78C123 105 98 134 72 130C43 125 22 104 24 75C27 45 51 21 75 16"/><path d="M75 25C100 32 119 56 119 78C116 99 94 122 72 121C49 119 34 99 33 76C34 53 55 31 75 25"/><path d="M75 35C94 40 108 58 108 78C106 94 91 111 72 111C55 109 44 95 43 77C44 60 60 43 75 35"/><path d="M75 45C88 49 98 62 97 78C96 91 86 101 72 100C61 99 54 89 54 77C54 65 64 52 75 45"/></svg></div><div class="arc-index">Layer 01 · Observe</div><h3>Find the repeated force.</h3><p>Who is doing what, where and how often? What do they hold, clip, wipe, search, lift or repeat to get the task done?</p><div class="arc-answer">Output: a specific behaviour and context—not a product idea yet.</div></article>
+   <article class="arc-card reveal"><div class="arc-wave" aria-hidden="true"><svg viewBox="0 0 150 150"><path d="M75 8C130 20 143 60 130 82C115 126 85 143 61 132C18 116 12 74 27 48C39 23 59 15 75 8"/><path d="M75 18C120 30 131 61 119 83C105 116 82 132 62 122C30 109 24 77 37 54C47 36 61 26 75 18"/><path d="M75 30C106 38 117 63 108 83C97 106 80 120 63 110C43 99 38 78 47 59C55 45 65 36 75 30"/><path d="M75 42C94 48 102 66 97 82C91 98 77 108 63 99C51 92 49 77 55 64C60 54 67 47 75 42"/><path d="M75 54C85 58 90 69 86 82C82 92 74 96 64 89C58 84 59 74 63 67C66 61 70 57 75 54"/></svg></div><div class="arc-index">Layer 02 · Engineer</div><h3>Make the smallest useful change.</h3><p>Compare what exists. Fix the friction at the right layer: geometry, grip, storage, a new interface, a connected device or a better handoff.</p><div class="arc-answer">Output: an intervention that can be compared against the workaround.</div></article>
+   <article class="arc-card reveal"><div class="arc-wave" aria-hidden="true"><svg viewBox="0 0 150 150"><path d="M75 6C122 10 147 53 136 85C125 120 101 142 74 140C40 137 8 105 12 73C15 38 48 9 75 6"/><path d="M75 17C113 21 134 55 125 84C116 112 96 132 73 129C45 126 21 102 23 74C26 45 51 19 75 17"/><path d="M75 28C102 32 120 57 114 83C107 104 90 120 73 118C50 115 34 97 35 74C37 52 55 31 75 28"/><path d="M75 40C93 44 106 60 101 82C97 99 85 109 73 107C57 105 46 91 47 75C48 58 61 44 75 40"/><path d="M75 52C86 55 94 65 90 81C87 93 79 98 72 96C62 94 57 85 58 75C59 64 67 55 75 52"/></svg></div><div class="arc-index">Layer 03 · Prove & scale</div><h3>Make usefulness repeatable.</h3><p>Check reliability, willingness to pay, manufacturing, service, safety, distribution and local context. A successful prototype is a beginning, not proof of global fit.</p><div class="arc-answer">Output: proceed, narrow or stop—with the evidence recorded.</div></article>
+  </div>
+  <div class="arc-foot reveal"><strong>ETHIC × MANRA</strong><span>ETHIC is the company aiming to build the right product. MANRA is the intelligence layer that investigates the task, identifies the residual gap and recommends the next decision. Evidence—not enthusiasm—decides whether a candidate advances.</span></div>
+ </div>
+</section>
+
 <section class="section white" id="evolution">
  <div class="inner">
   <div class="section-head reveal"><div class="secno">03 / Product evolution</div><div><h2>Tooth powder → toothpaste format → powered brushing → connected oral care.</h2><p class="lede">This is a useful example of how a familiar job can be served through changing product forms and technologies. It is <strong>not</strong> proof that one specific friction caused every change, or that older formats disappeared everywhere.</p></div></div>
   <div class="evolution">
-    <article class="evo-card reveal"><figure><img src="https://ids.si.edu/ids/deliveryService?id=NMAH-AHB2014q040231" alt="Historic Colgate tooth-powder packaging from the Smithsonian collection" loading="lazy"></figure><span class="tag silver">Earlier format</span><h3>Powder in a container</h3><p>Powders were used to clean teeth. Users still had to take the powder from its container and apply it to a brush or other cleaning tool. Exact routines varied by period and person.</p><p class="source">Historical reference: <a href="https://americanhistory.si.edu/collections/object/nmah_738122" target="_blank" rel="noopener noreferrer">Smithsonian National Museum of American History</a>.</p></article>
+    <article class="evo-card reveal"><figure><img src="assets/research/tooth-powder-historic-reference.webp" alt="Historic Colgate dental powder bottle supplied as a design-history reference" loading="lazy"></figure><span class="tag silver">Earlier format</span><h3>Powder in a container</h3><p>Powders were used to clean teeth. Users still had to take the powder from its container and apply it to a brush or other cleaning tool. Exact routines varied by period and person.</p><p class="source">Historical reference: <a href="https://americanhistory.si.edu/collections/object/nmah_738122" target="_blank" rel="noopener noreferrer">Smithsonian National Museum of American History</a>.</p></article>
     <div class="evo-arrow" aria-hidden="true">→</div>
-    <article class="evo-card reveal"><figure><img src="https://ids.si.edu/ids/deliveryService?id=NMAH-AHB2013q075256" alt="Historic Colgate toothpaste tube and carton from the Smithsonian collection" loading="lazy"></figure><span class="tag">Product-format change</span><h3>Paste in a jar, then a tube</h3><p>The Smithsonian records that Colgate marketed aromatic toothpaste in jars in the 1870s and began selling it in collapsible tubes by the 1890s. Tooth powder continued to be sold well into the twentieth century.</p><p class="source">History and object context: <a href="https://www.si.edu/object/colgate-tooth-powder%3Anmah_738122" target="_blank" rel="noopener noreferrer">Smithsonian collection record</a>.</p></article>
+    <article class="evo-card reveal"><figure><img src="assets/research/toothpaste-tube-format-reference.webp" alt="Colgate toothpaste tube and carton, supplied as a product-format reference" loading="lazy"></figure><span class="tag">Product-format change</span><h3>Paste in a jar, then a tube</h3><p>The Smithsonian records that Colgate marketed toothpaste in jars in the 1870s and introduced collapsible tubes in the 1890s. Tooth powder continued to be sold well into the twentieth century; the tube did not immediately erase every alternative.</p><p class="source">History and object context: <a href="https://www.si.edu/object/colgate-tooth-powder%3Anmah_738122" target="_blank" rel="noopener noreferrer">Smithsonian collection record</a>.</p></article>
   </div>
   <div class="timeline reveal" aria-label="Oral-care technology timeline">
     <div class="timeline-step"><b>c. 1780 · Mass-produced brush</b><small>William Addis is credited with an early mass-produced toothbrush in England.</small></div>
     <div class="timeline-step"><b>1938 · Nylon bristles</b><small>Nylon made the modern toothbrush bristle possible at commercial scale.</small></div>
-    <div class="timeline-step"><b>1954 · Powered brush milestone</b><small>Philippe-Guy Woog's Broxodent helped establish the electric toothbrush category.</small></div>
+    <div class="timeline-step"><b>1954 · Powered brush milestone</b><small>Philippe-Guy Woog’s Broxodent was designed for patients with limited motor skills and orthodontic patients. Early versions depended on an electrical outlet.</small></div>
     <div class="timeline-step"><b>2026 · Camera + jet + app</b><small>Dyson CameraJet illustrates a more integrated oral-care system, with manufacturer-claimed camera-assisted targeting and connected feedback.</small></div>
   </div>
   <div class="history-correction reveal">
@@ -245,6 +312,11 @@ section{position:relative}.section{padding:80px 22px}.section.white{background:#
     <div><p>It is reasonable to ask whether handling, dispensing, portioning, storage or mess mattered to particular users. But the historical sources cited here do <strong>not</strong> establish one universal friction as the cause of the powder-to-paste transition. Those explanations must be labelled as hypotheses unless stronger historical evidence supports them.</p><p>The lesson for ETHIC is to work backward from products: what job does the format make easier, what did it change, and what still remains inconvenient? Do not rewrite history to fit a business idea.</p></div>
   </div>
   <p class="source-note reveal">History sources: <a href="https://www.loc.gov/everyday-mysteries/browse-all-questions/item/who-invented-the-toothbrush-and-when-was-it-invented/" target="_blank" rel="noopener noreferrer">Library of Congress: toothbrush history</a> · <a href="https://www.americanhistory.si.edu/collections/object/nmah_2224" target="_blank" rel="noopener noreferrer">Smithsonian: nylon toothbrush</a> · <a href="https://www.si.edu/spotlight/health-hygiene-and-beauty/oral-care" target="_blank" rel="noopener noreferrer">Smithsonian: oral-care collection</a>.</p>
+
+  <div class="tooth-format-note reveal">
+    <div><span class="inference-label">Design reading · hypothesis, not historical certainty</span><h3>What friction might the format change have addressed?</h3><p>A powder container can require opening, retrieving an amount, and managing loose material. A paste in a jar changes the form; a collapsible tube gives users a portable container that can be closed and squeezed to dispense a portion.</p></div>
+    <div><h3>The useful global-scale lesson</h3><p><strong>We cannot prove one single motive caused the tube to win.</strong> Product chemistry, oral-health claims, packaging, hygiene, brand trust, distribution, price and habit all mattered. Smithsonian material notes that paste had overtaken powder as the more popular form of dentifrice in the U.S. by 1949, at roughly 75% of that market.</p><p>For ETHIC, the lesson is to identify a repeated job, engineer a format that fits it, then validate adoption and distribution. Tube toothpaste is now a globally familiar format, but powders, tablets and other formats still exist; global scale is not the same as a universal solution.</p><p class="ethic-source-line">Sources: <a href="https://www.si.edu/spotlight/health-hygiene-and-beauty/oral-care" target="_blank" rel="noopener noreferrer">Smithsonian Oral Care</a> · <a href="https://www.colgate.com/en-us/mission/history-and-purpose" target="_blank" rel="noopener noreferrer">Colgate corporate history</a>.</p></div>
+  </div>
  </div>
 </section>
 
