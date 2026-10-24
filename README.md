@@ -1,74 +1,81 @@
 # ETHIC × MANRA — Strategic Reference
 
-**Plain-language summary:** ETHIC is the company. MANRA is the strategic-intelligence and product-discovery system behind it. This site records the evolution, method, friction taxonomy, historical candidate audit, product-design thesis and the exact current stop point.
+## Read this page in order
 
-## Important naming rule
+1. **ETHIC vs MANRA:** ETHIC is the company and the intended Behavior Engineering category. MANRA is the strategic-intelligence, product-discovery and qualification system serving ETHIC.
+2. **What changed:** ETHIC began with affordable everyday gadget concepts. That was the entry point, not the final company definition.
+3. **Method:** Find the recurring friction, understand the behaviour and cause, inspect the workaround, define the remaining gap, and test whether an intervention is justified.
+4. **F1–F11:** the friction taxonomy—F1–F4 micro-frictions, F5 human–technology fusion, F6–F11 technology-led frictions.
+5. **C1–C5:** five specific candidate ideas from the earlier research. These are distinct from F1–F11; the numbers are not interchangeable.
+6. **Fusion:** distinguish F5 (a human task meets technology) from F11 (a handoff between tools) and the separate product-design thesis of Pattern 01 + Pattern 02.
+7. **Current stop point:** C1 is the leading candidate; P1 is not cleared; P2 is unclaimed; commercial validation is not established.
 
-The earlier internal research used F1–F5 as shorthand for five concrete candidate ideas. The friction-hunt framework uses F1–F4 for micro-friction types, F5 for human–technology fusion, and F6–F11 for technology-led frictions. These are different systems. To prevent confusion, this site renames the five historical candidate ideas **C1–C5** and reserves **F1–F11** for the friction taxonomy.
+## Brand meaning
 
-## The brands
+- **ETHIC:** the company and intended Behavior Engineering category. The long-term idea is not restricted to gadgets or physical products; an intervention may eventually be physical, digital, software, an experience, a service, AI-enabled or hybrid. The current first-product search is focused on capital-efficient everyday physical products because of the starting constraints.
+- **MANRA:** the strategy, evidence, discovery and qualification system behind ETHIC. MANRA develops evidence and a recommendation; ETHIC owns the product commitment and outcome.
+- **FIND → CHANGE → IMPLEMENT:** find the real problem and the behaviour around it; understand what needs to change; implement the smallest suitable intervention and test whether it works.
+- **“Identity Built Into Everything”:** intended user behaviour informs the problem selected, physical form, affordances, interaction, usability, errors and maintenance from the start. It does not mean merely applying the logo to objects.
+- **Fingerprint:** a brand imprint and visual metaphor for patterns in human behaviour, not a biometric-technology claim.
+- This reference does not invent acronym expansions for ETHIC or MANRA.
 
-- **ETHIC:** the company and intended Behavior Engineering category. Its long-term identity is not limited to gadgets or even physical products. An intervention could eventually be physical, digital, a service, software, AI-enabled or hybrid. The current first-product search is focused on capital-efficient everyday physical products because of the starting constraints.
-- **MANRA:** the strategic-intelligence, discovery, qualification and growth system that serves ETHIC. MANRA develops the evidence and recommendation; ETHIC owns product commitment and outcome.
-- **FIND → CHANGE → IMPLEMENT:** find the real problem and behaviour; understand what needs to change; implement the smallest suitable intervention and test whether it works.
-- **“Identity Built Into Everything”:** the intended user outcome shapes the selected problem, form, interaction, usability, errors and upkeep from the start. The fingerprint is a brand imprint/metaphor for patterns in human behaviour—not biometric technology.
-- No acronym expansion for ETHIC or MANRA is invented in this reference.
+## Friction taxonomy: F1–F11
 
-## Friction taxonomy — F1–F11
+- **F1 · Fit & Hold:** something slips, detaches or moves under force. Visual example: a cable clip at a desk edge.
+- **F2 · Position & Access:** something must be held or repositioned repeatedly. Example: moving a tool because no temporary resting place is available.
+- **F3 · Tangle & Retrieve:** something becomes tangled, mixed, lost or difficult to locate. Example: loose leads or small items buried in a bag.
+- **F4 · Repeated Effort:** the same extra action keeps recurring. Example: re-wrapping, wiping, reconnecting or readjusting.
+- **F5 · Human–Technology Fusion:** a defined human task meets a technological capability; investigate the human work that may remain after the tool responds. NEO 1 is an external reference. No defect is assumed.
+- **F6 · Capture & Recall:** something is missed, captured late or hard to retrieve. Example: finding a specific point in a saved lecture or voice note.
+- **F7 · Data → Action:** work remains after a recording, summary or alert. Example: turning meeting notes into an owned task and due date.
+- **F8 · Context & Accuracy:** output must be corrected or checked. Example: verifying a transcribed name, date or number.
+- **F9 · Access & Reach:** a tool is awkward to reach, clean, carry or use in a constrained space. Example: a handheld vacuum's nozzle cannot comfortably reach a narrow car-seat gap.
+- **F10 · Setup & Maintenance:** recurring setup or upkeep limits use. Example: charging, pairing and cleaning wireless earbuds.
+- **F11 · Interoperability & Handoff:** tools do not transfer information or complete a handoff smoothly. Example: manually copying a chat commitment into a calendar and task app.
 
-- **F1 Fit & Hold:** something slips, detaches or moves under force.
-- **F2 Position & Access:** something must be held or repositioned repeatedly.
-- **F3 Tangle & Retrieve:** something gets tangled, mixed, lost or difficult to locate.
-- **F4 Repeated Effort:** the same extra action keeps recurring.
-- **F5 Human–Technology Fusion:** a specific human task meets a technological capability; the question is what human work remains after the technology responds. NEO 1 is an illustrative reference; no defect is assumed.
-- **F6 Capture & Recall:** what is missed, captured too late or hard to retrieve?
-- **F7 Data → Action:** what work remains after a recording, summary or alert?
-- **F8 Context & Accuracy:** what must the user correct, verify or explain?
-- **F9 Access & Reach:** what is awkward to reach, clean, carry or use?
-- **F10 Setup & Maintenance:** what recurring setup or upkeep limits use?
-- **F11 Interoperability & Handoff:** where do tools fail to exchange information or hand a task over smoothly, leaving manual transfer/re-entry/reconciliation?
+**F5 and F11 are different:** F5 starts with a human task and asks how technology changes the task and what human work remains. F11 starts with a handoff between tools. Examples are investigation prompts, not claims of observed market demand.
 
-F5 and F11 are not the same. F5 is a human task/friction meeting technology; F11 is tool-to-tool or system handoff friction.
+## Candidate audit: C1–C5
 
-## Historical candidate audit — C1–C5
+The earlier notes used “F1–F5” as shorthand for five specific physical candidate ideas. Because the separate friction taxonomy reserves F1–F11 for track categories, this site calls those five ideas **C1–C5**.
 
-- **C1 — Cable anchor shifts under pull:** current leading candidate; not a cleared P1. Old working names “ForceBase / Kinetic Cable Anchor” are concept labels, not established product names.
-- **C2 — Bin liner slips:** deprioritised; existing solutions are crowded/commodity-like.
-- **C3 — Temporary tool-resting surface:** niche and prior-art proximity is a concern; no patent conclusion has been made.
-- **C4 — Power brick dragged by its cord:** older evidence and weak differentiation.
-- **C5 — Hanger slides on a line in wind:** weak evidence.
+- **C1 — Cable anchor shifts or peels under pull:** leading candidate; provisional track F1. “ForceBase / Kinetic Cable Anchor” are working names only. It is not a cleared P1 or validated product.
+- **C2 — Bin liner slips into the bin:** deprioritised; existing low-cost solutions are crowded/commodity-like.
+- **C3 — Temporary tool-resting surface:** not cleared; use case may be narrow and prior-art proximity is a concern. No patent conclusion has been made.
+- **C4 — Power brick dragged by its cord:** older evidence and unclear differentiation.
+- **C5 — Hanger slides along a line in wind:** weak evidence.
 
-These are candidate ideas, not friction taxonomy labels. The tentative track mapping shown in the site must be confirmed against the actual observed context. Deprioritised does not mean universally solved; it means current evidence does not justify priority.
+Candidate-to-track mappings are provisional and should be confirmed against the actual context. Deprioritised does not mean universally solved.
 
-## Product-design patterns and their fusion
+## Three meanings of “fusion”
 
-- **Pattern 01 — Commercial simplicity:** small, clear, cost-conscious intervention; minimal complexity unless needed.
-- **Pattern 02 — Capability transformation:** familiar form that enables a materially different capability or use experience; NEO 1 is only a reference.
-- **ETHIC hero-product thesis:** a potential combination of commercial simplicity and meaningful capability transformation. It does not mean literally combining a cable organiser and a wearable recorder. It is a design thesis, not a selected or validated product.
-- This is separate from F5 human–technology fusion and F11 tool interoperability.
+- **F5:** human friction + technology at the level of a real workflow.
+- **F11:** two tools or systems fail to hand off information or actions smoothly.
+- **Pattern 01 + Pattern 02:** a separate product-design hypothesis—commercial simplicity plus meaningful capability transformation. It does not mean literally combining a cable organiser with NEO 1, and it is not a selected or validated product.
 
-## Current gate and stop point
+## Current qualification and stop point
 
-- **C1:** leading current candidate; not validated.
-- **P1 — Physical Intelligence:** not cleared / unclaimed.
-- **P2 — Technology Intelligence:** unclaimed.
-- User validation, paid validation, unit economics and commercial proof are not established; patentability has not been established; scale is not approved.
-- **Target prototype envelope:** ₹11,500–₹12,500 (broader planning envelope approximately ₹11,000–₹13,000), not spend incurred or funding secured.
-- When a candidate actually satisfies all five P1 requirements—unresolved gap, strong ETHIC fit, scalable potential, clear physical intervention and prototype feasibility—stop broad search and focus on validation.
+- **C1:** leading candidate; not user-validated.
+- **P1 · Physical Intelligence:** not cleared / unclaimed.
+- **P2 · Technology Intelligence:** unclaimed.
+- User validation and paid validation are incomplete. Unit economics and commercial proof are not established. Patentability is not established. Scale is not approved.
+- **Prototype target:** ₹11,500–₹12,500; broader early planning envelope ₹11,000–₹13,000. It is not spend incurred, funding secured or a production budget.
+- A candidate must show an unresolved gap, strong ETHIC fit, scalable potential, a clear intervention and prototype feasibility before P1 can be cleared. When one truly clears the gate, stop broad search and focus on validation.
 
-## Supplied video
+## Video and product images
 
-The page contains a native player that loads the user-supplied Polygons fold-flat measuring-spoon clip from the repository only after the visitor presses **Load the supplied video**. The page uses no YouTube player and does not substitute another video. The video is web-optimised for lower loading time, with image and audio retained. It is an external case study—not an ETHIC product. The clip’s “$4 million in sales” statement is not presented as audited revenue, profit, verified unit economics or ETHIC traction. Confirm public redistribution rights before public release.
+- The cable organiser photo is attributed to the product listing linked in the page.
+- The NEO 1 image is linked to the official NeoSapien product page. It is a third-party reference, not an ETHIC product.
+- The supplied fold-flat measuring-spoon clip belongs after the method/taxonomy and before the C1–C5 candidate board. It should play as a native video from repository media; do not substitute a YouTube embed. The current page's native player expects repository media parts under `assets/video-data/clip-01.txt` onward. Those media parts still need to be committed before native playback can work.
+- The clip is an external design reference. The on-screen “$4 million in sales” statement is not treated as audited revenue, profit, verified unit economics or ETHIC traction. Confirm redistribution rights before public distribution.
 
-## Evidence and next steps
+## Evidence discipline
 
-Observed ≠ proven. Hypothesis ≠ proven. Interesting ≠ qualified. Qualified ≠ validated. Validated ≠ scale-ready. Five-person field screening is an early filter, not market proof; 20–30 relevant interviews per product is a later planning target. Prototype conversion, gross margin, repeat/referral, return-rate, validation-time and IP figures on the site are targets, not achieved results.
+Observed ≠ proven. Hypothesis ≠ proven. Interesting ≠ qualified. Qualified ≠ validated. Validated ≠ scale-ready. Five-person screening is only an early filter; 20–30 relevant interviews per product is a later planning target. Commercial KPIs are targets, not achieved outcomes.
 
 ## Publishing
 
 - Repository: https://github.com/Manoj5520/ETHIC-manra
-- Intended GitHub Pages project URL after Pages is enabled: https://manoj5520.github.io/ETHIC-manra/
-- The repository serves one static page and local assets. The Pages setting still needs branch `main` and folder `/(root)` selected by the account owner; this integration was denied permission to enable Pages automatically.
-- The site does not touch the personal portfolio repository `Manoj5520/manoj5520.github.io`.
-
-This is a working strategic reference, not a product-launch announcement, patentability opinion or freedom-to-operate review.
+- Intended GitHub Pages URL after Pages is enabled: https://manoj5520.github.io/ETHIC-manra/
+- The page is a static HTML site with no build step. GitHub Pages must be enabled under the repository's Pages settings with branch `main` and folder `/(root)`; the connected integration cannot enable that setting directly.
+- The personal portfolio repository `Manoj5520/manoj5520.github.io` is separate and untouched.

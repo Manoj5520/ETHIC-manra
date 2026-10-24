@@ -22,6 +22,72 @@
     @media(max-width:980px){.links{gap:9px}.links a{font-size:9px}.hero-inner{gap:25px}.status-grid{grid-template-columns:repeat(2,1fr)}.status:nth-child(2){border-right:0}.status:nth-child(3){padding-left:0}.status:nth-child(-n+2){border-bottom:1px solid #3c372e}.grid4{grid-template-columns:repeat(2,1fr)}.gate{grid-template-columns:repeat(2,1fr)}.distinct-fusions{grid-template-columns:1fr}.flow{grid-template-columns:repeat(2,1fr)}}
     @media(max-width:700px){.nav{padding:9px 14px}.links{display:none;position:absolute;top:65px;left:0;right:0;padding:15px;background:#151410;border-bottom:1px solid #39342a;flex-direction:column;align-items:flex-start}.links.open{display:flex}.links a{font-size:11px}.menu{display:block}.hero{padding:42px 15px 0}.hero-inner{grid-template-columns:1fr;gap:26px;padding-bottom:30px}.hero h1{font-size:37px}.hero-copy{font-size:14px}.hero-logo{max-width:190px}.hero-logo img{width:68px;height:68px}.status-grid{padding:10px 15px}.status{padding:9px 10px}.status strong{font-size:11px}.section{padding:42px 15px}.section-head{grid-template-columns:1fr;gap:4px;margin-bottom:22px}.secno{padding-top:0}.grid2,.grid3,.timeline,.track-cards,.archetypes,.video-layout{grid-template-columns:1fr}.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}.flow{grid-template-columns:1fr}.flowcard{padding:15px}.video-stage{max-width:100%;aspect-ratio:9/14}.video-frame{max-width:100%}.fusion-row{grid-template-columns:1fr}.plus{transform:rotate(90deg)}.gate{grid-template-columns:1fr}.footerinner{grid-template-columns:1fr}.footer .footstatus{text-align:left}.tablewrap{border-radius:8px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+  
+    .map-section{padding-top:35px;padding-bottom:35px;background:#ece5d8}
+    .read-map-grid{display:grid;grid-template-columns:minmax(0,1fr) 24px minmax(0,1fr) 24px minmax(0,1fr);gap:10px;align-items:stretch}
+    .read-map-card{padding:17px 18px;border-radius:10px;border:1px solid var(--line);background:#fffdf8}
+    .read-map-card h3{font-size:20px;margin:7px 0}
+    .read-map-card p{font-size:12px;color:var(--muted);margin:0}
+    .read-map-card.map-company{border-top:3px solid #bea06b}
+    .read-map-card.map-system{background:#211f1a;color:#f2eadb;border-color:#4b4131;border-top:3px solid #c9a86c}
+    .read-map-card.map-system p{color:#d0c6b6}
+    .read-map-card.map-decision{border-top:3px solid #798b70}
+    .map-code{font:9px ui-monospace,monospace;letter-spacing:.11em;color:#8d6e3b}
+    .map-system .map-code{color:#d9bd8b}
+    .map-arrow{display:grid;place-items:center;color:#9a7946;font-size:21px}
+    .number-key{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-top:12px}
+    .number-key div{padding:12px 14px;border:1px solid #d8cbb5;background:#f7f3eb;border-radius:8px;min-width:0}
+    .number-key b{display:block;font-size:12px;color:#5b482b}
+    .number-key span{display:block;font-size:11px;font-weight:750;margin-top:3px}
+    .number-key small{display:block;color:#71695c;font-size:10px;line-height:1.5;margin-top:3px}
+    .track-with-image{border-top:3px solid #c5a36b}
+    .product-figure{margin:13px 0 12px;background:#f7f4ed;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+    .product-figure img{display:block;width:100%;height:180px;object-fit:contain;background:#fff;padding:8px}
+    .product-figure figcaption{padding:8px 10px;font-size:10px;line-height:1.55;color:#6c6558;border-top:1px solid #e3dccf}
+    .product-figure figcaption a,.small-note a{color:#72552b;text-decoration:underline}
+    .cable-figure img{height:185px}
+    .f5-feature{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:20px;align-items:start;padding:21px;border:1px solid #4d4332;border-radius:12px;background:#211f1a;color:#f3eadb}
+    .neo-figure{margin:0;background:#fff;border-color:#716044}
+    .neo-figure img{height:260px;object-fit:contain}
+    .neo-figure figcaption{color:#5e594f;background:#f7f4ed}
+    .f5-copy .trackhead{align-items:flex-start}
+    .f5-copy .question{color:#f1e4cc;font-size:13px;line-height:1.65}
+    .f5-copy p{color:#d7cdbd;font-size:12px;line-height:1.75}
+    .worked-example{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:15px 0}
+    .worked-example div{padding:12px;border:1px solid #4a4235;background:#191814;border-radius:7px}
+    .worked-example b{display:block;color:#e6c891;font-size:11px;margin-bottom:5px}
+    .worked-example p{font-size:11px;margin:0;color:#d6cabb}
+    .small-note{font-size:10px!important;color:#b9ad9c!important}
+    .tech-friction-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+    .tech-example{min-width:0;padding:17px;background:#fffdf8;border:1px solid var(--line);border-radius:10px}
+    .tech-visual{height:100px;margin:-1px -1px 13px;border-radius:7px;background:#f3ecdf;display:flex;align-items:center;justify-content:center;overflow:hidden}
+    .tech-visual svg{display:block;width:100%;height:100%;max-width:210px}
+    .tech-example h3{font-size:15px;margin:10px 0 7px}
+    .tech-example p{font-size:11px;line-height:1.7;color:var(--muted);margin:8px 0 0}
+    .tech-example p strong{color:#443b2b}
+    .tech-example .question{color:#494136}
+    .candidate-board{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    .candidate-card{min-width:0;padding:18px;background:#fffdf8;border:1px solid var(--line);border-radius:10px}
+    .candidate-card.lead{grid-column:1/-1;border:1px solid #c7b18c;background:#fbf7ef}
+    .candidate-top{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin-bottom:12px}
+    .candidate-id{font:19px Georgia,serif;color:#816138;margin-right:4px}
+    .candidate-content{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:20px;align-items:start}
+    .product-figure.compact{margin:0}
+    .product-figure.compact img{height:170px}
+    .candidate-card h3{font-size:17px}
+    .candidate-card p{font-size:12px;line-height:1.7;color:var(--muted)}
+    .candidate-state{font-size:10px!important;font-weight:800;letter-spacing:.05em;color:#8b433c!important}
+    .three-fusions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+    .fusion-card{padding:20px;border:1px solid var(--line);border-radius:10px;background:#fffdf8}
+    .fusion-card h3{font-size:17px;margin:12px 0 9px}
+    .fusion-card p{font-size:12px;line-height:1.75;color:var(--muted)}
+    .fusion-card.f5-fusion{background:#211f1a;color:#f3eadb;border-color:#4d4332}
+    .fusion-card.f5-fusion p{color:#d7cdbd}
+    .fusion-card.f5-fusion strong{color:#e7cf9f}
+    .fusion-card.f5-fusion h3{color:#f1e4cc}
+    @media(max-width:950px){.tech-friction-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.read-map-grid{grid-template-columns:1fr 22px 1fr}.read-map-grid .map-arrow:nth-of-type(4){display:none}.read-map-grid .read-map-card.map-decision{grid-column:1/-1}.number-key{grid-template-columns:repeat(2,minmax(0,1fr))}.f5-feature{grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr)}}
+    @media(max-width:700px){.read-map-grid{grid-template-columns:1fr}.read-map-grid .map-arrow{transform:rotate(90deg);line-height:1}.read-map-grid .map-arrow:nth-of-type(4){display:grid}.read-map-grid .read-map-card.map-decision{grid-column:auto}.number-key{grid-template-columns:1fr 1fr}.f5-feature,.candidate-content{grid-template-columns:1fr}.neo-figure img{height:210px}.tech-friction-grid{grid-template-columns:1fr}.candidate-board{grid-template-columns:1fr}.candidate-card.lead{grid-column:auto}.worked-example{grid-template-columns:1fr}.product-figure img{height:190px}}
+
   </style>
 </head>
 <body>
@@ -34,7 +100,7 @@
     </a>
     <button class="menu" id="menu" aria-expanded="false" aria-controls="links">Menu ☰</button>
     <nav class="links" id="links" aria-label="Main navigation">
-      <a href="#meaning">What it is</a><a href="#change">What changed</a><a href="#method">Method</a><a href="#tracks">F1–F11</a><a href="#video-case">Video case</a><a href="#candidates">C1–C5</a><a href="#fusion">Fusion</a><a href="#current">Current stop</a>
+      <a href="#read-map">Start here</a><a href="#meaning">What it is</a><a href="#change">What changed</a><a href="#method">Method</a><a href="#tracks">F1–F11</a><a href="#video-case">Video case</a><a href="#candidates">C1–C5</a><a href="#fusion">Fusion</a><a href="#current">Current stop</a>
     </nav>
   </div>
 </header>
@@ -65,6 +131,24 @@
 </section>
 
 <main id="main">
+<section class="section map-section" id="read-map">
+  <div class="inner">
+    <div class="section-head"><div class="secno">READ THIS FIRST</div><div><h2>One page, three different number systems.</h2><p class="section-intro">This map prevents the biggest source of confusion: a friction category is not a product idea, and a product-design pattern is not a qualification result.</p></div></div>
+    <div class="read-map-grid">
+      <article class="read-map-card map-company"><span class="map-code">01 · COMPANY</span><h3>ETHIC</h3><p>The company: finds human problems and develops useful interventions around behaviour.</p></article>
+      <span class="map-arrow" aria-hidden="true">→</span>
+      <article class="read-map-card map-system"><span class="map-code">02 · INTELLIGENCE</span><h3>MANRA</h3><p>The system behind ETHIC: researches, compares, tests and recommends a decision.</p></article>
+      <span class="map-arrow" aria-hidden="true">→</span>
+      <article class="read-map-card map-decision"><span class="map-code">03 · DECISION</span><h3>Evidence gate</h3><p>Decide whether to investigate, qualify, prototype, validate—or stop.</p></article>
+    </div>
+    <div class="number-key">
+      <div><b>F1–F11</b><span>Friction types</span><small>What kind of problem is it?</small></div>
+      <div><b>C1–C5</b><span>Historical candidates</span><small>Which specific ideas were examined?</small></div>
+      <div><b>Pattern 01 + 02</b><span>Product-design thesis</span><small>What kind of solution might fit?</small></div>
+      <div><b>P1 / P2</b><span>Qualification gates</span><small>Has evidence earned the next stage?</small></div>
+    </div>
+  </div>
+</section>
 <section class="section alt" id="meaning">
   <div class="inner">
     <div class="section-head"><div class="secno">01 / The meaning</div><div><h2>One company. One intelligence system. Different jobs.</h2><p class="section-intro">Think of ETHIC as the company that may create and deliver an intervention. Think of MANRA as the system that helps it decide which problem deserves that effort. They work together, but they are not the same thing.</p></div></div>
@@ -124,37 +208,91 @@
 
 <section class="section" id="tracks">
   <div class="inner">
-    <div class="section-head"><div class="secno">04 / Friction taxonomy</div><div><h2>F1–F11: eleven ways to classify the problem.</h2><p class="section-intro">These are <strong>types of friction</strong>, not eleven products. Start with the user's task and observed problem, then choose the track that best describes it. F1–F4 are small everyday frictions; F5 is the human–technology bridge; F6–F11 are technology-led or system-level frictions.</p></div></div>
-    <div class="track-band"><strong>LANE A · F1–F4</strong><span>Everyday micro-frictions · small, recurring, observable tasks</span></div>
+    <div class="section-head"><div class="secno">04 / Friction taxonomy</div><div><h2>F1–F11 are problem types—not eleven products.</h2><p class="section-intro">First describe the person's real task. Then choose the track that fits the friction you actually observe. The six technology tracks below use familiar situations as investigation prompts; they do not claim that a named product is defective.</p></div></div>
+    <div class="track-band"><strong>LANE A · F1–F4</strong><span>Everyday micro-frictions · small, repeatable actions or failures</span></div>
     <div class="track-cards">
-      <article class="track"><div class="trackhead"><span class="fcode">F1</span><h3>Fit & Hold</h3></div><p class="question">What slips, detaches or moves under force?</p><p>Example to investigate: a cable mount moves when the cable is pulled. Check the surface, force, attachment and how often it happens.</p></article>
-      <article class="track"><div class="trackhead"><span class="fcode">F2</span><h3>Position & Access</h3></div><p class="question">What must be held or repositioned repeatedly?</p><p>Example to investigate: a tool has no convenient temporary resting place, so the user keeps moving it or holding it.</p></article>
-      <article class="track"><div class="trackhead"><span class="fcode">F3</span><h3>Tangle & Retrieve</h3></div><p class="question">What becomes hard to separate, identify or find?</p><p>Examples: loose leads becoming mixed together, or a small item buried in a bag.</p></article>
-      <article class="track"><div class="trackhead"><span class="fcode">F4</span><h3>Repeated Effort</h3></div><p class="question">What extra action keeps recurring?</p><p>Examples: re-wrapping, wiping, reconnecting or readjusting. Count the repetition and its consequence rather than assuming it matters.</p></article>
+      <article class="track track-with-image">
+        <div class="trackhead"><span class="fcode">F1</span><div><h3>Fit &amp; Hold</h3><span class="tag">Does it stay where it should?</span></div></div>
+        <p class="question">What slips, detaches or moves when a force is applied?</p>
+        <figure class="product-figure cable-figure">
+          <img src="https://content.etilize.com/Alternate-Image2/1068644651.jpg" alt="A commercial cable clip holding a lead at the edge of a desk" loading="lazy">
+          <figcaption>Existing cable-clip example. This image shows a marketed solution—not proof that it fails. <a href="https://com.hamster.ca/en/cavoline-clip-2-cable-clips-840765" target="_blank" rel="noopener noreferrer">Image/source</a>.</figcaption>
+        </figure>
+        <p><strong>What to observe:</strong> when the cable is pulled in a real setup, does the clip move, peel, or continue holding? Record surface, attachment, pull direction and repeats. The proposed cable-anchor candidate is tested against this question.</p>
+      </article>
+      <article class="track">
+        <div class="trackhead"><span class="fcode">F2</span><h3>Position &amp; Access</h3></div>
+        <p class="question">What must a person keep holding or repositioning?</p>
+        <div class="mini-visual" aria-label="Illustration of a tool being moved between two positions"><svg viewBox="0 0 260 92" role="img"><rect x="13" y="17" width="72" height="55" rx="7" fill="#eee4d2" stroke="#bda77e"/><rect x="31" y="29" width="36" height="10" rx="3" fill="#8f7754"/><path d="M49 41v16m-5-5 5 5 5-5" stroke="#8f7754" stroke-width="2" fill="none"/><path d="M96 46h58" stroke="#9a7946" stroke-width="2" stroke-dasharray="4 4"/><path d="m148 40 7 6-7 6" fill="none" stroke="#9a7946" stroke-width="2"/><rect x="164" y="17" width="82" height="55" rx="7" fill="#eee4d2" stroke="#bda77e"/><rect x="188" y="29" width="35" height="10" rx="3" fill="#8f7754"/><path d="M205 42v15m-5-5 5 5 5-5" stroke="#8f7754" stroke-width="2" fill="none"/></svg><small>Illustration: repeated repositioning</small></div>
+        <p><strong>Everyday example:</strong> someone pauses mid-task to hold a tool, move it out of the way, then pick it up again because there is no convenient temporary resting place.</p>
+      </article>
+      <article class="track">
+        <div class="trackhead"><span class="fcode">F3</span><h3>Tangle &amp; Retrieve</h3></div>
+        <p class="question">What gets mixed, buried, tangled or difficult to locate?</p>
+        <div class="mini-visual" aria-label="Illustration of tangled cables and a search symbol"><svg viewBox="0 0 260 92" role="img"><path d="M18 26c34-30 48 37 79 8s-8 47 32 25 19-43 48-22 25 20 43-1" fill="none" stroke="#ad8b55" stroke-width="4" stroke-linecap="round"/><path d="M20 59c22-25 51 17 73-6s43-12 54 16 44-33 68-10" fill="none" stroke="#4d4940" stroke-width="3" stroke-linecap="round"/><circle cx="213" cy="27" r="14" fill="#f8f4eb" stroke="#8d7349" stroke-width="2"/><path d="m223 38 12 12" stroke="#8d7349" stroke-width="4" stroke-linecap="round"/></svg><small>Illustration: tangled leads or buried items</small></div>
+        <p><strong>Everyday example:</strong> the user spends time separating cables or searching a bag for a small item. Check how often it happens and what the search actually costs.</p>
+      </article>
+      <article class="track">
+        <div class="trackhead"><span class="fcode">F4</span><h3>Repeated Effort</h3></div>
+        <p class="question">What extra action has become so normal that nobody questions it?</p>
+        <div class="mini-visual" aria-label="Illustration of the same step being repeated"><svg viewBox="0 0 260 92" role="img"><rect x="20" y="22" width="54" height="45" rx="6" fill="#eee4d2" stroke="#bda77e"/><path d="M32 35h30M32 44h22M32 53h26" stroke="#92764b" stroke-width="2"/><path d="M82 45h35" stroke="#9a7946" stroke-width="2"/><path d="m110 39 7 6-7 6" fill="none" stroke="#9a7946" stroke-width="2"/><rect x="124" y="22" width="54" height="45" rx="6" fill="#eee4d2" stroke="#bda77e"/><path d="M136 35h30M136 44h22M136 53h26" stroke="#92764b" stroke-width="2"/><path d="M184 45h20" stroke="#9a7946" stroke-width="2"/><path d="m197 39 7 6-7 6" fill="none" stroke="#9a7946" stroke-width="2"/><text x="210" y="51" font-size="12" fill="#6b5633">again</text></svg><small>Illustration: the same small action repeats</small></div>
+        <p><strong>Everyday example:</strong> re-wrapping, wiping, reconnecting or readjusting something over and over. Repetition alone is not enough; the consequence must matter.</p>
+      </article>
     </div>
-    <div class="track-band" style="margin-top:27px"><strong>LANE B · F5</strong><span>Human friction meets a technological capability</span></div>
-    <article class="track f5">
-      <div class="trackhead"><span class="fcode">F5</span><div><h3>Human–Technology Fusion</h3><span class="tag">The bridge track</span></div></div>
-      <p class="question">A real human task meets an existing technology response. What human work remains?</p>
-      <p>Reference example: NEO 1, a wearable AI note-taker. The human friction is a hypothesis: during a conversation, someone may struggle to listen while remembering every detail or commitment. A device may capture and summarise it; the investigation asks what still needs checking, organising, retrieving or acting on. <strong>Do not assume NEO 1 is defective.</strong></p>
-      <p style="margin-top:12px"><strong>Reasoning chain:</strong> human task → technology response → remaining human work → evidence of a residual gap.</p>
-    </article>
-    <div class="track-band" style="margin-top:27px"><strong>LANE C · F6–F11</strong><span>Technology-led / macro frictions · bounded to a real task</span></div>
-    <div class="track-cards">
-      <article class="track"><div class="trackhead"><span class="fcode">F6</span><h3>Capture & Recall</h3></div><p class="question">What is missed, captured too late or hard to retrieve?</p><p>Example: a person captured information but cannot find the relevant moment or note when they need it.</p></article>
-      <article class="track"><div class="trackhead"><span class="fcode">F7</span><h3>Data → Action</h3></div><p class="question">What work remains after a recording, summary or alert?</p><p>Example: a summary exists, but someone still has to identify commitments, assign the next step and follow up.</p></article>
-      <article class="track"><div class="trackhead"><span class="fcode">F8</span><h3>Context & Accuracy</h3></div><p class="question">What must a user correct, verify or explain?</p><p>Example: an output lacks context or gets a detail wrong, so the user must check it before relying on it.</p></article>
-      <article class="track"><div class="trackhead"><span class="fcode">F9</span><h3>Access & Reach</h3></div><p class="question">What remains awkward to reach, clean, carry or use?</p><p>Example: a tool exists but cannot conveniently reach a tight space or the part that needs attention.</p></article>
-      <article class="track"><div class="trackhead"><span class="fcode">F10</span><h3>Setup & Maintenance</h3></div><p class="question">What recurring setup or upkeep limits use?</p><p>Examples: charging, configuring, cleaning, emptying, replacing consumables or storing parts.</p></article>
-      <article class="track"><div class="trackhead"><span class="fcode">F11</span><h3>Interoperability & Handoff</h3></div><p class="question">Where do tools fail to hand information or a task over smoothly?</p><p>Example: information must be transferred, re-entered or reconciled by hand between two apps, devices or physical/digital tools.</p></article>
+
+    <div class="track-band" style="margin-top:28px"><strong>LANE B · F5</strong><span>Human friction + a technological capability · a workflow-level bridge</span></div>
+    <div class="f5-feature">
+      <figure class="product-figure neo-figure">
+        <img src="https://shop.neosapien.ai/cdn/shop/t/4/assets/double-neo.png?v=67222249636087248081749142858" alt="Neo 1 wearable AI conversation note-taker by NeoSapien" loading="lazy">
+        <figcaption>NEO 1 is an external reference product, not an ETHIC product. <a href="https://shop.neosapien.ai/products/neo-1" target="_blank" rel="noopener noreferrer">Official product reference</a>.</figcaption>
+      </figure>
+      <div class="f5-copy">
+        <div class="trackhead"><span class="fcode">F5</span><div><h3>Human–Technology Fusion</h3><span class="tag amber">Do not assume product failure</span></div></div>
+        <p class="question">A person has a real task. Technology helps with part of it. What human work remains after the technology responds?</p>
+        <div class="worked-example">
+          <div><b>1 · Human task</b><p>Listen during a conversation and remember details or commitments.</p></div>
+          <div><b>2 · Technology response</b><p>NEO 1 is designed to capture conversation information and produce summaries, memory and action items.</p></div>
+          <div><b>3 · Remaining work to investigate</b><p>Does the user still have to check accuracy, find the right detail, organise the follow-up or take action?</p></div>
+          <div><b>4 · Evidence question</b><p>Which remaining step is genuinely difficult, how often, and for whom? Do not assume there is a gap without evidence.</p></div>
+        </div>
+        <p class="small-note">This is a research example—not an allegation that NEO 1 fails. Source: <a href="https://shop.neosapien.ai/products/neo-1" target="_blank" rel="noopener noreferrer">NEO 1 product page</a>.</p>
+      </div>
     </div>
-    <div class="note" style="margin-top:17px"><strong>Keep the scope bounded.</strong> “Technology is frustrating” is too broad. “After this meeting recorder creates a summary, I still have to search for the commitment and add it to my task list” is a testable task. The examples are prompts to investigate—not claims that the named products fail.</div>
+
+    <div class="track-band" style="margin-top:28px"><strong>LANE C · F6–F11</strong><span>Technology-led / macro frictions · each example is bounded to a specific task</span></div>
+    <div class="tech-friction-grid">
+      <article class="tech-example">
+        <div class="tech-visual"><svg viewBox="0 0 150 90" role="img" aria-label="Audio recording waveform and search"><rect x="9" y="14" width="92" height="62" rx="7" fill="#fffaf1" stroke="#c6b28c"/><circle cx="27" cy="29" r="6" fill="#b36e57"/><path d="M42 29h44" stroke="#b6a17c" stroke-width="3"/><path d="M19 51h6m4-10v20m7-15v10m7-20v30m7-19v8m7-15v22m7-27v32m7-18v4m7-13v22" stroke="#8a6c42" stroke-width="2.8" stroke-linecap="round"/><circle cx="115" cy="55" r="17" fill="#eadcc3" stroke="#9f7d48" stroke-width="2"/><path d="m127 68 12 12" stroke="#9f7d48" stroke-width="5" stroke-linecap="round"/></svg></div>
+        <span class="tag">F6 · Capture &amp; Recall</span><h3>“I recorded it. Where is it?”</h3><p><strong>Common example:</strong> a student records a lecture or someone saves a voice note, then cannot quickly find the exact detail later.</p><p class="question">Investigate: was it captured, labelled and made searchable when needed?</p>
+      </article>
+      <article class="tech-example">
+        <div class="tech-visual"><svg viewBox="0 0 150 90" role="img" aria-label="Summary converted into a task checklist"><rect x="12" y="10" width="54" height="68" rx="5" fill="#fffaf1" stroke="#c6b28c"/><path d="M22 25h33M22 34h25M22 43h30" stroke="#9b8a6c" stroke-width="2.5"/><path d="M70 43h15m-6-6 6 6-6 6" fill="none" stroke="#947244" stroke-width="2"/><rect x="91" y="10" width="48" height="68" rx="5" fill="#e5ecdf" stroke="#91a38a"/><path d="m100 29 4 4 7-8m-11 19 4 4 7-8m-11 19 4 4 7-8" fill="none" stroke="#557b5a" stroke-width="2.5"/><path d="M116 29h15m-15 15h15m-15 15h15" stroke="#8b9f83" stroke-width="2"/></svg></div>
+        <span class="tag">F7 · Data → Action</span><h3>“I got a summary. Now what?”</h3><p><strong>Common example:</strong> a meeting summary exists, but the user still has to extract the promise, assign an owner and add a due date to a task list.</p><p class="question">Investigate: what steps remain between information and completion?</p>
+      </article>
+      <article class="tech-example">
+        <div class="tech-visual"><svg viewBox="0 0 150 90" role="img" aria-label="Transcription with a detail that needs verification"><rect x="10" y="13" width="130" height="64" rx="6" fill="#fffaf1" stroke="#c6b28c"/><text x="20" y="32" font-size="10" fill="#63594a">Transcript result</text><path d="M20 42h85" stroke="#a99b80" stroke-width="3"/><rect x="19" y="49" width="72" height="13" rx="3" fill="#f3d6c9"/><path d="M20 68h50" stroke="#a99b80" stroke-width="2"/><circle cx="118" cy="54" r="10" fill="#f7e7bf" stroke="#a47e44" stroke-width="2"/><path d="M118 48v7m0 4v1" stroke="#7d5a2b" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+        <span class="tag">F8 · Context &amp; Accuracy</span><h3>“Can I trust this output?”</h3><p><strong>Common example:</strong> speech-to-text mishears a name, date or number. The user must replay the audio or check the source before acting.</p><p class="question">Investigate: what needs correction, how costly is the error, and who verifies it?</p>
+      </article>
+      <article class="tech-example">
+        <div class="tech-visual"><svg viewBox="0 0 150 90" role="img" aria-label="Handheld vacuum trying to reach a narrow gap"><path d="M7 68h136" stroke="#ab9b80" stroke-width="4"/><path d="M103 68v-20h35v20" fill="#eee5d6" stroke="#ab9b80" stroke-width="2"/><rect x="16" y="25" width="47" height="24" rx="8" fill="#d9d6d0" stroke="#716b61" stroke-width="2"/><path d="M58 32 88 45l-5 8-31-9" fill="#b9b6af" stroke="#716b61" stroke-width="2"/><path d="M87 48h26" stroke="#7b7468" stroke-width="5"/><path d="M114 45v7" stroke="#b56d56" stroke-width="3"/><text x="72" y="17" font-size="9" fill="#645746">tight gap</text></svg></div>
+        <span class="tag">F9 · Access &amp; Reach</span><h3>“The tool works—except here.”</h3><p><strong>Common example:</strong> a handheld vacuum cleans an open surface, but a narrow gap or deep car-seat crevice is hard to reach with the available nozzle.</p><p class="question">Investigate: is the access gap frequent and important, or just an occasional edge case?</p>
+      </article>
+      <article class="tech-example">
+        <div class="tech-visual"><svg viewBox="0 0 150 90" role="img" aria-label="Wireless earbuds in charging case with battery indicator"><rect x="22" y="30" width="106" height="48" rx="12" fill="#ddd9d1" stroke="#777168" stroke-width="2"/><path d="M22 49h106" stroke="#b4aea3" stroke-width="2"/><path d="M50 23c-7-9 6-18 13-10 5 6 1 11-1 15v15h-8V28M92 23c-7-9 6-18 13-10 5 6 1 11-1 15v15h-8V28" fill="#c3bfb8" stroke="#716b61" stroke-width="2"/><rect x="53" y="57" width="44" height="7" rx="3" fill="#9ab099"/><text x="75" y="73" font-size="8" text-anchor="middle" fill="#4b5849">charge</text></svg></div>
+        <span class="tag">F10 · Setup &amp; Maintenance</span><h3>“It needs care before I can use it.”</h3><p><strong>Common example:</strong> wireless earbuds need charging, cleaning, pairing and sometimes resetting before they work as expected.</p><p class="question">Investigate: which recurring upkeep step limits use, and in what setting?</p>
+      </article>
+      <article class="tech-example">
+        <div class="tech-visual"><svg viewBox="0 0 150 90" role="img" aria-label="Information passed between separate apps requiring manual re-entry"><rect x="6" y="15" width="39" height="51" rx="5" fill="#e9e2d6" stroke="#b6a17c"/><rect x="55" y="15" width="39" height="51" rx="5" fill="#dfe8df" stroke="#9cb29b"/><rect x="104" y="15" width="39" height="51" rx="5" fill="#dfe3ee" stroke="#9ca6be"/><text x="25" y="30" font-size="7" text-anchor="middle" fill="#685538">CHAT</text><text x="74" y="30" font-size="7" text-anchor="middle" fill="#4d6a4c">CAL</text><text x="123" y="30" font-size="7" text-anchor="middle" fill="#56627b">TASK</text><path d="M13 40h24m-24 7h19m-19 7h22M63 41h22m-22 8h17m-17 8h21M112 41h22m-22 8h17m-17 8h21" stroke="#8a8172" stroke-width="2"/><path d="M45 40h10m-4-4 4 4-4 4M94 40h10m-4-4 4 4-4 4" fill="none" stroke="#9a7946" stroke-width="1.8"/></svg></div>
+        <span class="tag">F11 · Interoperability &amp; Handoff</span><h3>“Why am I copying this twice?”</h3><p><strong>Common example:</strong> a date or commitment arrives in a chat, then must be manually re-entered into a calendar and task app.</p><p class="question">Investigate: where does the handoff break, and is manual transfer actually avoidable?</p>
+      </article>
+    </div>
+    <div class="note" style="margin-top:17px"><strong>F5 is not F11.</strong> F5 begins with a human task and asks how technology changes that task—and what human work remains. F11 begins with a handoff between tools and asks why information or actions do not move between them smoothly. All examples here are prompts, not claims of observed market demand.</div>
   </div>
 </section>
 
 <section class="section alt" id="video-case">
   <div class="inner">
-    <div class="section-head"><div class="secno">05 / Supplied video case</div><div><h2>Study the design move—not the sales headline.</h2><p class="section-intro">This is the video you supplied: a third-party product example showing Polygons Design's fold-flat measuring spoons. It is placed here after the method and friction taxonomy, so readers understand the method before seeing how a familiar object can be rethought around a use constraint.</p></div></div>
+    <div class="section-head"><div class="secno">05 / Supplied video case</div><div><h2>Study the design move—not the sales headline.</h2><p class="section-intro">This is the video you uploaded: a third-party product example showing Polygons Design's fold-flat measuring spoons. It is placed here after the method and friction taxonomy, so readers understand the method before seeing how a familiar object can be rethought around a use constraint.</p></div></div>
     <div class="video-layout">
       <div>
         <div class="video-stage" id="video-stage">
@@ -183,51 +321,36 @@
 
 <section class="section" id="candidates">
   <div class="inner">
-    <div class="section-head"><div class="secno">06 / Candidate audit</div><div><h2>Five concrete ideas were investigated. They are not the F1–F5 track labels.</h2><p class="section-intro">This naming distinction fixes a real source of confusion: old notes called these five candidate ideas “F1–F5”, but the friction taxonomy uses F1–F11 for categories. This page renames the five historical candidate ideas <strong>C1–C5</strong>. F1–F11 stays reserved for the taxonomy above.</p></div></div>
-    <div class="note candidate-note"><strong>Read it this way:</strong> the track tells you what kind of friction you observed. C1–C5 are specific ideas considered during earlier research. Several candidates can belong to the same track; the numbers do not mean the same thing.</div>
-    <div class="tablewrap">
-      <table>
-        <thead><tr><th>Candidate</th><th>What was being investigated</th><th>Working status</th><th>Next decision</th></tr></thead>
-        <tbody>
-          <tr><td><span class="c-code">C1</span><strong>Cable anchor shifting under pull</strong><small>Provisional track: F1 · Fit & Hold</small></td><td>A mount may peel or move when a cable is pulled. The proposed “ForceBase / Kinetic Cable Anchor” names in old notes are working concepts, not established product names.</td><td><span class="tag amber">Leading candidate</span><p style="margin-top:7px">Not a qualified P1. No product validation is claimed.</p></td><td>Observe the failure in context; bench-test attachment, force direction, surface compatibility and repeated pull cycles; compare existing products; then test with users.</td></tr>
-          <tr><td><span class="c-code">C2</span><strong>Bin liner slipping into the bin</strong><small>Provisional track: F1 · Fit & Hold</small></td><td>The liner fails to stay in position during use.</td><td><span class="tag">Deprioritised</span><p style="margin-top:7px">Crowded, commodity-like solutions.</p></td><td>Reopen only if fresh evidence reveals a specific, meaningful gap that current low-cost solutions do not solve.</td></tr>
-          <tr><td><span class="c-code">C3</span><strong>Temporary tool-resting surface</strong><small>Provisional track: F2 · Position & Access</small></td><td>A tool has no convenient place to rest between actions. “Kinetic Tray Pad” was a working concept name.</td><td><span class="tag">Not cleared</span><p style="margin-top:7px">Niche; prior-art proximity is a concern.</p></td><td>Specify the unmet job and compare alternatives; obtain a formal IP review before making novelty or patent claims.</td></tr>
-          <tr><td><span class="c-code">C4</span><strong>Power brick dragged by its cord</strong><small>Provisional track: F1 · Fit & Hold</small></td><td>A pull on the cable can move or drop the brick.</td><td><span class="tag">Deprioritised</span><p style="margin-top:7px">Earlier evidence; differentiation unclear.</p></td><td>Do not revive on the old observation alone. Look for current, repeated evidence and a real gap against existing solutions.</td></tr>
-          <tr><td><span class="c-code">C5</span><strong>Hanger sliding on a line in wind</strong><small>Provisional track: F1 · Fit & Hold</small></td><td>A hanger may move along a line in windy conditions.</td><td><span class="tag">Deprioritised</span><p style="margin-top:7px">Evidence was weak.</p></td><td>Stop unless direct observations demonstrate recurrence, consequence and an unmet need.</td></tr>
-        </tbody>
-      </table>
+    <div class="section-head"><div class="secno">06 / Candidate audit</div><div><h2>C1–C5 are the five specific ideas reviewed earlier.</h2><p class="section-intro">These are individual candidate ideas—not the F1–F11 friction categories. The track tells us what kind of friction is involved; C1–C5 identifies the particular idea.</p></div></div>
+    <div class="note candidate-note"><strong>Keep the numbering separate:</strong> F1 is the Fit &amp; Hold track. C1 is the cable-anchor candidate. C2–C5 are other candidate ideas. The shared number is not a shared identity.</div>
+    <div class="candidate-board">
+      <article class="candidate-card lead">
+        <div class="candidate-top"><span class="candidate-id">C1</span><span class="tag amber">Leading current candidate</span><span class="tag">Provisional track: F1</span></div>
+        <div class="candidate-content"><figure class="product-figure compact"><img src="https://content.etilize.com/Alternate-Image2/1068644651.jpg" alt="Existing desk-edge cable clip shown as a current solution" loading="lazy"><figcaption>Example of a current cable clip—not the proposed ETHIC design. <a href="https://com.hamster.ca/en/cavoline-clip-2-cable-clips-840765" target="_blank" rel="noopener noreferrer">Source</a>.</figcaption></figure><div><h3>Cable mount that shifts or peels under pull</h3><p>Working hypothesis: a cable's pull may cause an anchor to migrate from its position. “ForceBase / Kinetic Cable Anchor” are old working names, not an established product.</p><p><strong>Next:</strong> observe it; measure the failure; test pull direction, surface, attachment and repeated cycles; compare alternatives; then ask users whether the remaining gap matters.</p><p class="candidate-state">P1 NOT CLEARED · not user-validated · not approved for manufacture</p></div></div>
+      </article>
+      <article class="candidate-card"><div class="candidate-top"><span class="candidate-id">C2</span><span class="tag">Deprioritised</span><span class="tag">Provisional track: F1</span></div><h3>Bin liner slips into the bin</h3><p>The liner doesn't stay in position. Existing low-cost solutions are crowded and commodity-like; reopen only if a distinct, evidenced gap appears.</p></article>
+      <article class="candidate-card"><div class="candidate-top"><span class="candidate-id">C3</span><span class="tag">Not cleared</span><span class="tag">Provisional track: F2</span></div><h3>Temporary tool-resting surface</h3><p>A tool needs a place to rest between actions. “Kinetic Tray Pad” is a working concept name. The use case may be narrow and prior-art proximity is a concern; no patent conclusion has been made.</p></article>
+      <article class="candidate-card"><div class="candidate-top"><span class="candidate-id">C4</span><span class="tag">Deprioritised</span><span class="tag">Provisional track: F1</span></div><h3>Power brick dragged by its cord</h3><p>A cable pull can drag or drop a power brick. The evidence is older and differentiation was unclear; do not revive it on that old observation alone.</p></article>
+      <article class="candidate-card"><div class="candidate-top"><span class="candidate-id">C5</span><span class="tag">Deprioritised</span><span class="tag">Provisional track: F1</span></div><h3>Hanger slides along a line in wind</h3><p>A hanger may move along a line outdoors. Evidence was weak; stop unless repeatable observations show a meaningful consequence and unmet need.</p></article>
     </div>
-    <p class="taxonomy-note">Track mappings are working classifications based on the current description; check the actual situation before finalising a track. “Deprioritised” does not mean universally solved—it means these candidates do not currently justify priority given the evidence at hand.</p>
+    <p class="taxonomy-note">Track assignments are provisional mappings from the descriptions on record. Confirm them from the real task and context. “Deprioritised” means it is not worth prioritising given the current evidence—not that the problem is solved everywhere.</p>
   </div>
 </section>
 
 <section class="section alt" id="fusion">
   <div class="inner">
-    <div class="section-head"><div class="secno">07 / Product archetypes</div><div><h2>Two patterns. A possible fusion. No final product chosen.</h2><p class="section-intro">These patterns describe possible shapes of an ETHIC intervention. They are different from the F1–F11 friction taxonomy and different from the P1/P2 qualification categories.</p></div></div>
-    <div class="archetypes">
-      <article class="archetype">
-        <span class="a-no">PATTERN 01</span><h3>Commercial simplicity</h3>
-        <p>A small, understandable, low-cost physical intervention that can be prototyped and manufactured without unnecessary complexity.</p>
-        <ul><li>Familiar job; obvious use</li><li>Simple form, preferably universal-fit</li><li>Minimal or no electronics unless evidence justifies them</li><li>Potential reference: cable organisation / anchoring</li></ul>
-      </article>
-      <article class="archetype">
-        <span class="a-no">PATTERN 02</span><h3>Capability transformation</h3>
-        <p>A familiar physical form gives the user a materially different capability or use experience. The extra complexity must solve a real need.</p>
-        <ul><li>Clear transformation, not technology for show</li><li>Understandable in its real use context</li><li>Potential reference: wearable recorder / NEO 1</li><li>Research pattern only—not a validated ETHIC product</li></ul>
-      </article>
+    <div class="section-head"><div class="secno">07 / Three meanings—keep apart</div><div><h2>“Fusion” is used in two different ways here. They are not the same.</h2><p class="section-intro">F5 is a friction category. Pattern 01 + Pattern 02 is a possible product-design direction. F11 is about tools handing work to each other. The word may sound similar, but each asks a different question.</p></div></div>
+    <div class="three-fusions">
+      <article class="fusion-card f5-fusion"><span class="tag amber">F5 · Problem type</span><h3>Human task + technology</h3><p><strong>Question:</strong> what difficulty does a person face, how does a technology respond, and what human work may remain?</p><p><strong>Reference:</strong> NEO 1's conversation capture. The discovery is about a defined workflow, not an assumption that the device is defective.</p></article>
+      <article class="fusion-card"><span class="tag">F11 · Problem type</span><h3>Tool + tool handoff</h3><p><strong>Question:</strong> where do devices, apps or physical/digital tools fail to exchange information or complete a handoff smoothly?</p><p><strong>Reference:</strong> copying a commitment from a chat into a calendar and task list by hand.</p></article>
+      <article class="fusion-card"><span class="tag green">Pattern 01 + Pattern 02 · Design thesis</span><h3>Commercial simplicity + capability transformation</h3><p><strong>Question:</strong> could an easy-to-understand, low-complexity product also create a genuinely useful change in what the person can do?</p><p>This is the proposed ETHIC “hero-product” thesis—not F5, not F11, and not a final product concept.</p></article>
     </div>
-    <div class="fusion-row">
-      <div><span class="label">Pattern 01</span><h3>Commercial simplicity</h3><p>Can someone understand, use, source and afford it?</p></div>
-      <div class="plus" aria-hidden="true">+</div>
-      <div><span class="label">Pattern 02</span><h3>Meaningful capability change</h3><p>Does it give the user a genuinely useful new ability or outcome?</p></div>
+    <div class="archetypes" style="margin-top:18px">
+      <article class="archetype"><span class="a-no">PATTERN 01</span><h3>Commercial simplicity</h3><p>Small, clear, cost-conscious, easy to understand and feasible to prototype. A cable organiser is an example of the product class—not a validated ETHIC product.</p><ul><li>Obvious job and use</li><li>Minimal parts and complexity</li><li>Potentially suitable for tight first-product capital</li><li>Still has to be differentiated and tested</li></ul></article>
+      <article class="archetype"><span class="a-no">PATTERN 02</span><h3>Capability transformation</h3><p>A familiar, wearable or portable form delivers a noticeably different capability. NEO 1 is a reference used to study this pattern—not an ETHIC-owned product.</p><ul><li>Clear ability or outcome change</li><li>Added complexity must be justified by need</li><li>Look at the whole workflow, not just the device</li><li>No claim that copying this approach is the answer</li></ul></article>
     </div>
-    <div class="note" style="margin-top:14px"><strong>ETHIC hero-product thesis:</strong> combine the commercial clarity of Pattern 01 with a meaningful capability transformation from Pattern 02—only if evidence supports both. This does <strong>not</strong> mean literally joining a cable organiser to a wearable recorder. It is a product-design thesis; the final product, demand and viability remain unproven.</div>
-    <h3 style="margin-top:28px">Three different meanings that must never be mixed up</h3>
-    <div class="distinct-fusions">
-      <article class="fusion-type"><span class="mini">F5 · FRICTION TRACK</span><h4>Human friction + technology</h4><p>A person's real task meets a technology capability. Study the human work left after the tool responds. NEO 1 is a reference case; no product defect is assumed.</p></article>
-      <article class="fusion-type"><span class="mini">F11 · FRICTION TRACK</span><h4>Tool-to-tool handoff</h4><p>Two devices, apps or physical/digital tools do not exchange information or complete a handoff smoothly, leaving people to transfer or reconcile work manually.</p></article>
-      <article class="fusion-type"><span class="mini">HERO-PRODUCT · DESIGN THESIS</span><h4>Simplicity + transformation</h4><p>Two intervention archetypes may be combined in a future product. This is not the F5 category and not the F11 interoperability problem.</p></article>
-    </div>
+    <div class="fusion-row"><div><span class="label">01 · SIMPLICITY</span><h3>Easy to understand and build</h3><p>Can the user grasp it quickly, and can a first version realistically be tested?</p></div><div class="plus" aria-hidden="true">+</div><div><span class="label">02 · TRANSFORMATION</span><h3>A meaningful capability change</h3><p>Does it materially improve what the user can do—not just add features?</p></div></div>
+    <div class="note" style="margin-top:14px"><strong>The hypothesis—not the answer:</strong> ETHIC may one day find a product that combines commercial simplicity with a meaningful capability change. This does not mean physically combining a cable organiser with NEO 1. It is a testable design direction; the winning product has not been found or validated.</div>
   </div>
 </section>
 
@@ -327,7 +450,7 @@
   const status = document.getElementById("video-status");
   let loading = false;
   let videoUrl = null;
-  const partCount = 48;
+  const partCount = 20;
 
   loadButton.addEventListener("click", async () => {
     if (loading || videoUrl) return;
