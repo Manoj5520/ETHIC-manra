@@ -231,6 +231,31 @@ section{position:relative}.section{padding:80px 22px}.section.white{background:#
 
 
 /* ETHIC DIMENSIONAL DESIGN PASS — restrained silver, black, white and muted burgundy */
+
+.micro-precedent{
+  display:grid;grid-template-columns:minmax(220px,.72fr) minmax(0,1.28fr);gap:24px;
+  margin:22px 0 18px;padding:18px;background:linear-gradient(120deg,#fff 0%,#f4f4f3 100%);
+  border:1px solid #d0d1d3;border-radius:12px;box-shadow:0 14px 35px rgba(12,13,16,.06);
+  align-items:center;transform-style:preserve-3d;transition:transform .35s ease,box-shadow .35s ease;
+}
+.micro-precedent:hover{transform:translateY(-3px);box-shadow:0 23px 52px rgba(12,13,16,.1)}
+.micro-precedent-media{display:flex;align-items:center;justify-content:center;min-height:230px;
+  overflow:hidden;border:1px solid #e1e1e2;border-radius:8px;background:#fff}
+.micro-precedent-media img{width:100%;height:250px;object-fit:contain;padding:8px;transition:transform .45s ease}
+.micro-precedent-media:hover img{transform:scale(1.035)}
+.micro-precedent-copy h3{margin:12px 0 7px;font-size:clamp(20px,2.8vw,28px);letter-spacing:-.035em;line-height:1.12}
+.micro-precedent-copy p{font-size:12px;line-height:1.8;color:#5f6064;margin:9px 0}
+.micro-precedent-facts{display:flex;gap:8px;flex-wrap:wrap;margin:13px 0}
+.micro-precedent-facts span{font:9px ui-monospace,monospace;letter-spacing:.04em;text-transform:uppercase;border:1px solid #d6d7d8;background:#eeeeef;border-radius:4px;padding:7px 9px;color:#4b484c}
+.micro-precedent-links{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:14px}
+.micro-precedent-links>a:not(.btn){font-size:11px;color:#674550;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:730px){
+  .micro-precedent{grid-template-columns:1fr;gap:16px;padding:13px}
+  .micro-precedent-media{min-height:175px}
+  .micro-precedent-media img{height:200px}
+}
+@media(prefers-reduced-motion:reduce){.micro-precedent,.micro-precedent-media img{transition:none!important}.micro-precedent:hover{transform:none}}
+
 :root{
   --black:#101114;--ink:#25262a;--silver:#9fa2a4;--silver2:#d9dbdc;
   --paper:#f2f2f0;--white:#fff;--burg:#4d313b;--burg2:#76545e;
@@ -441,12 +466,12 @@ body::before{
   <div class="timeline reveal" aria-label="Oral-care technology timeline">
     <div class="timeline-step"><b>c. 1780 · Mass-produced brush</b><small>William Addis is credited with an early mass-produced toothbrush in England.</small></div>
     <div class="timeline-step"><b>1938 · Nylon bristles</b><small>Nylon made the modern toothbrush bristle possible at commercial scale.</small></div>
-    <div class="timeline-step"><b>1954 · Powered brush milestone</b><small>Philippe-Guy Woog’s Broxodent was designed for patients with limited motor skills and orthodontic patients. Early versions depended on an electrical outlet.</small></div>
+    <div class="timeline-step"><b>1954 · Powered brush milestone</b><small>Philippe-Guy Woog’s Broxodent was developed in Switzerland; powered brushes reached the U.S. market around 1960. Early models were positioned for some users with limited dexterity or orthodontic appliances.</small></div>
     <div class="timeline-step"><b>2026 · Camera + jet + app</b><small>Dyson CameraJet illustrates a more integrated oral-care system, with manufacturer-claimed camera-assisted targeting and connected feedback.</small></div>
   </div>
   <div class="history-correction reveal">
     <div><span class="badge-label">Important accuracy note</span><h4 style="margin-top:8px">What can we say about the friction?</h4></div>
-    <div><p>It is reasonable to ask whether handling, dispensing, portioning, storage or mess mattered to particular users. But the historical sources cited here do <strong>not</strong> establish one universal friction as the cause of the powder-to-paste transition. Those explanations must be labelled as hypotheses unless stronger historical evidence supports them.</p><p>The lesson for ETHIC is to work backward from products: what job does the format make easier, what did it change, and what still remains inconvenient? Do not rewrite history to fit a business idea.</p></div>
+    <div><p>It is reasonable to investigate handling, dosing, storage and mess as possible friction points for some users. But the cited sources do <strong>not</strong> establish one universal friction as the cause of the powder-to-paste transition. Nor do they establish that powered brushes were invented to compensate for soft modern diets or to simulate gum massage. Treat both as hypotheses unless credible historical or clinical sources support them.</p><p>The lesson for ETHIC is to work backward from the evidence: what job did a format change make easier, for whom, and what evidence links that change to adoption? Do not rewrite history to fit a business idea.</p></div>
   </div>
   <p class="source-note reveal">History sources: <a href="https://www.loc.gov/everyday-mysteries/browse-all-questions/item/who-invented-the-toothbrush-and-when-was-it-invented/" target="_blank" rel="noopener noreferrer">Library of Congress: toothbrush history</a> · <a href="https://www.americanhistory.si.edu/collections/object/nmah_2224" target="_blank" rel="noopener noreferrer">Smithsonian: nylon toothbrush</a> · <a href="https://www.si.edu/spotlight/health-hygiene-and-beauty/oral-care" target="_blank" rel="noopener noreferrer">Smithsonian: oral-care collection</a>.</p>
 
@@ -456,10 +481,7 @@ body::before{
   </div>
  </div>
 
-  <div class="tooth-format-note reveal">
-   <div><span class="inference-label">Design reading · hypothesis, not historical certainty</span><h3>What friction might the format change have addressed?</h3><p>A powder container can require opening, retrieving an amount and managing loose material. A paste in a jar changes the form; a collapsible tube gives users a portable container that can be closed and squeezed to dispense a portion.</p></div>
-   <div><h3>The useful global-scale lesson</h3><p><strong>We cannot prove one single motive caused the tube to win.</strong> Product chemistry, oral-health claims, packaging, hygiene, brand trust, distribution, price and habit all mattered. Smithsonian material notes that paste had overtaken powder as the more popular form of dentifrice in the U.S. by 1949, at roughly 75% of that market.</p><p>For ETHIC, identify a repeated job, engineer a format that fits it, then validate adoption and distribution. Tube toothpaste is now a globally familiar format, but powders, tablets and other formats still exist; global scale is not the same as a universal solution.</p><p class="ethic-source-line">Sources: <a href="https://www.si.edu/spotlight/health-hygiene-and-beauty/oral-care" target="_blank" rel="noopener noreferrer">Smithsonian Oral Care</a> · <a href="https://www.colgate.com/en-us/mission/history-and-purpose" target="_blank" rel="noopener noreferrer">Colgate corporate history</a>.</p></div>
-  </div></section>
+  </section>
 
 <section class="section paper" id="method">
  <div class="inner">
@@ -499,6 +521,19 @@ body::before{
  <div class="fcopy"><span class="fcode">F4</span><span class="tag">Contact &amp; Control</span><h3>“What if the hand does not need to be the tool?”</h3><p class="question">Where does direct hand contact create mess, discomfort or inconsistent finishing?</p><p>The Caulking Finger is an existing purpose-shaped tool for smoothing and finishing a bead of caulk. It gives the task a dedicated contact surface instead of relying only on a bare fingertip, while preserving a simple, direct interaction.</p><p><strong>Research lesson:</strong> a narrowly scoped micro-tool can address a small but practical task. The product proves an existing solution, not that nobody noticed the friction or that no alternatives exist.</p><p class="source">Product reference: <a href="https://thecaulkingfinger.com/order-product" target="_blank" rel="noopener noreferrer">The Caulking Finger listing ↗</a>.</p></div>
 </article>
   </div>
+  <article class="micro-precedent reveal" aria-label="External micro-friction example: fold-flat measuring spoons">
+    <a class="micro-precedent-media" href="#video-case" aria-label="View the fold-flat measuring spoon case video">
+      <img src="https://cdn.shopify.com/s/files/1/0600/9988/7255/t/6/assets/1-1647557431684_1200x.png?v=1647557435" alt="Official Polygons product image showing a flat red foldable measuring spoon in a hand" loading="lazy">
+    </a>
+    <div class="micro-precedent-copy">
+      <span class="tag">F1–F4 · External micro-friction precedent</span>
+      <h3>Six measures. Two tools. Less drawer bulk.</h3>
+      <p>The Polygons measuring-spoon design turns a familiar kitchen task into two fold-flat tools with multiple marked volumes. The relevant micro-friction is not “measuring spoons do not work”; it is the repeated search, selection, handling and storage of several separate pieces.</p>
+      <div class="micro-precedent-facts"><span>2 flat tools</span><span>6 measuring sizes</span><span>0.1 in thin · manufacturer-listed</span></div>
+      <p><strong>Why it belongs in this lane:</strong> it is a specific physical redesign around storage and task-flow friction. It is an external precedent—not an ETHIC product, proof that nobody had observed the issue, or validation of an unrelated ETHIC concept.</p>
+      <div class="micro-precedent-links"><a class="btn btn-ghost" href="#video-case">Watch the case video ↓</a><a href="https://www.getpolygons.com/products/spoon" target="_blank" rel="noopener noreferrer">Official product & specifications ↗</a></div>
+    </div>
+  </article>
   <div class="callout reveal" style="margin-top:18px"><strong>Global scalability is not proof of a gap.</strong> Cable organisers demonstrate how a simple fix can be useful across many desks and places. That category already exists. ETHIC’s C1 hypothesis is narrower: whether one specific cable mount shifts or peels under pull, and whether the reviewed solutions leave a meaningful gap in the exact context being studied.</div>
  </div>
 </section>
@@ -665,7 +700,7 @@ body::before{
 
 <section id="video-case">
  <div class="inner">
-  <div class="section-head reveal"><div class="secno">10 / Applied video case</div><div><h2>Use the example to learn a design move—not to copy a product.</h2><p class="lede">Your supplied fold-flat measuring-spoon clip sits after the friction framework and before ETHIC's own candidate audit. The video is an external reference, not an ETHIC product or proof of ETHIC's commercial thesis.</p></div></div>
+  <div class="section-head reveal"><div class="secno">10 / Applied micro-friction case</div><div><h2>See the fold—not just the finished object.</h2><p class="lede">The fold-flat measuring-spoon example sits inside the F1–F4 micro-friction lane: a familiar task, a visible storage/handling constraint and a physical redesign. It is an external reference, not an ETHIC product or proof of ETHIC's commercial thesis.</p></div></div>
   <div class="cards2">
     <div class="reveal">
       <div class="video-frame" style="position:relative;width:100%;aspect-ratio:9/16;max-height:660px;overflow:hidden;border-radius:12px;background:#211b18;border:1px solid #a6a8a8">
@@ -674,7 +709,7 @@ body::before{
           <iframe src="https://www.youtube-nocookie.com/embed/0HK_r5Ld72Q?rel=0" title="Separate published Polygons Design product demonstration" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>
         </div>
       </div>
-      <p class="source-note">Primary reference: the supplied 61-second short, “This unique spoon made $4 Million in sales.” The local MP4 and poster are staged in the ETHIC media bundle; once placed at <code>assets/videos/spoon-reference.mp4</code> and <code>assets/videos/spoon-reference-poster.jpg</code>, the page automatically prioritises your clip. Until then, the embedded YouTube video is a separate publisher demonstration—not a claim that it is the same file.</p>
+      <p class="source-note">The hosted player first attempts the supplied 61-second clip at <code>assets/videos/spoon-reference.mp4</code> and uses an official public Polygons demonstration as its fallback. The original MP4 and poster are present in the separate ETHIC media bundle but are not yet committed into this GitHub repository; the fallback is a different video, not a substitute represented as the same file. Product details: <a href="https://www.getpolygons.com/products/spoon" target="_blank" rel="noopener noreferrer">official Polygons product page ↗</a>.</p>
     </div>
     <div class="panel reveal">
       <span class="tag">Worked example · external product</span><h3 style="margin-top:12px">Six measures. Two fold-flat tools. Compact storage.</h3>
