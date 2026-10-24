@@ -221,6 +221,14 @@ section{position:relative}.section{padding:80px 22px}.section.white{background:#
 .manual-powered-note p{margin:0;font-size:12px;line-height:1.8;color:#625b55}
 @media(max-width:700px){.oral-care-before{grid-template-columns:1fr}}
 
+
+/* Contrast the two user-provided tooth-cleaning formats inside the F3 micro-friction card */
+.friction-card figure.format-pair{display:grid;grid-template-columns:1fr 1fr;gap:7px;padding:9px;background:#eeece9;align-items:stretch}
+.friction-card figure.format-pair>div{display:flex;flex-direction:column;min-width:0;background:#fff;border:1px solid #e0ddd7}
+.friction-card figure.format-pair img{width:100%;height:160px;max-height:none;object-fit:contain;padding:7px;transform:none!important}
+.friction-card figure.format-pair span{font-size:9px;letter-spacing:.09em;text-transform:uppercase;text-align:center;color:#6c625b;padding:8px 4px;border-top:1px solid #e5e1db}
+@media(max-width:560px){.friction-card figure.format-pair{gap:5px;padding:6px}.friction-card figure.format-pair img{height:125px;padding:4px}.friction-card figure.format-pair span{font-size:8px}}
+
 </style>
 </head>
 <body>
@@ -381,7 +389,7 @@ section{position:relative}.section{padding:80px 22px}.section.white{background:#
   <div class="micro-banner reveal"><b>LANE A · F1–F4</b><span>SMALL TASK · VISIBLE WORKAROUND · TESTABLE CONSEQUENCE</span></div>
   <div class="friction-grid">
     <article class="friction-card reveal">
-      <figure><img src="https://www.uessentials.co/cdn/shop/files/1_805ad8b0-c368-4f32-a59c-0130b90fbf34.png?v=1741835252" alt="A desk-edge cable organiser clips cables into separate channels" loading="lazy"></figure>
+      <figure><img src="assets/research/f1-cable-before-after.webp" alt="Before-and-after reference of loose desk cables and an installed cable tray" loading="lazy"></figure>
       <div class="fcopy"><span class="fcode">F1</span><span class="tag">Fit & Hold</span><h3>“Will it stay where I put it?”</h3><p class="question">What slips, shifts or detaches under force?</p><p>A desk cable organiser can keep loose cable ends close to the edge instead of letting them drop behind a desk. It is an established product category sold by many makers, not an undiscovered solution.</p><p><strong>Research question:</strong> in a specific setup, does the mount itself move when the cable is pulled? What surface, load direction and attachment method are involved?</p><p class="source">Existing-solution reference: <a href="https://www.upliftdesk.com/cable-management-clips/" target="_blank" rel="noopener noreferrer">UPLIFT cable clips</a>.</p></div>
     </article>
     <article class="friction-card reveal">
@@ -389,13 +397,16 @@ section{position:relative}.section{padding:80px 22px}.section.white{background:#
       <div class="fcopy"><span class="fcode">F2</span><span class="tag">Position & Access</span><h3>“Why do I keep moving it?”</h3><p class="question">What must the user repeatedly hold, reposition or arrange?</p><p>Example: a craftsperson, cook or technician needs to put a tool down briefly, but the workspace has no suitable resting spot. The person keeps moving it out of the way and picking it up again.</p><p><strong>Research question:</strong> how often does it happen, and does it cause delay, damage, contamination or another measurable consequence?</p></div>
     </article>
     <article class="friction-card reveal">
-      <figure><img src="assets/research/f1-cable-before-after.webp" alt="Cable organiser keeping several charging leads separate and retrievable" loading="lazy"></figure>
-      <div class="fcopy"><span class="fcode">F3</span><span class="tag">Tangle & Retrieve</span><h3>“Where did it go—and why is it tangled?”</h3><p class="question">What gets mixed together, buried or hard to locate?</p><p>Example: charging leads are stored in a shared drawer and become tangled or hard to identify. Cable clips or labelled storage can reduce that problem for a particular setup.</p><p><strong>Research question:</strong> is the issue tangling, identification, reach, or a different job? Don’t force every cable problem into C1.</p></div>
-    </article>
+ <figure class="format-pair">
+  <div><img src="assets/research/tooth-powder-historic-reference.webp" alt="Historic Colgate dental powder container" loading="lazy"><span>Powder format</span></div>
+  <div><img src="assets/research/toothpaste-tube-format-reference.webp" alt="Colgate toothpaste tube and carton" loading="lazy"><span>Paste / tube format</span></div>
+ </figure>
+ <div class="fcopy"><span class="fcode">F3</span><span class="tag">Format &amp; Dispense</span><h3>“Can I carry it, portion it and apply it cleanly?”</h3><p class="question">Does the container support the actual task and routine?</p><p>Powder formats can require opening a container and managing loose material. A collapsible tube supports closed storage and squeeze-based dispensing. This is a plausible usability comparison—not proof that one friction alone caused toothpaste tubes to spread.</p><p><strong>Research question:</strong> measure spills, dosing control, portability, sealing, residue, cost and repeat use. Historical adoption also depended on formulation, branding, distribution and oral-health messaging.</p><p class="source">Longer context: <a href="#evolution">Toothpaste format case ↗</a>.</p></div>
+</article>
     <article class="friction-card reveal">
-      <figure><img src="assets/research/f1-caulk-finger-reference.webp" alt="The Caulking Finger, a small hand tool for smoothing and finishing caulk" loading="lazy"></figure>
-      <div class="fcopy"><span class="fcode">F4</span><span class="tag">Repeated Effort</span><h3>“A tiny extra action, repeated again and again.”</h3><p class="question">What repeated action has become normal?</p><p>The Caulking Finger is a useful reference to a specific task: smoothing and finishing a bead of caulk. A dedicated shaped tool can help standardise contact with the bead instead of relying only on a bare finger.</p><p><strong>Research lesson:</strong> a narrowly scoped, minimalist tool can be useful. We cannot claim that nobody noticed this task or that it had no alternatives; those claims require evidence.</p><p class="source">Product reference: <a href="https://thecaulkingfinger.com/order-product" target="_blank" rel="noopener noreferrer">The Caulking Finger listing/search</a>.</p></div>
-    </article>
+ <figure><img src="assets/research/f1-caulk-finger-reference.webp" alt="The Caulking Finger, a small tool for smoothing and finishing caulk" loading="lazy"></figure>
+ <div class="fcopy"><span class="fcode">F4</span><span class="tag">Contact &amp; Control</span><h3>“What if the hand does not need to be the tool?”</h3><p class="question">Where does direct hand contact create mess, discomfort or inconsistent finishing?</p><p>The Caulking Finger is an existing purpose-shaped tool for smoothing and finishing a bead of caulk. It gives the task a dedicated contact surface instead of relying only on a bare fingertip, while preserving a simple, direct interaction.</p><p><strong>Research lesson:</strong> a narrowly scoped micro-tool can address a small but practical task. The product proves an existing solution, not that nobody noticed the friction or that no alternatives exist.</p><p class="source">Product reference: <a href="https://thecaulkingfinger.com/order-product" target="_blank" rel="noopener noreferrer">The Caulking Finger listing ↗</a>.</p></div>
+</article>
   </div>
   <div class="callout reveal" style="margin-top:18px"><strong>Global scalability is not proof of a gap.</strong> Cable organisers demonstrate how a simple fix can be useful across many desks and places. That category already exists. ETHIC’s C1 hypothesis is narrower: whether one specific cable mount shifts or peels under pull, and whether the reviewed solutions leave a meaningful gap in the exact context being studied.</div>
  </div>
