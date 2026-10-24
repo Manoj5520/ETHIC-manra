@@ -229,13 +229,104 @@ section{position:relative}.section{padding:80px 22px}.section.white{background:#
 .friction-card figure.format-pair span{font-size:9px;letter-spacing:.09em;text-transform:uppercase;text-align:center;color:#6c625b;padding:8px 4px;border-top:1px solid #e5e1db}
 @media(max-width:560px){.friction-card figure.format-pair{gap:5px;padding:6px}.friction-card figure.format-pair img{height:125px;padding:4px}.friction-card figure.format-pair span{font-size:8px}}
 
+
+/* ETHIC DIMENSIONAL DESIGN PASS — restrained silver, black, white and muted burgundy */
+:root{
+  --black:#101114;--ink:#25262a;--silver:#9fa2a4;--silver2:#d9dbdc;
+  --paper:#f2f2f0;--white:#fff;--burg:#4d313b;--burg2:#76545e;
+  --red:#765052;--gold:#9fa2a4;--gold2:#d3d5d6;--muted:#6a6a6d;
+  --line:#d3d4d5;--shadow:0 18px 46px rgba(13,14,17,.09);
+}
+body::before{
+  content:"";position:fixed;top:0;left:0;height:2px;width:var(--page-progress,0%);
+  z-index:1000;background:linear-gradient(90deg,#8e9194 0%,#d9dbdc 55%,#76545e 100%);
+  box-shadow:0 0 12px rgba(118,84,94,.18);pointer-events:none;
+}
+.nav-brand{gap:12px;align-items:center}
+.nav-brand .nav-brand-mark{
+  display:block;width:38px;height:38px;flex:0 0 38px;object-fit:contain;
+  border:1px solid rgba(202,205,207,.42);border-radius:50%;padding:4px;
+  background:linear-gradient(145deg,#17181b,#0b0c0e);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.10),0 4px 16px rgba(0,0,0,.18);
+}
+.nav-brand strong{letter-spacing:.22em}
+.nav-brand small{color:#b8b9bc}
+.hero{background:radial-gradient(ellipse at 78% 32%,rgba(140,145,149,.105),transparent 33%),radial-gradient(ellipse at 22% 82%,rgba(93,57,69,.19),transparent 39%),linear-gradient(135deg,#08090b 0%,#111216 56%,#171216 100%)}
+.hero-inner{perspective:1400px}
+.hero-logo-wrap{perspective:1400px;transform-style:preserve-3d}
+.hero-logo-card{
+  position:relative;isolation:isolate;overflow:hidden;border:1px solid rgba(205,208,210,.26);
+  border-radius:9px;box-shadow:0 35px 90px rgba(0,0,0,.44),inset 0 1px 0 rgba(255,255,255,.12);
+  transform:rotateY(-3deg) rotateX(1.2deg) translateZ(16px);transition:transform .55s cubic-bezier(.2,.7,.2,1),box-shadow .55s ease;
+}
+.hero-logo-card::after{
+  content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;
+  background:linear-gradient(132deg,rgba(255,255,255,.06),transparent 28%,transparent 72%,rgba(111,76,87,.13));
+  mix-blend-mode:screen;
+}
+.hero-logo-card img{filter:contrast(1.035);transform:translateZ(10px)}
+.hero-logo-card:hover{transform:rotateY(0deg) rotateX(0deg) translateY(-4px) translateZ(24px);box-shadow:0 42px 105px rgba(0,0,0,.51),0 0 0 1px rgba(218,220,222,.1)}
+.hero:before{border-top-color:rgba(211,214,216,.23);box-shadow:0 -24px 0 -23px rgba(211,214,216,.16),0 -48px 0 -47px rgba(211,214,216,.11),0 -72px 0 -71px rgba(211,214,216,.07),0 -96px 0 -95px rgba(211,214,216,.045)}
+.hero:after{border-top-color:rgba(118,84,94,.35);box-shadow:0 -25px 0 -24px rgba(118,84,94,.21),0 -50px 0 -49px rgba(118,84,94,.12),0 -75px 0 -74px rgba(118,84,94,.07)}
+.section-head h2{color:var(--ink)}
+.secno,.kicker,.story-number{color:var(--burg2)}
+.tag{border-color:#d0d1d3;background:#ededee;color:#51444a}
+.tag.gold{border-color:#4d4247;background:#29262a;color:#c9c7c9}
+.tag.red{border-color:#d6cbd0;background:#eee7e9;color:#765052}
+.story-card,.panel,.friction-card,.tech-product,.fusion-card,.product-image,.evo-card{
+  transform-style:preserve-3d;backface-visibility:hidden;
+  transition:transform .32s ease,box-shadow .32s ease,border-color .32s ease;
+}
+.friction-card,.tech-product,.fusion-card,.story-card{translate:0 var(--scroll-depth-y,0px)}
+.story-card{border-color:#d5d5d7}
+.story-card:hover,.friction-card:hover,.tech-product:hover,.fusion-card:hover{
+  border-color:rgba(118,84,94,.48);box-shadow:0 22px 56px rgba(12,13,16,.11);
+}
+.friction-card figure{background:linear-gradient(150deg,#f5f5f4 0%,#e7e7e6 100%)}
+.friction-card figure img,.product-image img,.evo-card figure img{transition:transform .45s cubic-bezier(.2,.7,.2,1),filter .45s ease}
+.friction-card:hover figure img,.product-image:hover img{transform:scale(1.035) translateZ(8px);filter:contrast(1.025)}
+.product-image{border-color:#d0d1d3;box-shadow:0 9px 25px rgba(16,17,20,.045)}
+.product-image figcaption{background:rgba(248,248,247,.96)}
+.ethic-scroll-arc .arc-card{
+  border-color:rgba(214,216,218,.24);
+  background:linear-gradient(148deg,rgba(245,246,247,.105),rgba(255,255,255,.025) 54%,rgba(118,84,94,.06));
+  box-shadow:0 16px 42px rgba(0,0,0,.13);
+}
+.ethic-scroll-arc .arc-card:hover{border-color:rgba(204,208,210,.48);box-shadow:0 30px 65px rgba(0,0,0,.22)}
+.meaning-logo{box-shadow:0 20px 46px rgba(10,11,13,.14);border:1px solid #25262a}
+.status .state{background:#765052}
+.status .state.amber{background:#a0a2a5}
+.callout{border-left-color:var(--burg2);background:#eee9eb}
+.callout strong{color:#654854}
+.source a,.fine a{color:#674550}
+.video-frame{box-shadow:0 22px 52px rgba(9,10,12,.15)}
+.founder-photo img{filter:grayscale(12%);transition:filter .4s ease,transform .6s ease}
+.founder-photo:hover img{filter:grayscale(0%);transform:scale(1.025)}
+.footer{background:#0c0d10}
+@media (pointer:fine) and (min-width:900px){
+  .friction-card,.tech-product,.fusion-card,.story-card,.product-image{will-change:transform}
+  .nav-brand .nav-brand-mark{transition:transform .4s ease,box-shadow .4s ease}
+  .nav-brand:hover .nav-brand-mark{transform:rotate(-7deg) scale(1.04);box-shadow:0 0 0 3px rgba(118,84,94,.16)}
+}
+@media(max-width:730px){
+  .hero-logo-card{transform:none;border-radius:7px}
+  .hero-logo-card:hover{transform:translateY(-2px)}
+  .nav-brand .nav-brand-mark{width:32px;height:32px;flex-basis:32px}
+  .friction-card,.tech-product,.fusion-card,.story-card{translate:0 0}
+}
+@media(prefers-reduced-motion:reduce){
+  body::before{transition:none}
+  .hero-logo-card,.hero-logo-card img,.friction-card,.tech-product,.fusion-card,.story-card,.product-image img,.founder-photo img{transition:none!important;animation:none!important}
+  .friction-card,.tech-product,.fusion-card,.story-card{translate:0 0!important}
+}
+
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="topbar">
   <div class="nav">
-    <a class="nav-brand" href="#top" aria-label="ETHIC × MANRA home"><span><strong>ETHIC × MANRA</strong><small>Behavior Engineering · Strategic Reference</small></span></a>
+    <a class="nav-brand" href="#top" aria-label="ETHIC × MANRA home"><img class="nav-brand-mark" src="assets/ethic-fingerprint-mark.webp" alt="" aria-hidden="true"><span><strong>ETHIC × MANRA</strong><small>Behavior Engineering · Strategic Reference</small></span></a>
     <button class="menu" id="menu" type="button" aria-expanded="false" aria-controls="navlinks">Menu ☰</button>
     <nav class="navlinks" id="navlinks" aria-label="Main navigation">
       <a href="#meaning">What is ETHIC?</a><a href="#story">Origin story</a><a href="#design-thesis">Design thesis</a><a href="#evolution">Toothpaste case</a><a href="#micro">F1–F4</a><a href="#f5">F5 / NEO 1</a><a href="#technology">F6–F11</a><a href="#field-notes">Field notes</a><a href="#candidates">Candidates</a><a href="#aim">Scale & KPIs</a>
@@ -775,6 +866,42 @@ section{position:relative}.section{padding:80px 22px}.section.white{background:#
       card.addEventListener("pointerleave",()=>{card.style.transform="";});
     });
   }
+
+  // Page progress and restrained scroll-parallax. All motion is disabled for reduced-motion users.
+  const root=document.documentElement;
+  const reduceMotion=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let progressRaf=false;
+  const updatePageProgress=()=>{
+    const max=Math.max(1,root.scrollHeight-window.innerHeight);
+    const p=Math.max(0,Math.min(100,(window.scrollY/max)*100));
+    root.style.setProperty("--page-progress",p.toFixed(2)+"%");
+    progressRaf=false;
+  };
+  const requestProgress=()=>{if(!progressRaf){progressRaf=true;window.requestAnimationFrame(updatePageProgress);}};
+  updatePageProgress();
+  window.addEventListener("scroll",requestProgress,{passive:true});
+  window.addEventListener("resize",requestProgress);
+  if(!reduceMotion){
+    const depthItems=document.querySelectorAll(".friction-card,.tech-product,.fusion-card,.story-card");
+    let depthRaf=false;
+    const updateDepth=()=>{
+      const vh=window.innerHeight||800;
+      depthItems.forEach((el,i)=>{
+        if(window.innerWidth<731){el.style.setProperty("--scroll-depth-y","0px");return;}
+        const r=el.getBoundingClientRect();
+        const mid=r.top+r.height/2;
+        const unit=Math.max(-1,Math.min(1,(vh*.52-mid)/(vh*.68)));
+        const phase=(i%2===0?1:-1);
+        el.style.setProperty("--scroll-depth-y",(unit*phase*3.2).toFixed(2)+"px");
+      });
+      depthRaf=false;
+    };
+    const requestDepth=()=>{if(!depthRaf){depthRaf=true;window.requestAnimationFrame(updateDepth);}};
+    updateDepth();
+    window.addEventListener("scroll",requestDepth,{passive:true});
+    window.addEventListener("resize",requestDepth);
+  }
+
 })();
 </script>
 </body>
