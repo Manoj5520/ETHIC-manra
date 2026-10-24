@@ -66,7 +66,7 @@ Candidate-to-track mappings are provisional and should be confirmed against the 
 
 - The cable organiser photo is attributed to the product listing linked in the page.
 - The NEO 1 image is linked to the official NeoSapien product page. It is a third-party reference, not an ETHIC product.
-- The supplied fold-flat measuring-spoon clip belongs after the method/taxonomy and before the C1–C5 candidate board. It should play as a native video from repository media; do not substitute a YouTube embed. The current page's native player expects repository media parts under `assets/video-data/clip-01.txt` onward. Those media parts still need to be committed before native playback can work.
+- The supplied fold-flat measuring-spoon clip belongs after the method/taxonomy and before the C1–C5 candidate board. The page uses a native HTML5 `<video>` player with direct MP4 source `https://transcendent-melba-53609f.netlify.app/assets/videos/spoon-reference.mp4` and a poster at the matching `assets/videos/spoon-reference-poster.jpg` path on the current Netlify deployment. It uses no YouTube embed. The video path depends on that existing Netlify media asset remaining available; the GitHub Pages repository currently does not store a duplicate MP4 because the connected GitHub tool cannot upload raw binary files.
 - The clip is an external design reference. The on-screen “$4 million in sales” statement is not treated as audited revenue, profit, verified unit economics or ETHIC traction. Confirm redistribution rights before public distribution.
 
 ## Evidence discipline
