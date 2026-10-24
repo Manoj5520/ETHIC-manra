@@ -203,6 +203,12 @@ section{position:relative}.section{padding:80px 22px}.section.white{background:#
 @media(max-width:480px){.ethic-kpi-grid{grid-template-columns:1fr 1fr;gap:8px}.ethic-kpi{padding:13px}.ethic-scroll-arc .arc-card{padding:22px 19px}.ethic-scroll-arc .arc-foot{display:block}.ethic-scroll-arc .arc-foot strong{display:block;margin-bottom:6px}}
 @media(prefers-reduced-motion:reduce){.ethic-scroll-arc .arc-wave path{animation:none}.ethic-scroll-arc .arc-card,.friction-card figure img,.evo-card figure img{transition:none}}
 
+
+/* Scroll-linked depth for the three-part ETHIC thesis */
+.ethic-scroll-arc .arc-card{transform:translateY(var(--arc-y,0px)) rotateX(var(--arc-rx,0deg)) rotateY(var(--arc-ry,0deg));will-change:transform}
+.ethic-scroll-arc .arc-card:hover{transform:translateY(calc(var(--arc-y,0px) - 7px)) rotateX(var(--arc-rx,0deg)) rotateY(calc(var(--arc-ry,0deg) - 1.5deg))}
+@media(prefers-reduced-motion:reduce){.ethic-scroll-arc .arc-card{transform:none!important;will-change:auto}}
+
 </style>
 </head>
 <body>
@@ -212,7 +218,7 @@ section{position:relative}.section{padding:80px 22px}.section.white{background:#
     <a class="nav-brand" href="#top" aria-label="ETHIC × MANRA home"><span><strong>ETHIC × MANRA</strong><small>Behavior Engineering · Strategic Reference</small></span></a>
     <button class="menu" id="menu" type="button" aria-expanded="false" aria-controls="navlinks">Menu ☰</button>
     <nav class="navlinks" id="navlinks" aria-label="Main navigation">
-      <a href="#meaning">What is ETHIC?</a><a href="#story">The shift</a><a href="#evolution">Toothpaste case</a><a href="#micro">F1–F4</a><a href="#f5">F5 / NEO 1</a><a href="#technology">F6–F11</a><a href="#field-notes">Field notes</a><a href="#candidates">C1–C5</a><a href="#design-thesis">Design thesis</a><a href="#aim">Scale & KPIs</a>
+      <a href="#meaning">What is ETHIC?</a><a href="#story">Origin story</a><a href="#design-thesis">Design thesis</a><a href="#evolution">Toothpaste case</a><a href="#micro">F1–F4</a><a href="#f5">F5 / NEO 1</a><a href="#technology">F6–F11</a><a href="#field-notes">Field notes</a><a href="#candidates">Candidates</a><a href="#aim">Scale & KPIs</a>
     </nav>
   </div>
 </header>
@@ -356,7 +362,7 @@ section{position:relative}.section{padding:80px 22px}.section.white{background:#
     </article>
     <article class="friction-card reveal">
       <figure><img src="assets/research/f1-caulk-finger-reference.webp" alt="The Caulking Finger, a small hand tool for smoothing and finishing caulk" loading="lazy"></figure>
-      <div class="fcopy"><span class="fcode">F4</span><span class="tag">Repeated Effort</span><h3>“A tiny extra action, repeated again and again.”</h3><p class="question">What repeated action has become normal?</p><p>The Caulking Finger is a useful reference to a specific task: smoothing and finishing a bead of caulk. A dedicated shaped tool can help standardise contact with the bead instead of relying only on a bare finger.</p><p><strong>Research lesson:</strong> a narrowly scoped, minimalist tool can be useful. We cannot claim that nobody noticed this task or that it had no alternatives; those claims require evidence.</p><p class="source">Product reference: <a href="https://www.walmart.com/search?q=the+caulking+finger" target="_blank" rel="noopener noreferrer">The Caulking Finger listing/search</a>.</p></div>
+      <div class="fcopy"><span class="fcode">F4</span><span class="tag">Repeated Effort</span><h3>“A tiny extra action, repeated again and again.”</h3><p class="question">What repeated action has become normal?</p><p>The Caulking Finger is a useful reference to a specific task: smoothing and finishing a bead of caulk. A dedicated shaped tool can help standardise contact with the bead instead of relying only on a bare finger.</p><p><strong>Research lesson:</strong> a narrowly scoped, minimalist tool can be useful. We cannot claim that nobody noticed this task or that it had no alternatives; those claims require evidence.</p><p class="source">Product reference: <a href="https://thecaulkingfinger.com/order-product" target="_blank" rel="noopener noreferrer">The Caulking Finger listing/search</a>.</p></div>
     </article>
   </div>
   <div class="callout reveal" style="margin-top:18px"><strong>Global scalability is not proof of a gap.</strong> Cable organisers demonstrate how a simple fix can be useful across many desks and places. That category already exists. ETHIC’s C1 hypothesis is narrower: whether one specific cable mount shifts or peels under pull, and whether the reviewed solutions leave a meaningful gap in the exact context being studied.</div>
@@ -452,7 +458,7 @@ section{position:relative}.section{padding:80px 22px}.section.white{background:#
     <div class="story-copy"><div class="story-kicker">F6–F11 / Technology-led research</div><h3>Capability only matters when it works at the point of need.</h3><p>A handheld vacuum makes localised cleaning possible without bringing a full-size cleaner into the car. It already solves much of the basic pickup task; a photo of use is not evidence that the category is deficient.</p><p class="research-question"><strong>MANRA question:</strong> Observe access around seat seams, one-handed control, crumb pickup, emptying, charging and storage. Identify a repeatable residual task before proposing another tool or attachment.</p><div class="story-meta"><span>Existing technology</span><span>Workflow study</span><span>Not a cleared candidate</span></div></div>
    </article>
    <article class="story-row reveal">
-    <div class="story-media contain"><img src="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/primary/673029-01.png?%24responsive%24=&fmt=png-alpha" alt="User-supplied concept-style rendering of a toothbrush with a Dyson wordmark; not verified as an official Dyson product" loading="lazy"><figcaption>Official manufacturer image · Dyson CameraJet</figcaption></div>
+    <div class="story-media contain"><img src="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/primary/673029-01.png?%24responsive%24=&fmt=png-alpha" alt="Official Dyson CameraJet product reference image" loading="lazy"><figcaption>Official manufacturer image · Dyson CameraJet</figcaption></div>
     <div class="story-copy"><div class="story-kicker">Physical + digital task · Concept versus product evidence</div><h3>Adding technology is the beginning of a question—not the conclusion.</h3><p>The image is from Dyson’s official CameraJet product photography. The system combines camera-assisted gap targeting, a precision jet of mouthrinse, a contoured dual-bristle head and app-based guidance. These are manufacturer-described capabilities—not independent proof of clinical superiority. See <a href="https://www.dyson.com/discover/news/latest/introducing-camerajet" target="_blank" rel="noopener noreferrer">Dyson’s official CameraJet announcement</a>.</p><p class="research-question"><strong>MANRA question:</strong> What information changes the user’s next action? Does it arrive at the right moment, remain understandable, respect privacy and improve the routine enough to justify added cost and upkeep?</p><div class="story-meta"><span>Concept image labelled</span><span>Separate official reference</span><span>Evidence still required</span></div></div>
    </article>
   </div>
@@ -581,19 +587,42 @@ section{position:relative}.section{padding:80px 22px}.section.white{background:#
 
 <section class="section paper" id="aim">
  <div class="inner">
-  <div class="section-head reveal"><div class="secno">13 / What ETHIC is aiming for</div><div><h2>A repeatable way to find, prove and scale useful interventions.</h2><p class="lede">ETHIC does not need to be the most futuristic company. The ambition is to select problems that are real, repeated, important and poorly served—and build the smallest effective solution that can be tested under the available capital.</p></div></div>
+  <div class="section-head reveal"><div class="secno">13 / What ETHIC is aiming for</div><div><h2>A repeatable way to find, prove and scale useful interventions.</h2><p class="lede">The ambition is not to be the most futuristic company. It is to identify problems that recur, matter to real people and remain poorly served—then build the smallest effective intervention and prove it across real contexts.</p></div></div>
   <div class="strategy-grid">
-    <article class="strategy-card reveal"><span class="tag">Working differentiation thesis</span><h3 style="margin-top:12px">Where ETHIC intends to be different</h3><ul><li>Begin with observed human behaviour and the user's task, not a gadget looking for a use case.</li><li>Find the current workaround and precisely state the residual gap.</li><li>Prefer a simple solution where it is sufficient; add electronics, AI or connectivity only when the added capability earns its cost.</li><li>Put evidence gates before prototype spending and manufacturing commitment.</li><li>Design for use, errors, maintenance and the full context—not novelty alone.</li></ul><div class="callout" style="margin-top:15px"><strong>Evidence boundary:</strong> these are intended principles, not a proven competitive advantage. They become differentiation only when ETHIC repeatedly executes them and customers value the result.</div></article>
-    <article class="strategy-card reveal"><span class="tag">Adjacent references · not a direct rival list</span><h3 style="margin-top:12px">What current products teach us</h3><p style="font-size:12px;color:var(--muted);line-height:1.75">These references are chosen to study distinct product-design moves. They do not mean ETHIC competes head-to-head with every brand or that these products fail.</p>
-      <div class="reference-list" style="grid-template-columns:repeat(2,minmax(0,1fr));margin-top:15px">
-        <div class="reference-item"><img src="https://www.uessentials.co/cdn/shop/files/1_805ad8b0-c368-4f32-a59c-0130b90fbf34.png?v=1741835252" alt="Cable holder" loading="lazy"><div><strong>Cable organisers</strong><p>A proven simple product category; inspect where a specific setup may still fail.</p><a href="https://www.upliftdesk.com/cable-management-clips/" target="_blank" rel="noopener noreferrer">Reference ↗</a></div></div>
-        <div class="reference-item"><img src="assets/research/f1-caulk-finger-reference.webp" alt="Caulking Finger product" loading="lazy"><div><strong>Caulking Finger</strong><p>A purpose-shaped tool for a narrow task.</p><a href="https://www.walmart.com/search?q=the+caulking+finger" target="_blank" rel="noopener noreferrer">Reference ↗</a></div></div>
-        <div class="reference-item"><img src="https://shop.neosapien.ai/cdn/shop/files/Black_9cf12abc-9c61-41d3-a47f-514eb1ba0788.png?v=1789282275&width=1202" alt="NEO 1 wearable AI notetaker" loading="lazy"><div><strong>NEO 1</strong><p>One capability integrated into a wider information workflow.</p><a href="https://shop.neosapien.ai/products/neo-1" target="_blank" rel="noopener noreferrer">Reference ↗</a></div></div>
-        <div class="reference-item"><img src="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/leap-petite-global/dynamic-media/vacuums/sticks/285L/primary/394483-01.png?scl=1&wid=1200" alt="Dyson V8 cordless vacuum" loading="lazy"><div><strong>Dyson V8</strong><p>A portable power unit with attachments for different cleaning tasks.</p><a href="https://www.dyson.in/vacuum-cleaners/cord-free/dyson-v8/overview/dyson-v8-absolute-vacuum" target="_blank" rel="noopener noreferrer">Reference ↗</a></div></div>
-        <div class="reference-item"><img src="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/gallery/oral-care/electric-toothbrush/camerajet/WEB-682-GALLERY02.jpg" alt="Dyson CameraJet connected oral-care device" loading="lazy"><div><strong>Dyson CameraJet</strong><p>A complex combination of sensors, liquid delivery and app guidance.</p><a href="https://www.dyson.com/discover/news/latest/introducing-camerajet" target="_blank" rel="noopener noreferrer">Reference ↗</a></div></div>
-      </div>
-    </article>
+   <article class="strategy-card reveal">
+    <span class="tag">The intended differentiator</span><h3 style="margin-top:12px">Method before machinery.</h3>
+    <p>ETHIC’s working thesis is to begin with human behaviour and a specific task—not a gadget looking for a use case. MANRA investigates the workaround, compares existing solutions and identifies a possible residual gap. ETHIC then chooses whether a physical, digital or hybrid intervention is worth testing.</p>
+    <ul><li><strong>Observe:</strong> identify a repeated behaviour in a real setting.</li><li><strong>Explain:</strong> separate the visible symptom from the likely cause.</li><li><strong>Compare:</strong> acknowledge what current products already solve.</li><li><strong>Test:</strong> prove the residual gap, reliability and willingness to pay.</li><li><strong>Decide:</strong> proceed, narrow or stop before spending on scale.</li></ul>
+    <div class="callout" style="margin-top:15px"><strong>Honest boundary:</strong> this is ETHIC’s intended operating model, not a proven competitive advantage yet. Differentiation exists only if the method consistently produces a result that customers value.</div>
+   </article>
+   <article class="strategy-card reveal">
+    <span class="tag">The landscape to learn from</span><h3 style="margin-top:12px">Three types of existing solution.</h3>
+    <p style="font-size:12px;color:var(--muted);line-height:1.75">These are adjacent categories and design references—not a claim that ETHIC already competes directly against these brands or that their products are defective.</p>
+    <div class="reference-list" style="grid-template-columns:repeat(2,minmax(0,1fr));margin-top:15px">
+     <div class="reference-item"><img src="assets/research/f1-cable-before-after.webp" alt="Cable management reference showing an untidy desk and an installed cable tray" loading="lazy"><div><strong>Cable organisers</strong><p>A broadly useful category that already controls and routes cables. C1 must identify a narrower failure, such as a specific mount shifting under pull.</p><a href="https://www.upliftdesk.com/cable-management-clips/" target="_blank" rel="noopener noreferrer">Category reference ↗</a></div></div>
+     <div class="reference-item"><img src="assets/research/f1-caulk-finger-reference.webp" alt="The Caulking Finger, an existing specialist hand tool" loading="lazy"><div><strong>The Caulking Finger</strong><p>A purpose-shaped tool for one narrow finishing task. Study how a small intervention can help without claiming it is unique or the only solution.</p><a href="https://thecaulkingfinger.com/order-product" target="_blank" rel="noopener noreferrer">Official product ↗</a></div></div>
+     <div class="reference-item"><img src="https://shop.neosapien.ai/cdn/shop/files/first_fold_image_black.jpg?v=1748789281&width=1800" alt="Official NEO 1 wearable AI notetaker from NeoSapien" loading="lazy"><div><strong>NEO 1</strong><p>Combines conversation capture with searchable transcripts, summaries and reminders. Evaluate recall, accuracy, consent and completed follow-up.</p><a href="https://shop.neosapien.ai/products/neo-1" target="_blank" rel="noopener noreferrer">Official product ↗</a></div></div>
+     <div class="reference-item"><img src="https://fanttik.com/cdn/shop/files/1_72318606-8712-4564-8237-ae9f04847392.jpg?v=1761533250&width=1600" alt="Fanttik Slim V10 APEX portable multi-function cordless vacuum and accessories" loading="lazy"><div><strong>Multi-function portable cleaning</strong><p>Fanttik Slim V10 APEX combines vacuum, blower, inflator and deflator modes. A versatile product still has runtime, dust-capacity and maintenance limits.</p><a href="https://fanttik.com/products/fanttik-slim-v10-apex-cordless-car-vacuum" target="_blank" rel="noopener noreferrer">Official product ↗</a></div></div>
+     <div class="reference-item"><img src="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/primary/673029-01.png?%24responsive%24=&fmt=png-alpha" alt="Official Dyson CameraJet connected toothbrush system" loading="lazy"><div><strong>Dyson CameraJet</strong><p>Combines brushing, camera-assisted gap targeting, a precision mouthrinse jet and app guidance. Claimed features still need clinical, usability and reliability evaluation.</p><a href="https://www.dyson.com/discover/news/latest/introducing-camerajet" target="_blank" rel="noopener noreferrer">Official announcement ↗</a></div></div>
+    </div>
+   </article>
   </div>
+  <div class="ethic-competitor-note reveal">
+   <span class="tag">Where global scale could come from</span><h3>Scale is a sequence of proofs—not a tagline.</h3>
+   <div class="ethic-competitor-grid">
+    <div class="ethic-competitor"><b>1 · A repeatable need</b><p>Show the same task and residual problem in more than one user group or setting. A large-looking audience is not validated demand.</p></div>
+    <div class="ethic-competitor"><b>2 · A robust intervention</b><p>Test cost, materials, failure modes, safety, cleaning, maintenance and performance outside a single demonstration.</p></div>
+    <div class="ethic-competitor"><b>3 · A repeatable system</b><p>Prove purchasing behaviour, manufacturing quality, service, distribution and local requirements before claiming global readiness.</p></div>
+   </div>
+   <p class="ethic-source-line" style="margin-top:14px"><strong>ETHIC’s intended difference:</strong> choose the simplest solution that adequately removes a real friction; add electronics, AI or connectivity only when the extra capability earns its complexity. The products shown are references, not ETHIC inventions.</p>
+  </div>
+  <div class="ethic-kpi-grid reveal" aria-label="Primary early-stage validation targets">
+   <div class="ethic-kpi"><b>20–30</b><span>User interviews</span><small>Per candidate/product hypothesis; target, not yet achieved.</small></div>
+   <div class="ethic-kpi"><b>≤ 90 days</b><span>Validation cycle</span><small>Working target from research to a decision.</small></div>
+   <div class="ethic-kpi"><b>≥ 10%</b><span>Prototype → paid</span><small>Initial conversion target, not actual performance.</small></div>
+   <div class="ethic-kpi"><b>≥ 50%</b><span>Gross margin</span><small>Target to evaluate after cost assumptions are tested.</small></div>
+  </div>
+  <p class="ethic-source-line reveal" style="margin-top:12px">Additional guardrails tracked in the founder scorecard: repeat/referral ≥20%, return rate &lt;5%, prototype budget ₹11,500–₹12,500 for the current C1 study, and potential IP candidates only after a differentiated concept is validated. These remain targets, not achieved results.</p>
  </div>
 </section>
 
@@ -676,6 +705,27 @@ section{position:relative}.section{padding:80px 22px}.section.white{background:#
     const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("visible");io.unobserve(e.target);}}),{threshold:.10,rootMargin:"0px 0px -30px 0px"});
     reveals.forEach(el=>io.observe(el));
   }else reveals.forEach(el=>el.classList.add("visible"));
+  if(!reduced){
+    const arcCards=document.querySelectorAll(".ethic-scroll-arc .arc-card");
+    if(arcCards.length){
+      let arcTicking=false;
+      const updateArcDepth=()=>{
+        const vh=window.innerHeight||800;
+        arcCards.forEach((card,i)=>{
+          const rect=card.getBoundingClientRect();
+          const p=Math.max(-1,Math.min(1,(vh*.56-(rect.top+rect.height*.5))/(vh*.78)));
+          card.style.setProperty("--arc-y",((-p*17)+(i-1)*4)+"px");
+          card.style.setProperty("--arc-rx",(p*2.8)+"deg");
+          card.style.setProperty("--arc-ry",((i-1)*p*2.2)+"deg");
+        });
+        arcTicking=false;
+      };
+      const requestArcDepth=()=>{if(!arcTicking){arcTicking=true;window.requestAnimationFrame(updateArcDepth);}};
+      updateArcDepth();
+      window.addEventListener("scroll",requestArcDepth,{passive:true});
+      window.addEventListener("resize",requestArcDepth);
+    }
+  }
   if(!reduced&&window.matchMedia("(pointer:fine)").matches){
     document.querySelectorAll(".lift,.story-card,.hero-logo-card").forEach(card=>{
       card.addEventListener("pointermove",ev=>{const r=card.getBoundingClientRect();const x=(ev.clientX-r.left)/r.width-.5;const y=(ev.clientY-r.top)/r.height-.5;card.style.transform="perspective(900px) rotateY("+(x*3)+"deg) rotateX("+(-y*2)+"deg) translateY(-2px)";});
