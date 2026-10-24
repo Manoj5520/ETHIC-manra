@@ -292,28 +292,28 @@
 
 <section class="section alt" id="video-case">
   <div class="inner">
-    <div class="section-head"><div class="secno">05 / Supplied video case</div><div><h2>Study the design move—not the sales headline.</h2><p class="section-intro">This is the video you uploaded: a third-party product example showing Polygons Design's fold-flat measuring spoons. It is placed here after the method and friction taxonomy, so readers understand the method before seeing how a familiar object can be rethought around a use constraint.</p></div></div>
+    <div class="section-head"><div class="secno">05 / Applied example · supplied video</div><div><h2>Study the design move—not the sales headline.</h2><p class="section-intro">The video you supplied shows Polygons Design’s fold-flat measuring spoons. It is placed here after the method and friction taxonomy, and before ETHIC’s own candidates: learn from an external design case, then return to ETHIC’s evidence.</p></div></div>
     <div class="video-layout">
       <div>
-        <div class="video-stage" id="video-stage">
-          <div class="vid-eyebrow">External reference · Not an ETHIC product</div>
-          <div class="vid-title">Fold-flat measuring spoons</div>
-          <p>Your supplied 61-second clip · Optimised for web playback · Original footage and audio retained.</p>
-          <button class="playbtn" id="load-video" type="button">Load the supplied video ▶</button>
+        <div class="video-frame visible" id="video-frame">
+          <video id="reference-video" controls playsinline preload="metadata" poster="https://transcendent-melba-53609f.netlify.app/assets/videos/spoon-reference-poster.jpg" aria-label="User-supplied 61-second clip of Polygons Design fold-flat measuring spoons">
+            <source src="https://transcendent-melba-53609f.netlify.app/assets/videos/spoon-reference.mp4" type="video/mp4">
+            Your browser does not support embedded video. <a href="https://transcendent-melba-53609f.netlify.app/assets/videos/spoon-reference.mp4">Open the supplied clip directly.</a>
+          </video>
         </div>
-        <div class="video-frame" id="video-frame"><video id="reference-video" controls playsinline preload="none" aria-label="User-supplied Polygons Design fold-flat measuring spoon clip"></video></div>
-        <p class="video-status" id="video-status" role="status">The clip loads only when you press the button. It is served from this repository; no YouTube player is used.</p>
+        <p class="video-status" role="status">Native video player · user controls · no YouTube embed. <a href="https://transcendent-melba-53609f.netlify.app/assets/videos/spoon-reference.mp4" target="_blank" rel="noopener noreferrer">Open the supplied 61-second clip in a new tab</a>.</p>
       </div>
       <div class="video-copy">
-        <span class="tag">What this example helps explain</span>
-        <h3 style="margin-top:12px">The object stayed familiar. Its form and use changed.</h3>
-        <ul>
-          <li>The ordinary job is measuring ingredients using several spoon sizes.</li>
-          <li>The design in the clip uses two fold-flat tools to cover six measuring sizes, then flattens for storage.</li>
-          <li>The useful design question is: what repeated handling or storage work does this configuration remove, and what does it still ask the user to do?</li>
-          <li>The lesson is backward reasoning from a working design to the task and constraints—not “copy this product” or “this proves ETHIC has found a product.”</li>
-        </ul>
-        <div class="claim-note"><strong>Evidence boundary:</strong> the clip includes a “$4 million in sales” claim. This page does not treat that on-screen statement as audited revenue, profit, verified unit economics or proof of ETHIC's thesis. The clip is an external learning reference only. Confirm redistribution rights before public sharing.</div>
+        <span class="tag">External design reference · not an ETHIC product</span>
+        <h3 style="margin-top:12px">A familiar task, reworked around storage and handling.</h3>
+        <div class="worked-example video-lesson">
+          <div><b>1 · Existing job</b><p>Measure ingredients in more than one standard quantity.</p></div>
+          <div><b>2 · Design move</b><p>Two fold-flat tools provide six measuring sizes and flatten for storage.</p></div>
+          <div><b>3 · Question to ask</b><p>Which repeated handling or storage step has this configuration removed?</p></div>
+          <div><b>4 · What not to assume</b><p>The example does not prove ETHIC has found a product, and it is not automatically a blueprint to copy.</p></div>
+        </div>
+        <div class="claim-note"><strong>Sales-claim boundary:</strong> the clip includes a “$4 million in sales” statement. This page does not treat it as audited revenue, profit, verified unit economics or evidence of ETHIC’s traction. The clip is an external learning reference. Confirm redistribution rights before public distribution.</div>
+        <p class="small-note">Company reference: <a href="https://www.getpolygons.com/" target="_blank" rel="noopener noreferrer">Polygons Design</a>. This case is separate from ETHIC’s C1–C5 candidate research.</p>
       </div>
     </div>
   </div>
@@ -442,50 +442,6 @@
     links.classList.remove("open");
     menu.setAttribute("aria-expanded", "false");
   }));
-
-  const loadButton = document.getElementById("load-video");
-  const stage = document.getElementById("video-stage");
-  const frame = document.getElementById("video-frame");
-  const video = document.getElementById("reference-video");
-  const status = document.getElementById("video-status");
-  let loading = false;
-  let videoUrl = null;
-  const partCount = 20;
-
-  loadButton.addEventListener("click", async () => {
-    if (loading || videoUrl) return;
-    loading = true;
-    loadButton.disabled = true;
-    loadButton.textContent = "Loading clip…";
-    status.textContent = "Loading the user-supplied video from this repository. This may take a moment.";
-    try {
-      const parts = await Promise.all(Array.from({length: partCount}, (_, i) => {
-        const n = String(i + 1).padStart(2, "0");
-        return fetch("assets/video-data/clip-" + n + ".txt").then(r => {
-          if (!r.ok) throw new Error("Could not load video part " + n);
-          return r.text();
-        });
-      }));
-      const encoded = parts.join("").replace(/\s+/g, "");
-      const binary = atob(encoded);
-      const bytes = new Uint8Array(binary.length);
-      for (let i = 0; i < binary.length; i += 1) bytes[i] = binary.charCodeAt(i);
-      videoUrl = URL.createObjectURL(new Blob([bytes], {type: "video/mp4"}));
-      video.src = videoUrl;
-      video.load();
-      stage.classList.add("hidden");
-      frame.classList.add("visible");
-      status.textContent = "Supplied clip ready · 61 seconds · Use the native video controls to play, pause and seek.";
-      video.play().catch(() => {});
-    } catch (error) {
-      loadButton.disabled = false;
-      loadButton.textContent = "Retry loading supplied video";
-      status.textContent = "The clip could not load. Refresh after the page files finish publishing, then try again.";
-      console.error(error);
-    } finally {
-      loading = false;
-    }
-  });
 })();
 </script>
 </body>
