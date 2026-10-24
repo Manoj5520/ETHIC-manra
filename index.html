@@ -703,13 +703,11 @@ body::before{
   <div class="section-head reveal"><div class="secno">10 / Applied micro-friction case</div><div><h2>See the fold—not just the finished object.</h2><p class="lede">The fold-flat measuring-spoon example sits inside the F1–F4 micro-friction lane: a familiar task, a visible storage/handling constraint and a physical redesign. It is an external reference, not an ETHIC product or proof of ETHIC's commercial thesis.</p></div></div>
   <div class="cards2">
     <div class="reveal">
-      <div class="video-frame" style="position:relative;width:100%;aspect-ratio:9/16;max-height:660px;overflow:hidden;border-radius:12px;background:#211b18;border:1px solid #a6a8a8">
-        <video id="supplied-spoon-video" src="assets/videos/spoon-reference.mp4" poster="assets/videos/spoon-reference-poster.jpg" controls playsinline preload="metadata" aria-label="User-supplied measuring-spoon design reference" style="display:none;position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#211b18"></video>
-        <div id="polygons-video-fallback" style="position:absolute;inset:0">
-          <iframe src="https://www.youtube-nocookie.com/embed/0HK_r5Ld72Q?rel=0" title="Separate published Polygons Design product demonstration" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>
-        </div>
+      <div class="video-frame spoon-video-frame" style="position:relative;width:100%;aspect-ratio:9/16;max-height:660px;overflow:hidden;border-radius:12px;background:#111216;border:1px solid #a6a8a8">
+        <video id="supplied-spoon-video" src="assets/videos/spoon-reference.mp4" poster="assets/videos/spoon-reference-poster.jpg" controls playsinline preload="metadata" aria-label="User-supplied measuring-spoon design reference" style="display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#111216"></video>
+        
       </div>
-      <p class="source-note">The hosted player first attempts the supplied 61-second clip at <code>assets/videos/spoon-reference.mp4</code> and uses an official public Polygons demonstration as its fallback. The original MP4 and poster are present in the separate ETHIC media bundle but are not yet committed into this GitHub repository; the fallback is a different video, not a substitute represented as the same file. Product details: <a href="https://www.getpolygons.com/products/spoon" target="_blank" rel="noopener noreferrer">official Polygons product page ↗</a>.</p>
+      <p class="source-note">This section uses only the supplied fold-flat measuring-spoon video. It does not autoplay and has no substitute or external video fallback. Product details: <a href="https://www.getpolygons.com/products/spoon" target="_blank" rel="noopener noreferrer">official Polygons product page ↗</a>.</p>
     </div>
     <div class="panel reveal">
       <span class="tag">Worked example · external product</span><h3 style="margin-top:12px">Six measures. Two fold-flat tools. Compact storage.</h3>
@@ -862,13 +860,8 @@ body::before{
   const nav=document.getElementById("navlinks");
   if(menu&&nav){menu.addEventListener("click",()=>{const open=nav.classList.toggle("open");menu.setAttribute("aria-expanded",String(open));});nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("open");menu.setAttribute("aria-expanded","false");}));}
   const suppliedVideo=document.getElementById("supplied-spoon-video");
-  const externalVideo=document.getElementById("polygons-video-fallback");
-  if(suppliedVideo&&externalVideo){
-    suppliedVideo.addEventListener("loadedmetadata",()=>{suppliedVideo.style.display="block";externalVideo.style.display="none";},{once:true});
-    suppliedVideo.addEventListener("error",()=>{suppliedVideo.style.display="none";externalVideo.style.display="block";});
-    suppliedVideo.load();
-  }
-  const reduced=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if(suppliedVideo) suppliedVideo.load();
+    const reduced=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const reveals=document.querySelectorAll(".reveal");
   if(!reduced&&"IntersectionObserver" in window){
     const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("visible");io.unobserve(e.target);}}),{threshold:.10,rootMargin:"0px 0px -30px 0px"});
