@@ -117,6 +117,15 @@
     @media(max-width:980px){.architecture-flow{grid-template-columns:1fr 22px 1fr;gap:10px}.architecture-flow .architecture-arrow:nth-of-type(4){display:none}.architecture-flow .architecture-node:nth-of-type(4){grid-column:1/-1}.brand-principles-grid{grid-template-columns:1fr}}
     @media(max-width:620px){.hero-logo-category{letter-spacing:.13em;padding-left:.13em;font-size:6px}.hero-logo-tagline{letter-spacing:.1em;padding-left:.1em;font-size:6px}.ethic-manra-architecture{padding:17px}.architecture-flow{grid-template-columns:1fr;gap:8px}.architecture-arrow{transform:rotate(90deg);line-height:1;font-size:18px}.architecture-flow .architecture-arrow:nth-of-type(4){display:block}.architecture-flow .architecture-node:nth-of-type(4){grid-column:auto}.brand-principle{padding:18px}.hero-logo-lockup{object-fit:cover}}
 
+  
+    .footer-brand-lockup{display:flex;align-items:center;gap:13px;margin:0 0 17px}
+    .footer-brand-lockup>img{width:58px;height:58px;object-fit:cover;border-radius:50%;border:1px solid rgba(225,201,155,.4);background:#090908}
+    .footer-brand-lockup>div{display:flex;flex-direction:column;gap:5px}
+    .footer-brand-lockup strong{font-size:17px;font-weight:400;letter-spacing:.28em;color:#e7dcc8}
+    .footer-brand-lockup small{font-size:8px;letter-spacing:.19em;color:#d1b27c}
+    .footer-brand-lockup span{font-size:8px;letter-spacing:.14em;color:#999082}
+    @media(max-width:620px){.footer-brand-lockup>img{width:50px;height:50px}.footer-brand-lockup small,.footer-brand-lockup span{font-size:7px;letter-spacing:.1em}}
+
   </style>
 </head>
 <body>
@@ -564,8 +573,17 @@
   </main>
 
   <footer class="site-footer">
-    <div class="footer-inner"><div><div class="footer-brand">ETHIC × MANRA</div><p><strong style="color:#dcd1bc">Identity built into everything.</strong> ETHIC's current direction is Behavior Engineering, expressed first through affordable, everyday physical products if the evidence supports them. MANRA provides the research and decision discipline behind that journey.</p></div><div class="footer-meta">Strategic reference record<br>Early-stage · Evidence-gated<br><span style="color:var(--gold-2)">P1 not cleared · P2 unclaimed</span></div></div>
-    <div class="footer-bottom"><span>Working strategic record · Not a product launch announcement</span><span>Claims reflect the current internal working status; update when evidence changes.</span></div>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand-lockup" aria-label="ETHIC — Identity Built Into Everything">
+          <img src="assets/ethic-fingerprint-mark.webp" width="64" height="64" alt="">
+          <div><strong>ETHIC</strong><small>IDENTITY BUILT INTO EVERYTHING</small><span>MANRA · STRATEGIC INTELLIGENCE</span></div>
+        </div>
+        <p><strong style="color:#dcd1bc">ETHIC is the company. MANRA is the intelligence system.</strong> The current commercial route is everyday physical products, pursued only when a recurring human friction and the residual gap justify intervention. MANRA develops the evidence; ETHIC owns the product decision and outcome.</p>
+      </div>
+      <div class="footer-meta">Strategic reference record<br>Early-stage · Evidence-gated<br><span style="color:var(--gold-2)">P1 not cleared · P2 unclaimed</span></div>
+    </div>
+    <div class="footer-bottom"><span>Working strategic record · Not a product launch announcement</span><span>Claims reflect the current working status; update when evidence changes.</span></div>
   </footer>
   <script>
     (function(){
