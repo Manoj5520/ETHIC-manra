@@ -1,447 +1,373 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#11100e">
-  <meta name="description" content="ETHIC is a Behavior Engineering company in development. MANRA is its strategic-intelligence and discovery system. Understand the evolution, F1–F11 friction tracks, C1–C5 candidate audit, fusion concepts and present evidence gates.">
-  <meta property="og:title" content="ETHIC × MANRA — Behavior Engineering">
-  <meta property="og:description" content="ETHIC is the company. MANRA is the intelligence system. A plain-language, evidence-led strategic reference.">
-  <title>ETHIC × MANRA — Behavior Engineering</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <style>
-    :root{--ink:#171612;--night:#11100e;--panel:#211f1a;--paper:#f5f2eb;--white:#fffdf8;--muted:#68645b;--line:#ddd6c9;--gold:#c5a36b;--gold2:#e6cf9e;--red:#9a5149;--green:#446b52;--amber:#926323;--max:1120px;--radius:14px}
-    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:84px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit}img{max-width:100%}.skip{position:absolute;top:-100px;left:12px;padding:10px;background:#fff;z-index:100}.skip:focus{top:12px}
-    .header{position:sticky;top:0;z-index:20;background:rgba(17,16,14,.97);color:#f3eddf;border-bottom:1px solid rgba(197,163,107,.24);backdrop-filter:blur(12px)}.nav{max-width:var(--max);margin:auto;min-height:66px;padding:10px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;min-width:0}.brand img{width:40px;height:40px;object-fit:cover;border-radius:50%;border:1px solid rgba(197,163,107,.45);background:#090908}.brand strong{display:block;font-size:17px;letter-spacing:.24em;font-weight:500;line-height:1.15}.brand small{display:block;margin-top:4px;color:#b9ad96;font-size:9px;letter-spacing:.13em;text-transform:uppercase}.links{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:14px}.links a{font-size:10px;letter-spacing:.07em;text-decoration:none;color:#d2c8b7;white-space:nowrap}.links a:hover{color:var(--gold2)}.menu{display:none;background:transparent;border:1px solid #6a5a40;color:#f3eddf;border-radius:7px;padding:7px 10px}
-    .hero{background:var(--night);color:#f5eee1;padding:64px 22px 0}.hero-inner{max-width:var(--max);margin:auto;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(190px,.65fr);gap:48px;align-items:center;padding-bottom:48px}.eyebrow,.label{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:#ad8b55}.hero h1{margin:16px 0 16px;max-width:800px;font-size:clamp(34px,4.8vw,58px);line-height:1.04;font-weight:500;letter-spacing:-.045em}.hero h1 em{font-family:Georgia,serif;font-weight:400;color:var(--gold2)}.hero-copy{max-width:720px;color:#d5cbbb;font-size:16px;line-height:1.75}.hero-copy strong{color:#fff7e7}.hero-rule{margin:22px 0 0;padding:17px 0 0;border-top:1px solid #3a352c;max-width:720px;font-size:13px;color:#bfb5a4}.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:7px;padding:10px 14px;font-size:12px;font-weight:650;text-decoration:none;border:1px solid #6b5a3b}.btn.primary{background:var(--gold2);border-color:var(--gold2);color:#17130c}.btn.secondary{color:#eee5d5}.hero-logo{width:100%;max-width:245px;margin:0 auto;text-align:center}.hero-logo img{display:block;width:94px;height:94px;object-fit:cover;border-radius:50%;margin:0 auto 15px;border:1px solid rgba(197,163,107,.4);background:#090908}.hero-logo strong{display:block;font-size:25px;letter-spacing:.27em;font-weight:350;padding-left:.27em}.hero-logo span{display:block;color:var(--gold2);font-size:8px;letter-spacing:.17em;margin-top:9px}.hero-logo small{display:block;color:#b7aa94;font-size:8px;letter-spacing:.13em;margin-top:13px}.status-strip{background:#201e19;border-top:1px solid #39342a}.status-grid{max-width:var(--max);margin:auto;padding:13px 22px;display:grid;grid-template-columns:repeat(4,1fr)}.status{padding:7px 17px;border-right:1px solid #3c372e}.status:first-child{padding-left:0}.status:last-child{border:0}.status small{display:block;color:#9f9688;font-size:9px;text-transform:uppercase;letter-spacing:.12em}.status strong{display:block;margin-top:4px;color:#e9dfce;font-size:12px;font-weight:600}.dot{display:inline-block;width:7px;height:7px;margin-right:7px;border-radius:50%;background:#b06a5d;vertical-align:1px}.dot.amber{background:#ca9c4e}.dot.green{background:#77a181}
-    main{display:block}.section{padding:60px 22px}.section.alt{background:var(--white)}.inner{max-width:var(--max);margin:auto}.section-head{display:grid;grid-template-columns:155px minmax(0,1fr);gap:24px;margin-bottom:28px}.secno{padding-top:8px;color:#8e7042;font:10px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase}.section h2{margin:0 0 10px;font-size:clamp(25px,3.3vw,37px);line-height:1.12;letter-spacing:-.035em;font-weight:550}.section-intro{max-width:810px;color:var(--muted);font-size:14px;line-height:1.75;margin:0}.section h3{margin:0 0 9px;font-size:18px;line-height:1.25;letter-spacing:-.02em}.section p{margin-top:0}.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.card{padding:21px;border:1px solid var(--line);background:#fffdf8;border-radius:var(--radius);min-width:0}.card.dark{background:var(--panel);color:#f2eadb;border-color:#3c372d}.card.dark p{color:#d0c6b6}.card p{font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:0}.tag{display:inline-block;padding:4px 7px;border-radius:4px;background:#eee4d2;color:#68512c;font:9px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.06em;text-transform:uppercase}.tag.red{background:#f2e1df;color:#8b3e37}.tag.amber{background:#f1e8d6;color:#815a20}.tag.green{background:#e3ece3;color:#385940}.bigline{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin:25px 0;padding:24px;background:#ece4d5;border:1px solid #d8c6a6;border-radius:12px}.bigline span{font-size:clamp(18px,2.5vw,27px);font-weight:650;letter-spacing:-.025em}.bigline b{color:#a2804a;font-size:23px}.note{padding:15px 17px;border-left:3px solid var(--gold);background:#eee7db;color:#4e493f;font-size:12px;line-height:1.7}.note strong{color:#221f19}.timeline{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.timecard{padding:18px;background:var(--white);border:1px solid var(--line);border-top:3px solid #b69a69;border-radius:10px}.timecard .n{font:10px ui-monospace,monospace;color:#8f7042;letter-spacing:.1em}.timecard h3{margin-top:10px}.timecard p{font-size:12px;color:var(--muted);margin-bottom:0}
-    .flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.flowcard{position:relative;padding:17px 15px;background:#fffdf8;border:1px solid var(--line);border-radius:9px}.flowcard .number{font:10px ui-monospace,monospace;color:#936f39}.flowcard h3{margin-top:8px;font-size:15px}.flowcard p{font-size:12px}.track-band{margin:26px 0 14px;padding:13px 15px;background:#211f1a;color:#f0e7d7;border-radius:9px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px}.track-band strong{font-size:15px}.track-band span{font-size:11px;color:#d1c4ae}.track-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.track{padding:18px;border:1px solid var(--line);border-radius:10px;background:#fffdf8}.trackhead{display:flex;align-items:center;gap:10px;margin-bottom:10px}.fcode{flex:0 0 42px;height:42px;border-radius:8px;display:grid;place-items:center;background:#eae0cb;color:#4f3e23;font:16px Georgia,serif}.track h3{font-size:15px;margin:0}.question{font-weight:650;color:#39342a;font-size:12px;margin-bottom:6px}.track p{font-size:12px;color:var(--muted);margin-bottom:0}.track.f5{background:#211f1a;color:#f5ecdd;border-color:#4d4332}.track.f5 .fcode{background:var(--gold2);color:#282116}.track.f5 .question{color:#f0dfbf}.track.f5 p{color:#d7ccba}.track.f5 .tag{margin-top:12px}.taxonomy-note{margin:16px 0 0;font-size:12px;color:var(--muted);line-height:1.7}
-    .video-layout{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:28px;align-items:start}.video-stage{position:relative;max-width:420px;margin:0 auto;background:#080807;border:1px solid #9d7e49;border-radius:12px;overflow:hidden;aspect-ratio:9/16;color:#f4e8d0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center}.video-stage .vid-eyebrow{font:10px ui-monospace,monospace;color:#cfac72;letter-spacing:.15em;text-transform:uppercase}.video-stage .vid-title{font:clamp(20px,2.5vw,30px) Georgia,serif;margin:17px 0 9px;line-height:1.13}.video-stage p{color:#bcb09b;font-size:11px;line-height:1.6}.playbtn{border:1px solid #d2b37e;background:#e0c38b;color:#1a160f;border-radius:6px;padding:11px 15px;font-weight:700;font-size:12px;cursor:pointer;margin-top:14px}.video-stage.hidden{display:none}.video-frame{max-width:420px;margin:0 auto;display:none;border-radius:12px;overflow:hidden;border:1px solid #aa8b56;background:#080807}.video-frame.visible{display:block}.video-frame video{display:block;width:100%;height:auto;max-height:75vh;background:#080807}.video-status{font-size:11px;color:var(--muted);margin:9px 2px 0}.video-copy ul{padding-left:20px;color:#545046;font-size:13px;line-height:1.75}.video-copy li{margin-bottom:7px}.video-copy .claim-note{margin-top:15px;padding:14px;background:#eee6d8;border:1px solid var(--line);font-size:12px;color:#544c40;border-radius:8px}.video-copy .claim-note strong{color:#262118}
-    .candidate-note{margin-bottom:18px}.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:11px;background:#fffdf8}table{width:100%;border-collapse:collapse;min-width:760px}th,td{text-align:left;vertical-align:top;padding:14px 15px;border-bottom:1px solid #e8e1d5;font-size:12px;line-height:1.65}th{background:#25221c;color:#f1e8d7;font-size:10px;letter-spacing:.1em;text-transform:uppercase}tr:last-child td{border-bottom:0}td strong{display:block;margin-bottom:3px;font-size:13px;color:#26221b}td small{display:block;color:var(--muted);font-size:11px}.c-code{font:17px Georgia,serif;color:#967342}.archetypes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.archetype{padding:23px;border-radius:12px;border:1px solid var(--line);background:#fffdf8}.archetype .a-no{font:10px ui-monospace,monospace;color:#8b6c3c;letter-spacing:.13em}.archetype h3{font-size:20px;margin:12px 0 9px}.archetype ul{padding-left:18px;margin-bottom:0;color:var(--muted);font-size:12px;line-height:1.8}.fusion-row{margin:16px 0 0;display:grid;grid-template-columns:1fr 32px 1fr;gap:12px;align-items:center;padding:21px;background:#211f1a;color:#f6eddd;border-radius:12px}.fusion-row h3{margin-bottom:5px}.fusion-row p{margin-bottom:0;color:#d3c7b5;font-size:12px}.plus{display:grid;place-items:center;color:var(--gold2);font-size:25px}.distinct-fusions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:14px}.fusion-type{padding:16px;background:#fffdf8;border:1px solid var(--line);border-radius:10px}.fusion-type .mini{font:9px ui-monospace,monospace;letter-spacing:.1em;color:#8f6e3c}.fusion-type h4{font-size:14px;margin:9px 0 7px}.fusion-type p{font-size:11px;color:var(--muted);margin-bottom:0}
-    .gate{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:17px}.gatecard{padding:16px;border:1px solid var(--line);background:#fffdf8;border-radius:9px}.gatecard .n{font:10px ui-monospace,monospace;color:#8b6b3c}.gatecard h3{font-size:14px;margin-top:9px}.gatecard p{font-size:11px;color:var(--muted);margin:0}.statusbox{padding:23px;border-radius:12px;background:#211f1a;color:#f4ead8}.statusbox h3{font-size:23px}.statusbox p{font-size:13px;color:#d7cbb8}.statusbox .bigstatus{font-size:18px;color:#ebc7bd;font-weight:700}.proof-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.proof{padding:18px;border:1px solid var(--line);border-radius:9px;background:#fffdf8}.proof h3{margin-top:8px}.proof p{font-size:12px;color:var(--muted);margin-bottom:0}.capital-loop{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:17px 0;padding:18px;background:#ebe3d5;border-radius:10px}.capital-loop span{padding:8px 10px;background:#fffdf8;border:1px solid #d8c7aa;border-radius:6px;font-size:11px;font-weight:650}.capital-loop b{color:#a17d44}.plainlist{padding-left:20px;font-size:13px;color:#565044;line-height:1.8}.plainlist li{margin-bottom:7px}.footer{padding:35px 22px;background:#11100e;color:#d9cfbd}.footerinner{max-width:var(--max);margin:auto;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end}.footerbrand{display:flex;gap:10px;align-items:center;margin-bottom:10px}.footerbrand img{width:36px;height:36px;border-radius:50%;border:1px solid rgba(197,163,107,.4)}.footerbrand strong{letter-spacing:.2em;font-weight:500}.footer p{max-width:770px;color:#a9a08f;font-size:11px;line-height:1.75}.footer .footstatus{text-align:right;font-size:10px;color:#c4b69d;line-height:1.8}.footerbottom{max-width:var(--max);margin:20px auto 0;padding-top:12px;border-top:1px solid #383228;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;color:#9d9381;font-size:10px}
-    @media(max-width:980px){.links{gap:9px}.links a{font-size:9px}.hero-inner{gap:25px}.status-grid{grid-template-columns:repeat(2,1fr)}.status:nth-child(2){border-right:0}.status:nth-child(3){padding-left:0}.status:nth-child(-n+2){border-bottom:1px solid #3c372e}.grid4{grid-template-columns:repeat(2,1fr)}.gate{grid-template-columns:repeat(2,1fr)}.distinct-fusions{grid-template-columns:1fr}.flow{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:700px){.nav{padding:9px 14px}.links{display:none;position:absolute;top:65px;left:0;right:0;padding:15px;background:#151410;border-bottom:1px solid #39342a;flex-direction:column;align-items:flex-start}.links.open{display:flex}.links a{font-size:11px}.menu{display:block}.hero{padding:42px 15px 0}.hero-inner{grid-template-columns:1fr;gap:26px;padding-bottom:30px}.hero h1{font-size:37px}.hero-copy{font-size:14px}.hero-logo{max-width:190px}.hero-logo img{width:68px;height:68px}.status-grid{padding:10px 15px}.status{padding:9px 10px}.status strong{font-size:11px}.section{padding:42px 15px}.section-head{grid-template-columns:1fr;gap:4px;margin-bottom:22px}.secno{padding-top:0}.grid2,.grid3,.timeline,.track-cards,.archetypes,.video-layout{grid-template-columns:1fr}.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}.flow{grid-template-columns:1fr}.flowcard{padding:15px}.video-stage{max-width:100%;aspect-ratio:9/14}.video-frame{max-width:100%}.fusion-row{grid-template-columns:1fr}.plus{transform:rotate(90deg)}.gate{grid-template-columns:1fr}.footerinner{grid-template-columns:1fr}.footer .footstatus{text-align:left}.tablewrap{border-radius:8px}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
-  
-    .map-section{padding-top:35px;padding-bottom:35px;background:#ece5d8}
-    .read-map-grid{display:grid;grid-template-columns:minmax(0,1fr) 24px minmax(0,1fr) 24px minmax(0,1fr);gap:10px;align-items:stretch}
-    .read-map-card{padding:17px 18px;border-radius:10px;border:1px solid var(--line);background:#fffdf8}
-    .read-map-card h3{font-size:20px;margin:7px 0}
-    .read-map-card p{font-size:12px;color:var(--muted);margin:0}
-    .read-map-card.map-company{border-top:3px solid #bea06b}
-    .read-map-card.map-system{background:#211f1a;color:#f2eadb;border-color:#4b4131;border-top:3px solid #c9a86c}
-    .read-map-card.map-system p{color:#d0c6b6}
-    .read-map-card.map-decision{border-top:3px solid #798b70}
-    .map-code{font:9px ui-monospace,monospace;letter-spacing:.11em;color:#8d6e3b}
-    .map-system .map-code{color:#d9bd8b}
-    .map-arrow{display:grid;place-items:center;color:#9a7946;font-size:21px}
-    .number-key{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-top:12px}
-    .number-key div{padding:12px 14px;border:1px solid #d8cbb5;background:#f7f3eb;border-radius:8px;min-width:0}
-    .number-key b{display:block;font-size:12px;color:#5b482b}
-    .number-key span{display:block;font-size:11px;font-weight:750;margin-top:3px}
-    .number-key small{display:block;color:#71695c;font-size:10px;line-height:1.5;margin-top:3px}
-    .track-with-image{border-top:3px solid #c5a36b}
-    .product-figure{margin:13px 0 12px;background:#f7f4ed;border:1px solid var(--line);border-radius:8px;overflow:hidden}
-    .product-figure img{display:block;width:100%;height:180px;object-fit:contain;background:#fff;padding:8px}
-    .product-figure figcaption{padding:8px 10px;font-size:10px;line-height:1.55;color:#6c6558;border-top:1px solid #e3dccf}
-    .product-figure figcaption a,.small-note a{color:#72552b;text-decoration:underline}
-    .cable-figure img{height:185px}
-    .f5-feature{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:20px;align-items:start;padding:21px;border:1px solid #4d4332;border-radius:12px;background:#211f1a;color:#f3eadb}
-    .neo-figure{margin:0;background:#fff;border-color:#716044}
-    .neo-figure img{height:260px;object-fit:contain}
-    .neo-figure figcaption{color:#5e594f;background:#f7f4ed}
-    .f5-copy .trackhead{align-items:flex-start}
-    .f5-copy .question{color:#f1e4cc;font-size:13px;line-height:1.65}
-    .f5-copy p{color:#d7cdbd;font-size:12px;line-height:1.75}
-    .worked-example{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:15px 0}
-    .worked-example div{padding:12px;border:1px solid #4a4235;background:#191814;border-radius:7px}
-    .worked-example b{display:block;color:#e6c891;font-size:11px;margin-bottom:5px}
-    .worked-example p{font-size:11px;margin:0;color:#d6cabb}
-    .small-note{font-size:10px!important;color:#b9ad9c!important}
-    .tech-friction-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-    .tech-example{min-width:0;padding:17px;background:#fffdf8;border:1px solid var(--line);border-radius:10px}
-    .tech-visual{height:100px;margin:-1px -1px 13px;border-radius:7px;background:#f3ecdf;display:flex;align-items:center;justify-content:center;overflow:hidden}
-    .tech-visual svg{display:block;width:100%;height:100%;max-width:210px}
-    .tech-example h3{font-size:15px;margin:10px 0 7px}
-    .tech-example p{font-size:11px;line-height:1.7;color:var(--muted);margin:8px 0 0}
-    .tech-example p strong{color:#443b2b}
-    .tech-example .question{color:#494136}
-    .candidate-board{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-    .candidate-card{min-width:0;padding:18px;background:#fffdf8;border:1px solid var(--line);border-radius:10px}
-    .candidate-card.lead{grid-column:1/-1;border:1px solid #c7b18c;background:#fbf7ef}
-    .candidate-top{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin-bottom:12px}
-    .candidate-id{font:19px Georgia,serif;color:#816138;margin-right:4px}
-    .candidate-content{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:20px;align-items:start}
-    .product-figure.compact{margin:0}
-    .product-figure.compact img{height:170px}
-    .candidate-card h3{font-size:17px}
-    .candidate-card p{font-size:12px;line-height:1.7;color:var(--muted)}
-    .candidate-state{font-size:10px!important;font-weight:800;letter-spacing:.05em;color:#8b433c!important}
-    .three-fusions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-    .fusion-card{padding:20px;border:1px solid var(--line);border-radius:10px;background:#fffdf8}
-    .fusion-card h3{font-size:17px;margin:12px 0 9px}
-    .fusion-card p{font-size:12px;line-height:1.75;color:var(--muted)}
-    .fusion-card.f5-fusion{background:#211f1a;color:#f3eadb;border-color:#4d4332}
-    .fusion-card.f5-fusion p{color:#d7cdbd}
-    .fusion-card.f5-fusion strong{color:#e7cf9f}
-    .fusion-card.f5-fusion h3{color:#f1e4cc}
-    @media(max-width:950px){.tech-friction-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.read-map-grid{grid-template-columns:1fr 22px 1fr}.read-map-grid .map-arrow:nth-of-type(4){display:none}.read-map-grid .read-map-card.map-decision{grid-column:1/-1}.number-key{grid-template-columns:repeat(2,minmax(0,1fr))}.f5-feature{grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr)}}
-    @media(max-width:700px){.read-map-grid{grid-template-columns:1fr}.read-map-grid .map-arrow{transform:rotate(90deg);line-height:1}.read-map-grid .map-arrow:nth-of-type(4){display:grid}.read-map-grid .read-map-card.map-decision{grid-column:auto}.number-key{grid-template-columns:1fr 1fr}.f5-feature,.candidate-content{grid-template-columns:1fr}.neo-figure img{height:210px}.tech-friction-grid{grid-template-columns:1fr}.candidate-board{grid-template-columns:1fr}.candidate-card.lead{grid-column:auto}.worked-example{grid-template-columns:1fr}.product-figure img{height:190px}}
-
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101012">
+<meta name="description" content="ETHIC × MANRA — a visual, evidence-led account of Behavior Engineering: the origin, friction taxonomy F1–F11, global product examples, candidate status, design thesis and next steps.">
+<meta property="og:title" content="ETHIC × MANRA | Behavior Engineering">
+<meta property="og:description" content="From everyday friction to evidence-led product decisions. ETHIC is the company; MANRA is the strategic-intelligence system behind it.">
+<title>ETHIC × MANRA | Behavior Engineering</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<style>
+:root{--black:#101012;--ink:#202126;--silver:#c9cbd0;--silver2:#ececef;--paper:#f6f5f3;--white:#fff;--burg:#6e3545;--burg2:#8b4b5c;--red:#aa454b;--gold:#c7ad7a;--gold2:#e5d6b5;--muted:#686a70;--line:#dedee1;--max:1160px;--rad:15px;--shadow:0 18px 50px rgba(19,18,24,.09)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.58}img{max-width:100%;display:block}a{color:inherit}button{font:inherit}.skip{position:absolute;top:-100px;left:14px;z-index:999;padding:10px;background:#fff}.skip:focus{top:10px}
+.topbar{position:sticky;top:0;z-index:100;background:rgba(16,16,18,.96);border-bottom:1px solid rgba(204,207,214,.15);backdrop-filter:blur(15px);color:#f4f3f5}.nav{max-width:var(--max);min-height:65px;margin:auto;padding:9px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}.nav-brand{display:flex;align-items:center;gap:11px;text-decoration:none;min-width:0}.nav-brand img{width:39px;height:39px;border-radius:50%;object-fit:cover;border:1px solid rgba(231,213,176,.45)}.nav-brand strong{display:block;font-size:14px;letter-spacing:.24em;font-weight:600;line-height:1.1}.nav-brand small{display:block;color:#b7b6be;font-size:8px;letter-spacing:.15em;text-transform:uppercase;margin-top:4px}.navlinks{display:flex;gap:14px;align-items:center;justify-content:flex-end;flex-wrap:wrap}.navlinks a{font-size:9px;letter-spacing:.06em;color:#d4d4d8;text-decoration:none;white-space:nowrap}.navlinks a:hover{color:var(--gold2)}.menu{display:none;background:#202025;border:1px solid #56545a;color:#f4f3f5;padding:7px 10px;border-radius:7px}
+.hero{min-height:calc(93vh - 65px);position:relative;overflow:hidden;color:#f5f4f7;background:radial-gradient(ellipse at 76% 4%,rgba(139,75,92,.2),transparent 36%),radial-gradient(ellipse at 18% 80%,rgba(190,193,202,.10),transparent 45%),linear-gradient(128deg,#0a0a0c 0%,#17171b 55%,#111114 100%);isolation:isolate}.hero:before,.hero:after{content:"";position:absolute;inset:auto -10% -24% -10%;height:62%;border-radius:50% 50% 0 0;pointer-events:none;z-index:-1}.hero:before{border-top:1px solid rgba(211,215,225,.3);transform:rotate(-8deg);box-shadow:0 -24px 0 -23px rgba(211,215,225,.28),0 -48px 0 -47px rgba(211,215,225,.22),0 -72px 0 -71px rgba(211,215,225,.17),0 -96px 0 -95px rgba(211,215,225,.12);animation:wave-drift 18s ease-in-out infinite alternate}.hero:after{inset:auto -8% -38% -13%;height:68%;border-top:1px solid rgba(139,75,92,.7);transform:rotate(7deg);box-shadow:0 -25px 0 -24px rgba(139,75,92,.34),0 -50px 0 -49px rgba(139,75,92,.2),0 -75px 0 -74px rgba(139,75,92,.13);animation:wave-drift2 22s ease-in-out infinite alternate}.hero-inner{max-width:var(--max);margin:auto;padding:66px 24px 72px;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(270px,.95fr);gap:54px;align-items:center}.eyebrow,.micro{font:10px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.17em;text-transform:uppercase;color:#d0b987}.hero h1{font-size:clamp(42px,6.2vw,73px);line-height:.99;letter-spacing:-.055em;font-weight:540;margin:18px 0 22px;max-width:710px}.hero h1 em{font-family:Georgia,serif;color:#dfdfe4;font-weight:400}.hero-intro{font-size:16px;line-height:1.82;color:#d1d0d7;max-width:640px}.hero-intro strong{color:#fff}.hero-equation{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:24px 0 0;font-size:11px;letter-spacing:.12em;color:#e0d2b8;text-transform:uppercase}.hero-equation b{color:var(--burg2);font-size:18px}.hero-cta{display:flex;gap:11px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;justify-content:center;align-items:center;gap:9px;text-decoration:none;font-size:12px;font-weight:700;padding:12px 16px;border-radius:7px;transition:transform .25s ease,background .25s ease}.btn:hover{transform:translateY(-2px)}.btn-light{background:#e6e6e9;color:#16161a;border:1px solid #e6e6e9}.btn-ghost{border:1px solid #67636d;color:#efedf1;background:rgba(255,255,255,.035)}.hero-logo-wrap{max-width:385px;width:100%;margin:auto;perspective:900px}.hero-logo-card{background:linear-gradient(145deg,#1c1c1f,#09090a 72%);padding:18px;border:1px solid rgba(230,220,198,.22);border-radius:17px;box-shadow:0 35px 90px rgba(0,0,0,.4);transform:rotateY(-4deg) rotateX(2deg);transition:transform .6s ease}.hero-logo-card:hover{transform:rotateY(0) rotateX(0) translateY(-4px)}.hero-logo-card img{width:100%;height:auto;object-fit:contain;border-radius:8px}.hero-logo-caption{margin:13px 3px 0;color:#aaa8b1;text-align:center;font-size:9px;letter-spacing:.11em}.hero-bottom{position:relative;z-index:2;border-top:1px solid rgba(225,225,235,.13);background:rgba(4,4,6,.45)}.status-grid{max-width:var(--max);margin:auto;padding:13px 22px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}.status{padding:8px 16px;border-right:1px solid rgba(225,225,235,.14)}.status:first-child{padding-left:0}.status:last-child{border-right:0}.status small{display:block;color:#9f9ea6;font-size:8px;letter-spacing:.13em;text-transform:uppercase}.status strong{display:block;color:#e9e7ec;font-size:12px;margin-top:4px}.status .state{display:inline-block;width:6px;height:6px;margin-right:7px;border-radius:50%;background:#b55e67;vertical-align:1px}.status .state.amber{background:#d1ad6f}
+section{position:relative}.section{padding:80px 22px}.section.white{background:#fff}.section.paper{background:#f6f5f3}.section.dark{background:#17171b;color:#f0eff2}.inner{max-width:var(--max);margin:auto}.section-head{display:grid;grid-template-columns:165px minmax(0,1fr);gap:26px;align-items:start;margin-bottom:31px}.secno{font:10px ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--burg);letter-spacing:.16em;text-transform:uppercase;padding-top:8px}.section.dark .secno{color:var(--gold)}h2{font-size:clamp(28px,4.1vw,45px);line-height:1.07;letter-spacing:-.045em;font-weight:550;margin:0 0 13px}h3{font-size:20px;letter-spacing:-.025em;line-height:1.2;margin:0 0 10px}h4{font-size:14px;line-height:1.3;margin:0 0 7px}.lede{font-size:15px;color:var(--muted);line-height:1.82;max-width:850px;margin:0}.section.dark .lede{color:#c2c0c9}.kicker{font:9px ui-monospace,SFMono-Regular,Menlo,monospace;text-transform:uppercase;letter-spacing:.13em;color:var(--burg2)}.dark .kicker{color:var(--gold2)}.tag{display:inline-flex;align-items:center;padding:5px 8px;border:1px solid #e3d8d9;background:#f7eff1;color:#713c4b;border-radius:4px;font:9px ui-monospace,monospace;letter-spacing:.06em;text-transform:uppercase}.tag.silver{border-color:#d8d8dc;background:#f0f0f2;color:#45464e}.tag.gold{border-color:#5c4f38;background:#29251d;color:#e5d5b1}.tag.red{background:#f8e9e9;border-color:#e6c9cb;color:#8e343d}.tag.green{background:#e7eee8;border-color:#ccd9cf;color:#365744}.cards2,.cards3,.cards4{display:grid;gap:16px}.cards2{grid-template-columns:repeat(2,minmax(0,1fr))}.cards3{grid-template-columns:repeat(3,minmax(0,1fr))}.cards4{grid-template-columns:repeat(4,minmax(0,1fr))}.panel{min-width:0;padding:23px;background:#fff;border:1px solid var(--line);border-radius:var(--rad);box-shadow:0 6px 25px rgba(25,23,27,.035)}.panel.dark{background:#202025;color:#f0edf2;border-color:#3a3941;box-shadow:none}.panel p{color:var(--muted);font-size:13px;line-height:1.76;margin:9px 0 0}.panel.dark p{color:#c4c1cb}.panel strong{color:inherit}.fine{font-size:10px!important;line-height:1.6!important;color:#8b8b91!important}.source{font-size:10px;color:#74747a;line-height:1.6}.source a,.fine a{color:var(--burg);text-decoration:underline;text-underline-offset:2px}.dark .source{color:#b5b3bc}.dark .source a{color:#e5d5b1}.callout{padding:17px 19px;border-left:3px solid var(--burg);background:#f2e9eb;color:#454048;font-size:12px;line-height:1.8}.callout strong{color:#633142}.callout.dark{background:#222026;border-left-color:var(--gold);color:#d9d5de}.callout.dark strong{color:#e5d5b1}
+.story-line{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;position:relative}.story-card{position:relative;border:1px solid var(--line);border-radius:13px;padding:22px;background:#fff;overflow:hidden;transform-style:preserve-3d;transition:transform .35s ease,box-shadow .35s ease}.story-card:hover{transform:translateY(-5px) rotateX(1deg);box-shadow:var(--shadow)}.story-number{font:10px ui-monospace,monospace;letter-spacing:.13em;color:var(--burg2)}.story-card h3{margin-top:12px}.story-card p{font-size:12px;color:var(--muted);line-height:1.75}.story-card .foot{margin-top:15px;padding-top:12px;border-top:1px solid var(--line);font-size:10px;color:#55525a}.story-arrow{position:absolute;right:-11px;top:45%;z-index:2;background:#f6f5f3;border:1px solid #dedde1;border-radius:50%;width:23px;height:23px;display:grid;place-items:center;color:var(--burg);font-weight:800}.meaning-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;align-items:stretch}.meaning-logo{background:#101012;border-radius:13px;padding:20px;display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:255px}.meaning-logo img{width:175px;height:175px;object-fit:contain}.meaning-logo p{font-size:10px;color:#c4c0c8;line-height:1.6;text-align:center;max-width:340px;margin:10px 0 0}.meaning-text{padding:25px;border:1px solid var(--line);border-radius:13px;background:#fff}.meaning-text ul{padding-left:19px;margin:12px 0 0;color:var(--muted);font-size:12px;line-height:1.8}.ethic-manra-equation{display:grid;grid-template-columns:1fr 36px 1fr 36px 1fr;gap:10px;align-items:stretch;margin-top:20px}.eqbox{border:1px solid #dcd9d8;border-radius:10px;background:#f9f8f6;padding:17px}.eqbox strong{display:block;font-size:13px}.eqbox span{display:block;color:var(--muted);font-size:11px;margin-top:5px;line-height:1.55}.eqarrow{display:grid;place-items:center;color:var(--burg2);font-size:23px}.logo-meaning-row{display:grid;grid-template-columns:120px minmax(0,1fr);gap:19px;align-items:center;margin-top:19px;padding:18px;background:#1c1c20;border-radius:12px;color:#eeeef2}.logo-meaning-row img{width:112px;height:112px;object-fit:contain}.logo-meaning-row p{margin:5px 0 0;color:#c6c4cd;font-size:12px;line-height:1.7}
+.evolution{display:grid;grid-template-columns:minmax(0,1fr) 42px minmax(0,1fr);gap:15px;align-items:center}.evo-card{border:1px solid var(--line);border-radius:13px;background:#fff;padding:17px;min-width:0}.evo-card figure{margin:0 0 14px;border-radius:9px;background:#f5f4f3;overflow:hidden}.evo-card figure img{width:100%;height:195px;object-fit:contain;padding:9px;background:#f4f4f2}.evo-card h3{font-size:18px}.evo-card p{font-size:12px;color:var(--muted);line-height:1.72}.evo-arrow{font-size:30px;color:var(--burg2);text-align:center}.timeline{display:flex;align-items:stretch;gap:10px;flex-wrap:wrap;margin:18px 0 0}.timeline-step{flex:1 1 130px;padding:13px 14px;background:#eeecea;border:1px solid #dedcda;border-radius:8px}.timeline-step b{display:block;font-size:11px}.timeline-step small{display:block;color:var(--muted);font-size:10px;margin-top:4px;line-height:1.5}.history-correction{display:grid;grid-template-columns:150px minmax(0,1fr);gap:17px;align-items:start;margin-top:18px;padding:18px;border:1px solid #e4d4d7;border-radius:10px;background:#f9f1f2}.history-correction .badge-label{font:9px ui-monospace,monospace;letter-spacing:.1em;color:#793b4a}.history-correction p{font-size:12px;line-height:1.75;margin:7px 0 0;color:#544c51}
+.friction-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.friction-card{min-width:0;border:1px solid var(--line);border-radius:13px;background:#fff;overflow:hidden;display:grid;grid-template-columns:minmax(130px,.72fr) minmax(0,1.28fr)}.friction-card figure{margin:0;background:#eeece9;min-height:215px;display:flex;align-items:center;justify-content:center;overflow:hidden}.friction-card figure img{width:100%;height:100%;max-height:260px;object-fit:contain;padding:10px}.friction-card .fcopy{padding:19px}.friction-card h3{font-size:17px;margin:9px 0}.fcode{display:inline-grid;place-items:center;width:37px;height:37px;border-radius:9px;background:#202025;color:#f1e8d8;font:18px Georgia,serif}.fcopy p{font-size:12px;color:var(--muted);line-height:1.72;margin:8px 0}.fcopy .question{font-weight:700;color:#37353b}.micro-banner{margin:0 0 17px;padding:13px 17px;background:#211f22;border-radius:9px;display:flex;justify-content:space-between;align-items:center;gap:10px;color:#f1eff3}.micro-banner b{font-size:13px}.micro-banner span{font-size:10px;letter-spacing:.09em;color:#c9c6ce}.example-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:17px}.example-tile{border:1px solid var(--line);background:#fff;border-radius:10px;padding:14px}.example-tile h4{margin-top:8px}.example-tile p{font-size:11px;color:var(--muted);line-height:1.7;margin:5px 0 0}.product-image{border:1px solid var(--line);border-radius:12px;background:#fff;overflow:hidden}.product-image img{width:100%;height:255px;object-fit:contain;padding:10px;background:#fbfaf8}.product-image figcaption{border-top:1px solid var(--line);padding:9px 11px;color:#737178;font-size:10px;line-height:1.6}.product-image figcaption a{color:var(--burg)}.f5-layout{display:grid;grid-template-columns:minmax(280px,.8fr) minmax(0,1.2fr);gap:23px;align-items:start}.f5-layout figure{margin:0}.f5-layout .product-image img{height:335px}.worked-list{display:grid;gap:10px}.worked-step{display:grid;grid-template-columns:34px minmax(0,1fr);gap:11px;padding:14px;border:1px solid #3e3b43;border-radius:9px;background:#202025}.worked-step .num{width:30px;height:30px;display:grid;place-items:center;border-radius:50%;background:#e0d0b0;color:#252126;font:12px Georgia,serif}.worked-step b{display:block;color:#f2f0f4;font-size:12px}.worked-step p{margin:4px 0 0;color:#c3c0c9;font-size:11px;line-height:1.65}.example-source{margin-top:12px;color:#b5b2bc;font-size:10px;line-height:1.7}.example-source a{color:#ead9b2}
+.tech-hero-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.tech-product{padding:19px;border:1px solid #3c3a42;border-radius:14px;background:linear-gradient(155deg,#232329,#17171b);color:#f2f0f4;min-width:0}.tech-product-head{display:grid;grid-template-columns:minmax(0,1fr) 100px;gap:13px;align-items:start}.tech-product h3{font-size:22px;margin:10px 0 7px}.tech-product .sub{font-size:12px;color:#c4c1ca;line-height:1.7}.tech-product .product-image{border-color:#46434b;background:#fff}.tech-product .product-image img{height:215px}.tech-product .product-image figcaption{background:#f8f7f5;color:#68666d}.fact-pills{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0}.fact-pills span{padding:6px 8px;border:1px solid #49454f;background:#2c2b31;border-radius:6px;color:#e2d7c0;font-size:10px}.tech-product .feature-list{padding-left:18px;margin:12px 0 0;color:#d1ced6;font-size:11px;line-height:1.8}.manufacturer-note{padding:11px 13px;margin-top:12px;border-left:2px solid var(--gold);background:#27252b;color:#c7c3ce;font-size:10px;line-height:1.7}.f6f11-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:18px}.ftech{padding:17px;border-radius:10px;background:#fff;border:1px solid var(--line);min-width:0}.ftech .fcode{margin-bottom:10px}.ftech h4{font-size:14px}.ftech p{font-size:11px;color:var(--muted);line-height:1.7;margin:7px 0 0}.ftech .test{font-size:10px;color:#5a3c46;padding-top:9px;margin-top:10px;border-top:1px solid var(--line);font-weight:700}.ftech img{width:100%;height:100px;object-fit:contain;background:#f4f2ef;border-radius:7px;padding:4px;margin-bottom:12px}.candidate-board{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.candidate{padding:19px;border:1px solid var(--line);border-radius:11px;background:#fff}.candidate.lead{grid-column:1/-1;display:grid;grid-template-columns:150px minmax(0,1fr);gap:18px;border-color:#c7a7af;background:#fbf5f6}.candidate-id{font:28px Georgia,serif;color:var(--burg2)}.candidate h3{font-size:16px;margin-top:5px}.candidate p{font-size:12px;color:var(--muted);line-height:1.72;margin:7px 0 0}.candidate .state-text{color:#873f4e;font-size:10px;font-weight:800;letter-spacing:.06em;margin-top:12px}.candidate .mini-art{align-self:stretch;display:flex;align-items:center;justify-content:center;background:#f1eded;border-radius:9px;overflow:hidden;min-height:120px}.candidate .mini-art img{width:100%;height:100%;max-height:185px;object-fit:contain;padding:8px}
+.fusion-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.fusion-card{padding:21px;border-radius:12px;background:#fff;border:1px solid var(--line)}.fusion-card:nth-child(2){background:#201f23;color:#f2f0f4;border-color:#403d45}.fusion-card h3{margin-top:13px}.fusion-card p{font-size:12px;color:var(--muted);line-height:1.75}.fusion-card:nth-child(2) p{color:#c9c5cf}.fusion-card b{color:var(--burg)}.fusion-card:nth-child(2) b{color:#e2d0ac}.pattern-merge{display:grid;grid-template-columns:1fr 32px 1fr;gap:12px;align-items:center;background:#eee9e9;border-radius:12px;padding:19px;margin-top:15px}.pattern-box{background:#fff;border:1px solid #dbd7d7;border-radius:8px;padding:15px}.pattern-box b{display:block;font-size:13px}.pattern-box p{font-size:11px;color:var(--muted);margin:5px 0 0}.plus{display:grid;place-items:center;font-size:23px;color:var(--burg2)}
+.strategy-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:17px}.strategy-card{padding:24px;border:1px solid var(--line);background:#fff;border-radius:12px}.strategy-card ul{padding-left:18px;color:var(--muted);font-size:12px;line-height:1.85}.reference-list{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.reference-item{border:1px solid var(--line);border-radius:9px;overflow:hidden;background:#fff}.reference-item img{width:100%;height:100px;object-fit:contain;background:#f1f0ed;padding:6px}.reference-item div{padding:10px}.reference-item strong{display:block;font-size:11px}.reference-item p{font-size:10px;line-height:1.6;color:var(--muted);margin:5px 0}.reference-item a{font-size:10px;color:var(--burg)}.founder{display:grid;grid-template-columns:210px minmax(0,1fr);gap:30px;align-items:center}.founder-photo{background:#e6e5e7;border:1px solid #d1cdd0;border-radius:14px;overflow:hidden;max-width:210px}.founder-photo img{width:100%;height:auto;object-fit:cover;object-position:top}.founder-kicker{color:var(--gold2);font:10px ui-monospace,monospace;letter-spacing:.13em;text-transform:uppercase}.founder h2{font-size:clamp(27px,3vw,38px);margin:8px 0 12px}.founder p{font-size:13px;color:#c9c6cf;line-height:1.8;max-width:790px}.founder-points{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.founder-points span{padding:8px 10px;border:1px solid #444149;background:#242329;border-radius:6px;font-size:10px;color:#e5d9c1}.kpi-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;margin-top:23px}.kpi{border:1px solid #3b3941;border-radius:10px;padding:16px;background:#202025}.kpi small{display:block;color:#c0bdc6;font-size:9px;line-height:1.45}.kpi strong{display:block;color:#e6d4ad;font-size:22px;letter-spacing:-.03em;margin:6px 0}.kpi span{display:block;color:#9f9ca6;font-size:9px}.roadmap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.roadstep{padding:17px;background:#fff;border:1px solid var(--line);border-radius:10px}.roadstep small{font:9px ui-monospace,monospace;color:var(--burg)}.roadstep h3{font-size:15px;margin:9px 0 6px}.roadstep p{font-size:11px;color:var(--muted);line-height:1.7;margin:0}.final-state{padding:25px;border-radius:13px;background:#211f23;color:#f3f0f5;border:1px solid #46414b;margin-top:19px}.final-state h3{color:#e4d3b1;font-size:23px}.final-state p{color:#d1ccd7;font-size:13px;line-height:1.8;margin:8px 0 0}.sources{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.source-row{padding:13px 15px;background:#fff;border:1px solid var(--line);border-radius:8px;font-size:11px}.source-row b{display:block;font-size:11px;margin-bottom:4px}.source-row a{color:var(--burg);text-decoration:underline;text-underline-offset:2px}.footer{background:#0d0d0f;color:#d8d6dd;padding:38px 22px}.footerinner{max-width:var(--max);margin:auto;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:30px;align-items:end}.footerbrand{display:flex;align-items:center;gap:12px}.footerbrand img{width:55px;height:55px;object-fit:contain;background:#111;border-radius:7px}.footerbrand strong{font-weight:500;letter-spacing:.22em}.footer p{max-width:750px;font-size:11px;line-height:1.75;color:#a7a4ae}.footstatus{text-align:right;font-size:10px;line-height:1.8;color:#d3c3a3}.footerbottom{max-width:var(--max);margin:21px auto 0;border-top:1px solid #343238;padding-top:13px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:#8d8b94;font-size:9px}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}.reveal.visible{opacity:1;transform:none}.lift{transform-style:preserve-3d;transition:transform .35s ease,box-shadow .35s ease}.lift:hover{box-shadow:var(--shadow)}.source-note{margin-top:14px;font-size:10px;color:#77757d;line-height:1.65}.dark .source-note{color:#a5a1ab}.wave-divider{position:relative;height:38px;overflow:hidden;background:linear-gradient(to bottom,#f6f5f3,#fff)}.wave-divider svg{width:120%;height:70px;position:absolute;left:-10%;top:-22px}.wave-divider path{fill:none;stroke:rgba(110,53,69,.2);stroke-width:1.1}.wave-divider.dark-wave{background:#17171b}.wave-divider.dark-wave path{stroke:rgba(213,214,222,.17)}
+@keyframes wave-drift{from{transform:translateX(-2%) rotate(-8deg)}to{transform:translateX(2%) rotate(-3deg)}}@keyframes wave-drift2{from{transform:translateX(2%) rotate(7deg)}to{transform:translateX(-2%) rotate(2deg)}}
+@media(max-width:1020px){.navlinks{gap:9px}.navlinks a{font-size:8px}.hero-inner{gap:32px}.status-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.status:nth-child(2){border-right:0}.status:nth-child(-n+2){border-bottom:1px solid rgba(225,225,235,.14)}.status:nth-child(3){padding-left:0}.cards4{grid-template-columns:repeat(2,minmax(0,1fr))}.reference-list{grid-template-columns:repeat(3,minmax(0,1fr))}.kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.f6f11-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:730px){.nav{padding:8px 13px}.navlinks{display:none;position:absolute;top:65px;left:0;right:0;background:#111114;padding:17px;align-items:flex-start;flex-direction:column;border-bottom:1px solid #37343b}.navlinks.open{display:flex}.navlinks a{font-size:11px}.menu{display:block}.hero-inner{grid-template-columns:1fr;padding:44px 16px 43px;gap:29px}.hero h1{font-size:43px}.hero-intro{font-size:14px}.hero-logo-wrap{max-width:245px}.hero-logo-card{transform:none;padding:12px}.status-grid{padding:9px 13px}.status{padding:9px 10px}.status strong{font-size:10px}.status small{font-size:7px}.section{padding:52px 15px}.section-head{grid-template-columns:1fr;gap:4px;margin-bottom:24px}.secno{padding:0}.cards2,.cards3,.cards4,.story-line,.meaning-split,.friction-grid,.tech-hero-grid,.strategy-grid,.candidate-board,.fusion-grid,.roadmap,.sources{grid-template-columns:1fr}.story-arrow{display:none}.ethic-manra-equation{grid-template-columns:1fr}.eqarrow{transform:rotate(90deg)}.evolution{grid-template-columns:1fr}.evo-arrow{transform:rotate(90deg)}.evo-card figure img{height:200px}.friction-card{grid-template-columns:120px minmax(0,1fr)}.friction-card figure{min-height:190px}.friction-card .fcopy{padding:14px}.f5-layout{grid-template-columns:1fr}.f5-layout .product-image img{height:240px}.tech-product-head{grid-template-columns:1fr}.tech-product-head .product-image{max-width:340px}.tech-product .product-image img{height:200px}.f6f11-grid{grid-template-columns:1fr}.candidate.lead{grid-column:auto;grid-template-columns:1fr}.candidate .mini-art img{max-height:150px}.fusion-grid{grid-template-columns:1fr}.pattern-merge{grid-template-columns:1fr}.plus{transform:rotate(90deg)}.founder{grid-template-columns:145px minmax(0,1fr);gap:16px}.founder-photo{max-width:145px}.founder h2{font-size:28px}.kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.reference-list{grid-template-columns:repeat(2,minmax(0,1fr))}.history-correction{grid-template-columns:1fr;gap:5px}.logo-meaning-row{grid-template-columns:90px minmax(0,1fr)}.logo-meaning-row img{width:86px;height:86px}.footerinner{grid-template-columns:1fr}.footstatus{text-align:left}.footerbottom{display:block}.footerbottom span{display:block;margin:5px 0}}
+@media(max-width:420px){.friction-card{grid-template-columns:1fr}.friction-card figure{min-height:155px;max-height:190px}.friction-card figure img{height:185px}.founder{grid-template-columns:1fr}.founder-photo{max-width:185px}.hero h1{font-size:38px}.number-key,.kpi-grid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="header">
+<header class="topbar">
   <div class="nav">
-    <a class="brand" href="#top" aria-label="ETHIC × MANRA, top of page">
-      <img src="assets/ethic-fingerprint-mark.webp" alt="">
-      <span><strong>ETHIC</strong><small>Behavior Engineering · MANRA inside</small></span>
-    </a>
-    <button class="menu" id="menu" aria-expanded="false" aria-controls="links">Menu ☰</button>
-    <nav class="links" id="links" aria-label="Main navigation">
-      <a href="#read-map">Start here</a><a href="#meaning">What it is</a><a href="#change">What changed</a><a href="#method">Method</a><a href="#tracks">F1–F11</a><a href="#video-case">Video case</a><a href="#candidates">C1–C5</a><a href="#fusion">Fusion</a><a href="#current">Current stop</a>
+    <a class="nav-brand" href="#top" aria-label="ETHIC × MANRA home"><img src="assets/ethic-logo-compact.webp" alt=""><span><strong>ETHIC × MANRA</strong><small>Behavior Engineering · Strategic Reference</small></span></a>
+    <button class="menu" id="menu" type="button" aria-expanded="false" aria-controls="navlinks">Menu ☰</button>
+    <nav class="navlinks" id="navlinks" aria-label="Main navigation">
+      <a href="#meaning">What is ETHIC?</a><a href="#story">The shift</a><a href="#evolution">Evolution</a><a href="#micro">F1–F4</a><a href="#f5">F5 / NEO 1</a><a href="#technology">F6–F11</a><a href="#candidates">C1–C5</a><a href="#aim">Where next?</a>
     </nav>
   </div>
 </header>
-<section class="hero" id="top">
-  <div class="hero-inner">
-    <div>
-      <div class="eyebrow">ETHIC × MANRA · Strategic reference</div>
-      <h1>ETHIC is not a gadget. <em>It is a way to engineer behaviour.</em></h1>
-      <p class="hero-copy"><strong>ETHIC is the company.</strong> Its intended category is Behavior Engineering: find a real human problem, understand the behaviour behind it, and implement the smallest useful intervention that can change the experience for the better. That intervention might eventually be physical, digital, a service, an AI-enabled system or a hybrid.</p>
-      <p class="hero-rule"><strong>MANRA is the intelligence system behind ETHIC.</strong> It researches, compares and qualifies opportunities so ETHIC does not commit money or engineering effort just because an idea looks attractive.</p>
-      <div class="hero-actions"><a class="btn primary" href="#meaning">Understand ETHIC × MANRA ↓</a><a class="btn secondary" href="#current">See where work stands</a></div>
-    </div>
-    <div class="hero-logo" aria-label="ETHIC brand identity">
-      <img src="assets/ethic-fingerprint-mark.webp" alt="">
-      <strong>ETHIC</strong>
-      <span>BEHAVIOR ENGINEERING COMPANY</span>
-      <small>IDENTITY BUILT INTO EVERYTHING</small>
-    </div>
-  </div>
-  <div class="status-strip">
-    <div class="status-grid">
-      <div class="status"><small>Friction candidate C1</small><strong><i class="dot amber"></i>Leading candidate</strong></div>
-      <div class="status"><small>P1 · Physical opportunity</small><strong><i class="dot"></i>Not cleared</strong></div>
-      <div class="status"><small>P2 · Technology opportunity</small><strong><i class="dot"></i>Unclaimed</strong></div>
-      <div class="status"><small>Product / commercial proof</small><strong><i class="dot"></i>Not established</strong></div>
-    </div>
-  </div>
-</section>
 
 <main id="main">
-<section class="section map-section" id="read-map">
-  <div class="inner">
-    <div class="section-head"><div class="secno">READ THIS FIRST</div><div><h2>One page, three different number systems.</h2><p class="section-intro">This map prevents the biggest source of confusion: a friction category is not a product idea, and a product-design pattern is not a qualification result.</p></div></div>
-    <div class="read-map-grid">
-      <article class="read-map-card map-company"><span class="map-code">01 · COMPANY</span><h3>ETHIC</h3><p>The company: finds human problems and develops useful interventions around behaviour.</p></article>
-      <span class="map-arrow" aria-hidden="true">→</span>
-      <article class="read-map-card map-system"><span class="map-code">02 · INTELLIGENCE</span><h3>MANRA</h3><p>The system behind ETHIC: researches, compares, tests and recommends a decision.</p></article>
-      <span class="map-arrow" aria-hidden="true">→</span>
-      <article class="read-map-card map-decision"><span class="map-code">03 · DECISION</span><h3>Evidence gate</h3><p>Decide whether to investigate, qualify, prototype, validate—or stop.</p></article>
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-copy-block">
+      <div class="eyebrow">A company in development · A method in discovery</div>
+      <h1>From making gadgets to <em>engineering behaviour.</em></h1>
+      <p class="hero-intro"><strong>ETHIC is the company.</strong> Its intended category is Behavior Engineering: understand what people are trying to do, where they meet resistance, and what intervention could make that task work better. Gadgets were the starting point. They are not the whole definition.</p>
+      <p class="hero-intro"><strong>MANRA is the strategic-intelligence system behind ETHIC.</strong> It helps search for real friction, study current solutions, test what remains unsolved and recommend what deserves the next rupee of effort.</p>
+      <div class="hero-equation"><span>Human task</span><b>→</b><span>Residual gap</span><b>→</b><span>Useful intervention</span></div>
+      <div class="hero-cta"><a class="btn btn-light" href="#meaning">Understand ETHIC <span aria-hidden="true">↓</span></a><a class="btn btn-ghost" href="#aim">See current status</a></div>
     </div>
-    <div class="number-key">
-      <div><b>F1–F11</b><span>Friction types</span><small>What kind of problem is it?</small></div>
-      <div><b>C1–C5</b><span>Historical candidates</span><small>Which specific ideas were examined?</small></div>
-      <div><b>Pattern 01 + 02</b><span>Product-design thesis</span><small>What kind of solution might fit?</small></div>
-      <div><b>P1 / P2</b><span>Qualification gates</span><small>Has evidence earned the next stage?</small></div>
+    <div class="hero-logo-wrap">
+      <div class="hero-logo-card"><img src="assets/ethic-logo-primary.webp" alt="ETHIC — Behavior Engineering Company — Identity Built Into Everything"></div>
+      <div class="hero-logo-caption">PRIMARY BRAND LOCK-UP · SHOWN AT SUPPORTING SCALE</div>
     </div>
   </div>
-</section>
-<section class="section alt" id="meaning">
-  <div class="inner">
-    <div class="section-head"><div class="secno">01 / The meaning</div><div><h2>One company. One intelligence system. Different jobs.</h2><p class="section-intro">Think of ETHIC as the company that may create and deliver an intervention. Think of MANRA as the system that helps it decide which problem deserves that effort. They work together, but they are not the same thing.</p></div></div>
-    <div class="grid2">
-      <article class="card">
-        <span class="tag">The company</span><h3 style="margin-top:12px">ETHIC · Behavior Engineering</h3>
-        <p>ETHIC is not defined by one gadget or product category. It is built around the common thread of human behaviour: what people try to do, what gets in the way, what they do to cope and what could help them behave or act differently in a useful way.</p>
-        <p style="margin-top:12px"><strong>The current commercial starting point:</strong> find the best first product under a tight capital constraint. Physical everyday products are the present route being explored—not a permanent limit on what ETHIC could become.</p>
-      </article>
-      <article class="card dark">
-        <span class="tag">The intelligence layer</span><h3 style="margin-top:12px">MANRA · Strategic Intelligence & Growth</h3>
-        <p>MANRA helps ETHIC investigate friction, understand the underlying force, study existing alternatives, expose the remaining gap, set evidence gates and recommend whether to proceed, narrow or stop.</p>
-        <p style="margin-top:12px"><strong>MANRA does not make a product “validated” by naming it.</strong> Evidence must justify the decision. ETHIC owns the product commitment and outcome.</p>
-      </article>
-    </div>
-    <div class="bigline" aria-label="ETHIC's working philosophy"><span>FIND</span><b>→</b><span>CHANGE</span><b>→</b><span>IMPLEMENT</span></div>
-    <div class="grid3">
-      <article class="card"><span class="tag">Find</span><h3 style="margin-top:10px">Understand first</h3><p>Identify a real problem, repeated friction, habit, behavioural pattern or unmet need. Do not start by deciding which gadget to make.</p></article>
-      <article class="card"><span class="tag">Change</span><h3 style="margin-top:10px">Know what must change</h3><p>Understand what triggers the behaviour, what prevents a better result, and what intervention could improve the experience.</p></article>
-      <article class="card"><span class="tag">Implement</span><h3 style="margin-top:10px">Build the smallest useful intervention</h3><p>Test the simplest suitable form. Do not add technology if a clearer physical or behavioural design solves the problem better.</p></article>
-    </div>
-    <div class="note" style="margin-top:15px"><strong>What “Identity Built Into Everything” means:</strong> the intended user outcome informs the problem chosen, the form, how it is handled, errors, maintenance and repeat use from the beginning. It does not mean putting the logo on everything. The fingerprint is the brand imprint—a visual metaphor for patterns in human behaviour, not a biometric-technology claim. “ETHIC” is the company name here; this page does not invent an expansion of its letters.</div>
-  </div>
+  <div class="hero-bottom"><div class="status-grid">
+    <div class="status"><small>Leading candidate</small><strong><i class="state amber"></i>C1 · Cable-anchor shift</strong></div>
+    <div class="status"><small>P1 · Physical opportunity</small><strong><i class="state"></i>Not cleared</strong></div>
+    <div class="status"><small>P2 · Technology opportunity</small><strong><i class="state"></i>Unclaimed</strong></div>
+    <div class="status"><small>Product / market proof</small><strong><i class="state"></i>Not established</strong></div>
+  </div></div>
 </section>
 
-<section class="section" id="change">
-  <div class="inner">
-    <div class="section-head"><div class="secno">02 / The transformation</div><div><h2>The thinking changed. The product has not been proven yet.</h2><p class="section-intro">The original gadget phase was the entry point, not wasted work. It taught the team to think about affordability, portability, everyday use and customer expectations. The deeper shift was deciding to understand behaviour before selecting a product.</p></div></div>
-    <div class="timeline">
-      <article class="timecard"><span class="n">STAGE 01 · ORIGIN</span><h3>Consumer gadgets</h3><p>Start with an object: affordable, portable, useful and convenient.</p></article>
-      <article class="timecard"><span class="n">STAGE 02 · QUESTION</span><h3>Problem-first</h3><p>Change “What should we build?” to “What recurring friction is worth solving?”</p></article>
-      <article class="timecard"><span class="n">STAGE 03 · CAUSE</span><h3>Force-first</h3><p>Look beyond the visible annoyance. Ask why the same behaviour keeps happening.</p></article>
-      <article class="timecard"><span class="n">STAGE 04 · COMPANY IDEA</span><h3>Behavior Engineering</h3><p>Design an intervention around the task, person and context—not novelty alone.</p></article>
-      <article class="timecard"><span class="n">STAGE 05 · DISCIPLINE</span><h3>Evidence gates</h3><p>Separate what was seen, what is only a hypothesis, what has been verified and what commercial proof is still missing.</p></article>
-      <article class="timecard"><span class="n">STAGE 06 · TODAY</span><h3>Earn the first product</h3><p>Find one qualified first opportunity, test it, and let evidence decide the next investment.</p></article>
-    </div>
-    <div class="note" style="margin-top:16px"><strong>Early idea-stage examples:</strong> SOS keychain (₹599), emergency watch (₹1,299), torch + powerbank + SOS (₹799), smart daily pen (₹499) and an electric toothbrush with speaker/audio. These are historical concept/price ideas—not current products, validated prices, tested demand or proof of manufacturing.</div>
-  </div>
-</section>
+<div class="wave-divider" aria-hidden="true"><svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0 24 C180 64 320 8 510 28 S810 70 1010 26 S1280 8 1440 31"/><path d="M0 35 C180 75 320 19 510 39 S810 81 1010 37 S1280 19 1440 42"/><path d="M0 46 C180 86 320 30 510 50 S810 92 1010 48 S1280 30 1440 53"/></svg></div>
 
-<section class="section alt" id="method">
-  <div class="inner">
-    <div class="section-head"><div class="secno">03 / MANRA method</div><div><h2>Search for forces—not just annoyances.</h2><p class="section-intro">A person may get used to a small problem and stop noticing it. Their workaround gives us a clue about what they are trying to achieve. It does not, by itself, prove that a new product is needed.</p></div></div>
-    <div class="flow">
-      <article class="flowcard"><span class="number">01 / SEE IT</span><h3>Recurring friction</h3><p>What is the person trying to do? What keeps getting harder, slower, uncertain or repeated?</p></article>
-      <article class="flowcard"><span class="number">02 / EXPLAIN IT</span><h3>Underlying force</h3><p>What physical, environmental, task or behaviour condition keeps causing the same outcome?</p></article>
-      <article class="flowcard"><span class="number">03 / FOLLOW IT</span><h3>User workaround</h3><p>Do they tie, clip, wedge, hold, reposition, search, reconnect, clean or repeat something to cope?</p></article>
-      <article class="flowcard"><span class="number">04 / TEST IT</span><h3>Residual gap</h3><p>After the workaround and current products are considered, what still goes wrong? Is that gap important enough to solve?</p></article>
-    </div>
-    <div class="bigline"><span>Existing solution</span><b>→</b><span>User workaround</span><b>→</b><span>Remaining gap</span></div>
-    <div class="grid2">
-      <article class="card"><h3>“Unofficial second interface”</h3><p>The phrase names a discovery idea used inside ETHIC: people modify their surroundings when the first solution does not fully fit the task. The tie, clip, wedge or repositioning move is their unofficial fix.</p></article>
-      <article class="card"><h3>What it does—and does not—prove</h3><p>A workaround is a signal to investigate. It is not proof of market size, willingness to pay, uniqueness or patentability. First observe the task, check alternatives and test the gap. This is ETHIC's internal discovery language, not presented as a formal academic framework.</p></article>
+<section class="section white" id="meaning">
+ <div class="inner">
+  <div class="section-head reveal"><div class="secno">01 / The identity</div><div><h2>One company. One intelligence system. Different jobs.</h2><p class="lede">Imagine ETHIC as the team responsible for choosing and building a useful product. MANRA is the system that helps that team decide which problem is worth solving. The product belongs to ETHIC; the research and qualification process is MANRA's working layer.</p></div></div>
+  <div class="meaning-split">
+    <div class="meaning-logo reveal"><img src="assets/ethic-logo-compact.webp" alt="ETHIC compact logo: fingerprint, ETHIC, Identity Built Into Everything"><p>COMPACT LOCK-UP · USED AS A SECONDARY BRAND SIGNATURE, NOT AN OVERSIZED HERO</p></div>
+    <div class="meaning-text reveal">
+      <span class="tag">What the brand is intended to mean</span>
+      <h3 style="margin-top:12px">The intention must be built into the design—not painted on afterward.</h3>
+      <ul>
+        <li><strong>ETHIC</strong> is the company name. This reference does not invent an acronym expansion.</li>
+        <li><strong>Behavior Engineering</strong> means designing an intervention around a real task, the person, the setting and the behaviour that needs support.</li>
+        <li><strong>The fingerprint</strong> is a visual metaphor for patterns of human behaviour and individual context. It is not a biometric-tech claim.</li>
+        <li><strong>“Identity Built Into Everything”</strong> means the intended user outcome shapes the problem, form, interaction, usability and upkeep from the beginning. It does not mean putting a logo on every object.</li>
+      </ul>
     </div>
   </div>
+  <div class="ethic-manra-equation reveal" aria-label="ETHIC and MANRA working relationship">
+    <div class="eqbox"><span class="micro">THE COMPANY</span><strong>ETHIC</strong><span>Owns the product decision, build and eventual outcome.</span></div><div class="eqarrow" aria-hidden="true">→</div>
+    <div class="eqbox"><span class="micro">THE INTELLIGENCE LAYER</span><strong>MANRA</strong><span>Observes, researches, compares, qualifies and recommends.</span></div><div class="eqarrow" aria-hidden="true">→</div>
+    <div class="eqbox"><span class="micro">THE STANDARD</span><strong>Evidence</strong><span>Decides whether the idea should proceed, be narrowed or stop.</span></div>
+  </div>
+  <div class="callout reveal" style="margin-top:17px"><strong>The present commercial route is narrower than the company idea.</strong> ETHIC is currently searching for an affordable, practical first physical product because capital is limited and a real product is the next useful test. That is the entry strategy—not a rule that ETHIC can only ever make gadgets.</div>
+ </div>
 </section>
 
-<section class="section" id="tracks">
-  <div class="inner">
-    <div class="section-head"><div class="secno">04 / Friction taxonomy</div><div><h2>F1–F11 are problem types—not eleven products.</h2><p class="section-intro">First describe the person's real task. Then choose the track that fits the friction you actually observe. The six technology tracks below use familiar situations as investigation prompts; they do not claim that a named product is defective.</p></div></div>
-    <div class="track-band"><strong>LANE A · F1–F4</strong><span>Everyday micro-frictions · small, repeatable actions or failures</span></div>
-    <div class="track-cards">
-      <article class="track track-with-image">
-        <div class="trackhead"><span class="fcode">F1</span><div><h3>Fit &amp; Hold</h3><span class="tag">Does it stay where it should?</span></div></div>
-        <p class="question">What slips, detaches or moves when a force is applied?</p>
-        <figure class="product-figure cable-figure">
-          <img src="https://content.etilize.com/Alternate-Image2/1068644651.jpg" alt="A commercial cable clip holding a lead at the edge of a desk" loading="lazy">
-          <figcaption>Existing cable-clip example. This image shows a marketed solution—not proof that it fails. <a href="https://com.hamster.ca/en/cavoline-clip-2-cable-clips-840765" target="_blank" rel="noopener noreferrer">Image/source</a>.</figcaption>
-        </figure>
-        <p><strong>What to observe:</strong> when the cable is pulled in a real setup, does the clip move, peel, or continue holding? Record surface, attachment, pull direction and repeats. The proposed cable-anchor candidate is tested against this question.</p>
-      </article>
-      <article class="track">
-        <div class="trackhead"><span class="fcode">F2</span><h3>Position &amp; Access</h3></div>
-        <p class="question">What must a person keep holding or repositioning?</p>
-        <div class="mini-visual" aria-label="Illustration of a tool being moved between two positions"><svg viewBox="0 0 260 92" role="img"><rect x="13" y="17" width="72" height="55" rx="7" fill="#eee4d2" stroke="#bda77e"/><rect x="31" y="29" width="36" height="10" rx="3" fill="#8f7754"/><path d="M49 41v16m-5-5 5 5 5-5" stroke="#8f7754" stroke-width="2" fill="none"/><path d="M96 46h58" stroke="#9a7946" stroke-width="2" stroke-dasharray="4 4"/><path d="m148 40 7 6-7 6" fill="none" stroke="#9a7946" stroke-width="2"/><rect x="164" y="17" width="82" height="55" rx="7" fill="#eee4d2" stroke="#bda77e"/><rect x="188" y="29" width="35" height="10" rx="3" fill="#8f7754"/><path d="M205 42v15m-5-5 5 5 5-5" stroke="#8f7754" stroke-width="2" fill="none"/></svg><small>Illustration: repeated repositioning</small></div>
-        <p><strong>Everyday example:</strong> someone pauses mid-task to hold a tool, move it out of the way, then pick it up again because there is no convenient temporary resting place.</p>
-      </article>
-      <article class="track">
-        <div class="trackhead"><span class="fcode">F3</span><h3>Tangle &amp; Retrieve</h3></div>
-        <p class="question">What gets mixed, buried, tangled or difficult to locate?</p>
-        <div class="mini-visual" aria-label="Illustration of tangled cables and a search symbol"><svg viewBox="0 0 260 92" role="img"><path d="M18 26c34-30 48 37 79 8s-8 47 32 25 19-43 48-22 25 20 43-1" fill="none" stroke="#ad8b55" stroke-width="4" stroke-linecap="round"/><path d="M20 59c22-25 51 17 73-6s43-12 54 16 44-33 68-10" fill="none" stroke="#4d4940" stroke-width="3" stroke-linecap="round"/><circle cx="213" cy="27" r="14" fill="#f8f4eb" stroke="#8d7349" stroke-width="2"/><path d="m223 38 12 12" stroke="#8d7349" stroke-width="4" stroke-linecap="round"/></svg><small>Illustration: tangled leads or buried items</small></div>
-        <p><strong>Everyday example:</strong> the user spends time separating cables or searching a bag for a small item. Check how often it happens and what the search actually costs.</p>
-      </article>
-      <article class="track">
-        <div class="trackhead"><span class="fcode">F4</span><h3>Repeated Effort</h3></div>
-        <p class="question">What extra action has become so normal that nobody questions it?</p>
-        <div class="mini-visual" aria-label="Illustration of the same step being repeated"><svg viewBox="0 0 260 92" role="img"><rect x="20" y="22" width="54" height="45" rx="6" fill="#eee4d2" stroke="#bda77e"/><path d="M32 35h30M32 44h22M32 53h26" stroke="#92764b" stroke-width="2"/><path d="M82 45h35" stroke="#9a7946" stroke-width="2"/><path d="m110 39 7 6-7 6" fill="none" stroke="#9a7946" stroke-width="2"/><rect x="124" y="22" width="54" height="45" rx="6" fill="#eee4d2" stroke="#bda77e"/><path d="M136 35h30M136 44h22M136 53h26" stroke="#92764b" stroke-width="2"/><path d="M184 45h20" stroke="#9a7946" stroke-width="2"/><path d="m197 39 7 6-7 6" fill="none" stroke="#9a7946" stroke-width="2"/><text x="210" y="51" font-size="12" fill="#6b5633">again</text></svg><small>Illustration: the same small action repeats</small></div>
-        <p><strong>Everyday example:</strong> re-wrapping, wiping, reconnecting or readjusting something over and over. Repetition alone is not enough; the consequence must matter.</p>
-      </article>
-    </div>
+<section class="section paper" id="story">
+ <div class="inner">
+  <div class="section-head reveal"><div class="secno">02 / How the thinking changed</div><div><h2>The important shift was the question—not a claim that a product has already been found.</h2><p class="lede">The story is a change in the starting point: from choosing an object first, to understanding a repeated human difficulty before deciding what to build. This is ETHIC's working story, not a claim about a single historical founding event.</p></div></div>
+  <div class="story-line">
+    <article class="story-card reveal"><span class="story-number">ACT 01 · GADGET THINKING</span><h3>“What useful object could we make?”</h3><p>Early ideas included an SOS keychain, emergency watch, torch + powerbank + SOS, smart pen and an electric toothbrush with audio. These explored affordability and everyday usefulness.</p><div class="foot">These are idea-stage concepts and early price hypotheses—not validated products or prices.</div><span class="story-arrow" aria-hidden="true">›</span></article>
+    <article class="story-card reveal"><span class="story-number">ACT 02 · THE BETTER QUESTION</span><h3>“What still makes the user work?”</h3><p>People learn workarounds: they clip, tie, wipe, search, hold, correct, reconnect or repeat an action. The workaround can show us what they are trying to get done—but it does not yet prove demand.</p><div class="foot">Observe the task. Confirm the cause. Compare existing solutions.</div><span class="story-arrow" aria-hidden="true">›</span></article>
+    <article class="story-card reveal"><span class="story-number">ACT 03 · BEHAVIOR ENGINEERING</span><h3>“What is the smallest useful change?”</h3><p>Start with behaviour and context, then choose the form. If a simple physical change solves it, do not add electronics. If technology adds a genuinely useful capability, investigate the wider workflow.</p><div class="foot">The first product must earn its way through evidence gates.</div></article>
+  </div>
+  <div class="callout reveal" style="margin-top:20px"><strong>MANRA's discovery rule:</strong> “Search for forces, not just annoyances.” A visible nuisance may be the symptom. The research question is what repeatedly causes it, what people do to cope, and what is still not adequately solved.</div>
+ </div>
+</section>
 
-    <div class="track-band" style="margin-top:28px"><strong>LANE B · F5</strong><span>Human friction + a technological capability · a workflow-level bridge</span></div>
-    <div class="f5-feature">
-      <figure class="product-figure neo-figure">
-        <img src="https://shop.neosapien.ai/cdn/shop/t/4/assets/double-neo.png?v=67222249636087248081749142858" alt="Neo 1 wearable AI conversation note-taker by NeoSapien" loading="lazy">
-        <figcaption>NEO 1 is an external reference product, not an ETHIC product. <a href="https://shop.neosapien.ai/products/neo-1" target="_blank" rel="noopener noreferrer">Official product reference</a>.</figcaption>
-      </figure>
-      <div class="f5-copy">
-        <div class="trackhead"><span class="fcode">F5</span><div><h3>Human–Technology Fusion</h3><span class="tag amber">Do not assume product failure</span></div></div>
-        <p class="question">A person has a real task. Technology helps with part of it. What human work remains after the technology responds?</p>
-        <div class="worked-example">
-          <div><b>1 · Human task</b><p>Listen during a conversation and remember details or commitments.</p></div>
-          <div><b>2 · Technology response</b><p>NEO 1 is designed to capture conversation information and produce summaries, memory and action items.</p></div>
-          <div><b>3 · Remaining work to investigate</b><p>Does the user still have to check accuracy, find the right detail, organise the follow-up or take action?</p></div>
-          <div><b>4 · Evidence question</b><p>Which remaining step is genuinely difficult, how often, and for whom? Do not assume there is a gap without evidence.</p></div>
-        </div>
-        <p class="small-note">This is a research example—not an allegation that NEO 1 fails. Source: <a href="https://shop.neosapien.ai/products/neo-1" target="_blank" rel="noopener noreferrer">NEO 1 product page</a>.</p>
+<section class="section white" id="evolution">
+ <div class="inner">
+  <div class="section-head reveal"><div class="secno">03 / Product evolution</div><div><h2>Tooth powder → toothpaste format → powered brushing → connected oral care.</h2><p class="lede">This is a useful example of how a familiar job can be served through changing product forms and technologies. It is <strong>not</strong> proof that one specific friction caused every change, or that older formats disappeared everywhere.</p></div></div>
+  <div class="evolution">
+    <article class="evo-card reveal"><figure><img src="https://ids.si.edu/ids/deliveryService?id=NMAH-AHB2014q040231" alt="Historic Colgate tooth-powder packaging from the Smithsonian collection" loading="lazy"></figure><span class="tag silver">Earlier format</span><h3>Powder in a container</h3><p>Powders were used to clean teeth. Users still had to take the powder from its container and apply it to a brush or other cleaning tool. Exact routines varied by period and person.</p><p class="source">Historical reference: <a href="https://americanhistory.si.edu/collections/object/nmah_738122" target="_blank" rel="noopener noreferrer">Smithsonian National Museum of American History</a>.</p></article>
+    <div class="evo-arrow" aria-hidden="true">→</div>
+    <article class="evo-card reveal"><figure><img src="https://ids.si.edu/ids/deliveryService?id=NMAH-AHB2013q075256" alt="Historic Colgate toothpaste tube and carton from the Smithsonian collection" loading="lazy"></figure><span class="tag">Product-format change</span><h3>Paste in a jar, then a tube</h3><p>The Smithsonian records that Colgate marketed aromatic toothpaste in jars in the 1870s and began selling it in collapsible tubes by the 1890s. Tooth powder continued to be sold well into the twentieth century.</p><p class="source">History and object context: <a href="https://www.si.edu/object/colgate-tooth-powder%3Anmah_738122" target="_blank" rel="noopener noreferrer">Smithsonian collection record</a>.</p></article>
+  </div>
+  <div class="timeline reveal" aria-label="Oral-care technology timeline">
+    <div class="timeline-step"><b>c. 1780 · Mass-produced brush</b><small>William Addis is credited with an early mass-produced toothbrush in England.</small></div>
+    <div class="timeline-step"><b>1938 · Nylon bristles</b><small>Nylon made the modern toothbrush bristle possible at commercial scale.</small></div>
+    <div class="timeline-step"><b>1954 · Powered brush milestone</b><small>Philippe-Guy Woog's Broxodent helped establish the electric toothbrush category.</small></div>
+    <div class="timeline-step"><b>2026 · Camera + jet + app</b><small>Dyson CameraJet illustrates a more integrated oral-care system, with manufacturer-claimed camera-assisted targeting and connected feedback.</small></div>
+  </div>
+  <div class="history-correction reveal">
+    <div><span class="badge-label">Important accuracy note</span><h4 style="margin-top:8px">What can we say about the friction?</h4></div>
+    <div><p>It is reasonable to ask whether handling, dispensing, portioning, storage or mess mattered to particular users. But the historical sources cited here do <strong>not</strong> establish one universal friction as the cause of the powder-to-paste transition. Those explanations must be labelled as hypotheses unless stronger historical evidence supports them.</p><p>The lesson for ETHIC is to work backward from products: what job does the format make easier, what did it change, and what still remains inconvenient? Do not rewrite history to fit a business idea.</p></div>
+  </div>
+  <p class="source-note reveal">History sources: <a href="https://www.loc.gov/everyday-mysteries/browse-all-questions/item/who-invented-the-toothbrush-and-when-was-it-invented/" target="_blank" rel="noopener noreferrer">Library of Congress: toothbrush history</a> · <a href="https://www.americanhistory.si.edu/collections/object/nmah_2224" target="_blank" rel="noopener noreferrer">Smithsonian: nylon toothbrush</a> · <a href="https://www.si.edu/spotlight/health-hygiene-and-beauty/oral-care" target="_blank" rel="noopener noreferrer">Smithsonian: oral-care collection</a>.</p>
+ </div>
+</section>
+
+<section class="section paper" id="method">
+ <div class="inner">
+  <div class="section-head reveal"><div class="secno">04 / The discovery method</div><div><h2>Start from a task. Find the workaround. Test the remaining gap.</h2><p class="lede">Friction means a recurring point where a person's intended task meets resistance: extra effort, delay, uncertainty, repeated action, failure or compromise.</p></div></div>
+  <div class="cards4">
+    <article class="panel reveal"><span class="micro">01 / OBSERVE</span><h3 style="margin-top:12px">What is the user trying to do?</h3><p>Describe the user, task, setting and moment. Avoid vague statements such as “cables are annoying”.</p></article>
+    <article class="panel reveal"><span class="micro">02 / EXPLAIN</span><h3 style="margin-top:12px">What is causing the friction?</h3><p>Look at force, fit, context, access, information, timing and repeated behaviour. A symptom is not yet a cause.</p></article>
+    <article class="panel reveal"><span class="micro">03 / COMPARE</span><h3 style="margin-top:12px">What do people use now?</h3><p>Inspect products and workarounds fairly. A cheap clip, tape, cloth, app or existing habit may already be good enough.</p></article>
+    <article class="panel reveal"><span class="micro">04 / QUALIFY</span><h3 style="margin-top:12px">What remains unsolved?</h3><p>Show what the current solution still makes the user do. Choose proceed, narrow or stop based on evidence.</p></article>
+  </div>
+  <div class="quote-callout callout reveal" style="margin-top:18px"><strong>The central question:</strong> WHAT DOES THE CURRENT SOLUTION STILL MAKE THE USER DO?</div>
+ </div>
+</section>
+
+<section class="section white" id="micro">
+ <div class="inner">
+  <div class="section-head reveal"><div class="secno">05 / Micro-frictions</div><div><h2>F1–F4: small, everyday problems that repeat.</h2><p class="lede">These are problem types, not product names. The same product can reduce more than one type of friction; the actual track depends on what happens in the real situation.</p></div></div>
+  <div class="micro-banner reveal"><b>LANE A · F1–F4</b><span>SMALL TASK · VISIBLE WORKAROUND · TESTABLE CONSEQUENCE</span></div>
+  <div class="friction-grid">
+    <article class="friction-card reveal">
+      <figure><img src="https://shop.r10s.jp/lavett-shop/cabinet/r704i/5mm-b0d2w3w89l_1.jpg" alt="A desk-edge cable organiser clips cables into separate channels" loading="lazy"></figure>
+      <div class="fcopy"><span class="fcode">F1</span><span class="tag">Fit & Hold</span><h3>“Will it stay where I put it?”</h3><p class="question">What slips, shifts or detaches under force?</p><p>A desk cable organiser can keep loose cable ends close to the edge instead of letting them drop behind a desk. It is an established product category sold by many makers, not an undiscovered solution.</p><p><strong>Research question:</strong> in a specific setup, does the mount itself move when the cable is pulled? What surface, load direction and attachment method are involved?</p><p class="source">Existing-solution reference: <a href="https://www.upliftdesk.com/cable-management-clips/" target="_blank" rel="noopener noreferrer">UPLIFT cable clips</a>.</p></div>
+    </article>
+    <article class="friction-card reveal">
+      <figure aria-label="Simple visual showing a tool moved away then brought back to the task"><svg viewBox="0 0 260 210" role="img" aria-label="A tool is moved between task positions because there is no convenient resting place"><rect x="12" y="25" width="92" height="146" rx="9" fill="#e9e6e2" stroke="#c3bdba"/><rect x="30" y="48" width="56" height="13" rx="4" fill="#77767c"/><rect x="35" y="61" width="46" height="56" rx="7" fill="#9f9da4"/><path d="M58 118v26m-8-8 8 8 8-8" stroke="#6e3545" stroke-width="3" fill="none"/><path d="M118 99h34m-9-9 9 9-9 9" stroke="#8b4b5c" stroke-width="3" fill="none"/><rect x="165" y="25" width="82" height="146" rx="9" fill="#e9e6e2" stroke="#c3bdba"/><rect x="183" y="48" width="46" height="13" rx="4" fill="#77767c"/><rect x="188" y="61" width="36" height="56" rx="7" fill="#9f9da4"/><text x="58" y="194" font-size="11" text-anchor="middle" fill="#626066">TASK A</text><text x="205" y="194" font-size="11" text-anchor="middle" fill="#626066">TASK B</text></svg></figure>
+      <div class="fcopy"><span class="fcode">F2</span><span class="tag">Position & Access</span><h3>“Why do I keep moving it?”</h3><p class="question">What must the user repeatedly hold, reposition or arrange?</p><p>Example: a craftsperson, cook or technician needs to put a tool down briefly, but the workspace has no suitable resting spot. The person keeps moving it out of the way and picking it up again.</p><p><strong>Research question:</strong> how often does it happen, and does it cause delay, damage, contamination or another measurable consequence?</p></div>
+    </article>
+    <article class="friction-card reveal">
+      <figure><img src="https://shop.r10s.jp/lavett-shop/cabinet/r704i/5mm-b0d2w3w89l_1.jpg" alt="Cable organiser keeping several charging leads separate and retrievable" loading="lazy"></figure>
+      <div class="fcopy"><span class="fcode">F3</span><span class="tag">Tangle & Retrieve</span><h3>“Where did it go—and why is it tangled?”</h3><p class="question">What gets mixed together, buried or hard to locate?</p><p>Example: charging leads are stored in a shared drawer and become tangled or hard to identify. Cable clips or labelled storage can reduce that problem for a particular setup.</p><p><strong>Research question:</strong> is the issue tangling, identification, reach, or a different job? Don’t force every cable problem into C1.</p></div>
+    </article>
+    <article class="friction-card reveal">
+      <figure><img src="https://i5.walmartimages.com/asr/ad1c9cd6-a31e-49a1-8e6f-c026d496d4bd.ee9a4c1db173172ded1aba1763b7201a.jpeg?odnBg=FFFFFF&odnHeight=768&odnWidth=768" alt="The Caulking Finger, a small hand tool for smoothing and finishing caulk" loading="lazy"></figure>
+      <div class="fcopy"><span class="fcode">F4</span><span class="tag">Repeated Effort</span><h3>“A tiny extra action, repeated again and again.”</h3><p class="question">What repeated action has become normal?</p><p>The Caulking Finger is a useful reference to a specific task: smoothing and finishing a bead of caulk. A dedicated shaped tool can help standardise contact with the bead instead of relying only on a bare finger.</p><p><strong>Research lesson:</strong> a narrowly scoped, minimalist tool can be useful. We cannot claim that nobody noticed this task or that it had no alternatives; those claims require evidence.</p><p class="source">Product reference: <a href="https://www.walmart.com/search?q=the+caulking+finger" target="_blank" rel="noopener noreferrer">The Caulking Finger listing/search</a>.</p></div>
+    </article>
+  </div>
+  <div class="callout reveal" style="margin-top:18px"><strong>Global scalability is not proof of a gap.</strong> Cable organisers demonstrate how a simple fix can be useful across many desks and places. That category already exists. ETHIC’s C1 hypothesis is narrower: whether one specific cable mount shifts or peels under pull, and whether the reviewed solutions leave a meaningful gap in the exact context being studied.</div>
+ </div>
+</section>
+
+<section class="section dark" id="f5">
+ <div class="inner">
+  <div class="section-head reveal"><div class="secno">06 / The bridge track</div><div><h2>F5: a human task meets a technological capability.</h2><p class="lede">F5 is not just “a gadget” and it is not an assumption that a current product is defective. Start with a real human difficulty, study what the technology does, and investigate the work that may remain across the wider workflow.</p></div></div>
+  <div class="f5-layout">
+    <figure class="product-image reveal"><img src="https://shop.neosapien.ai/cdn/shop/t/4/assets/double-neo.png?v=67222249636087248081749142858" alt="NeoSapien NEO 1 wearable AI conversation note-taker" loading="lazy"><figcaption>NEO 1 · Wearable AI notetaker for online and offline conversations. Image and specifications: <a href="https://shop.neosapien.ai/products/neo-1" target="_blank" rel="noopener noreferrer">official NeoSapien product page</a>.</figcaption></figure>
+    <div class="reveal">
+      <span class="tag gold">F5 · Human friction + technology</span><h3 style="margin-top:13px;font-size:25px">NEO 1: make room to listen; investigate the rest of the workflow.</h3>
+      <div class="worked-list" style="margin-top:16px">
+        <div class="worked-step"><span class="num">1</span><div><b>The human task</b><p>During a meeting, class, site visit or customer conversation, a person tries to listen while remembering details, decisions and commitments.</p></div></div>
+        <div class="worked-step"><span class="num">2</span><div><b>The existing technology response</b><p>NEO 1 is marketed as a wearable AI notetaker that can capture conversations and turn them into searchable memory, summaries, tasks and follow-ups through an app.</p></div></div>
+        <div class="worked-step"><span class="num">3</span><div><b>What MANRA would investigate—not assume</b><p>Does the user still need to check a name or number, find a specific detail, get consent, confirm the owner/date of an action, or actually complete the follow-up?</p></div></div>
+        <div class="worked-step"><span class="num">4</span><div><b>The possible residual gap</b><p>Only a repeated, important remaining task supported by user evidence could justify another intervention. If NEO 1 plus the current workflow already works well, there may be no worthwhile gap for ETHIC to pursue.</p></div></div>
       </div>
+      <p class="example-source">Manufacturer specifications and promotional claims must be tested in context. This page does not claim NEO 1 has a defect. Conversation capture also raises consent, privacy and accuracy questions that must be handled responsibly.</p>
     </div>
-
-    <div class="track-band" style="margin-top:28px"><strong>LANE C · F6–F11</strong><span>Technology-led / macro frictions · each example is bounded to a specific task</span></div>
-    <div class="tech-friction-grid">
-      <article class="tech-example">
-        <div class="tech-visual"><svg viewBox="0 0 150 90" role="img" aria-label="Audio recording waveform and search"><rect x="9" y="14" width="92" height="62" rx="7" fill="#fffaf1" stroke="#c6b28c"/><circle cx="27" cy="29" r="6" fill="#b36e57"/><path d="M42 29h44" stroke="#b6a17c" stroke-width="3"/><path d="M19 51h6m4-10v20m7-15v10m7-20v30m7-19v8m7-15v22m7-27v32m7-18v4m7-13v22" stroke="#8a6c42" stroke-width="2.8" stroke-linecap="round"/><circle cx="115" cy="55" r="17" fill="#eadcc3" stroke="#9f7d48" stroke-width="2"/><path d="m127 68 12 12" stroke="#9f7d48" stroke-width="5" stroke-linecap="round"/></svg></div>
-        <span class="tag">F6 · Capture &amp; Recall</span><h3>“I recorded it. Where is it?”</h3><p><strong>Common example:</strong> a student records a lecture or someone saves a voice note, then cannot quickly find the exact detail later.</p><p class="question">Investigate: was it captured, labelled and made searchable when needed?</p>
-      </article>
-      <article class="tech-example">
-        <div class="tech-visual"><svg viewBox="0 0 150 90" role="img" aria-label="Summary converted into a task checklist"><rect x="12" y="10" width="54" height="68" rx="5" fill="#fffaf1" stroke="#c6b28c"/><path d="M22 25h33M22 34h25M22 43h30" stroke="#9b8a6c" stroke-width="2.5"/><path d="M70 43h15m-6-6 6 6-6 6" fill="none" stroke="#947244" stroke-width="2"/><rect x="91" y="10" width="48" height="68" rx="5" fill="#e5ecdf" stroke="#91a38a"/><path d="m100 29 4 4 7-8m-11 19 4 4 7-8m-11 19 4 4 7-8" fill="none" stroke="#557b5a" stroke-width="2.5"/><path d="M116 29h15m-15 15h15m-15 15h15" stroke="#8b9f83" stroke-width="2"/></svg></div>
-        <span class="tag">F7 · Data → Action</span><h3>“I got a summary. Now what?”</h3><p><strong>Common example:</strong> a meeting summary exists, but the user still has to extract the promise, assign an owner and add a due date to a task list.</p><p class="question">Investigate: what steps remain between information and completion?</p>
-      </article>
-      <article class="tech-example">
-        <div class="tech-visual"><svg viewBox="0 0 150 90" role="img" aria-label="Transcription with a detail that needs verification"><rect x="10" y="13" width="130" height="64" rx="6" fill="#fffaf1" stroke="#c6b28c"/><text x="20" y="32" font-size="10" fill="#63594a">Transcript result</text><path d="M20 42h85" stroke="#a99b80" stroke-width="3"/><rect x="19" y="49" width="72" height="13" rx="3" fill="#f3d6c9"/><path d="M20 68h50" stroke="#a99b80" stroke-width="2"/><circle cx="118" cy="54" r="10" fill="#f7e7bf" stroke="#a47e44" stroke-width="2"/><path d="M118 48v7m0 4v1" stroke="#7d5a2b" stroke-width="2.5" stroke-linecap="round"/></svg></div>
-        <span class="tag">F8 · Context &amp; Accuracy</span><h3>“Can I trust this output?”</h3><p><strong>Common example:</strong> speech-to-text mishears a name, date or number. The user must replay the audio or check the source before acting.</p><p class="question">Investigate: what needs correction, how costly is the error, and who verifies it?</p>
-      </article>
-      <article class="tech-example">
-        <div class="tech-visual"><svg viewBox="0 0 150 90" role="img" aria-label="Handheld vacuum trying to reach a narrow gap"><path d="M7 68h136" stroke="#ab9b80" stroke-width="4"/><path d="M103 68v-20h35v20" fill="#eee5d6" stroke="#ab9b80" stroke-width="2"/><rect x="16" y="25" width="47" height="24" rx="8" fill="#d9d6d0" stroke="#716b61" stroke-width="2"/><path d="M58 32 88 45l-5 8-31-9" fill="#b9b6af" stroke="#716b61" stroke-width="2"/><path d="M87 48h26" stroke="#7b7468" stroke-width="5"/><path d="M114 45v7" stroke="#b56d56" stroke-width="3"/><text x="72" y="17" font-size="9" fill="#645746">tight gap</text></svg></div>
-        <span class="tag">F9 · Access &amp; Reach</span><h3>“The tool works—except here.”</h3><p><strong>Common example:</strong> a handheld vacuum cleans an open surface, but a narrow gap or deep car-seat crevice is hard to reach with the available nozzle.</p><p class="question">Investigate: is the access gap frequent and important, or just an occasional edge case?</p>
-      </article>
-      <article class="tech-example">
-        <div class="tech-visual"><svg viewBox="0 0 150 90" role="img" aria-label="Wireless earbuds in charging case with battery indicator"><rect x="22" y="30" width="106" height="48" rx="12" fill="#ddd9d1" stroke="#777168" stroke-width="2"/><path d="M22 49h106" stroke="#b4aea3" stroke-width="2"/><path d="M50 23c-7-9 6-18 13-10 5 6 1 11-1 15v15h-8V28M92 23c-7-9 6-18 13-10 5 6 1 11-1 15v15h-8V28" fill="#c3bfb8" stroke="#716b61" stroke-width="2"/><rect x="53" y="57" width="44" height="7" rx="3" fill="#9ab099"/><text x="75" y="73" font-size="8" text-anchor="middle" fill="#4b5849">charge</text></svg></div>
-        <span class="tag">F10 · Setup &amp; Maintenance</span><h3>“It needs care before I can use it.”</h3><p><strong>Common example:</strong> wireless earbuds need charging, cleaning, pairing and sometimes resetting before they work as expected.</p><p class="question">Investigate: which recurring upkeep step limits use, and in what setting?</p>
-      </article>
-      <article class="tech-example">
-        <div class="tech-visual"><svg viewBox="0 0 150 90" role="img" aria-label="Information passed between separate apps requiring manual re-entry"><rect x="6" y="15" width="39" height="51" rx="5" fill="#e9e2d6" stroke="#b6a17c"/><rect x="55" y="15" width="39" height="51" rx="5" fill="#dfe8df" stroke="#9cb29b"/><rect x="104" y="15" width="39" height="51" rx="5" fill="#dfe3ee" stroke="#9ca6be"/><text x="25" y="30" font-size="7" text-anchor="middle" fill="#685538">CHAT</text><text x="74" y="30" font-size="7" text-anchor="middle" fill="#4d6a4c">CAL</text><text x="123" y="30" font-size="7" text-anchor="middle" fill="#56627b">TASK</text><path d="M13 40h24m-24 7h19m-19 7h22M63 41h22m-22 8h17m-17 8h21M112 41h22m-22 8h17m-17 8h21" stroke="#8a8172" stroke-width="2"/><path d="M45 40h10m-4-4 4 4-4 4M94 40h10m-4-4 4 4-4 4" fill="none" stroke="#9a7946" stroke-width="1.8"/></svg></div>
-        <span class="tag">F11 · Interoperability &amp; Handoff</span><h3>“Why am I copying this twice?”</h3><p><strong>Common example:</strong> a date or commitment arrives in a chat, then must be manually re-entered into a calendar and task app.</p><p class="question">Investigate: where does the handoff break, and is manual transfer actually avoidable?</p>
-      </article>
-    </div>
-    <div class="note" style="margin-top:17px"><strong>F5 is not F11.</strong> F5 begins with a human task and asks how technology changes that task—and what human work remains. F11 begins with a handoff between tools and asks why information or actions do not move between them smoothly. All examples here are prompts, not claims of observed market demand.</div>
   </div>
+ </div>
 </section>
 
-<section class="section alt" id="video-case">
-  <div class="inner">
-    <div class="section-head"><div class="secno">05 / Applied example · supplied video</div><div><h2>Study the design move—not the sales headline.</h2><p class="section-intro">The video you supplied shows Polygons Design’s fold-flat measuring spoons. It is placed here after the method and friction taxonomy, and before ETHIC’s own candidates: learn from an external design case, then return to ETHIC’s evidence.</p></div></div>
-    <div class="video-layout">
-      <div>
-        <div class="video-frame visible" id="video-frame">
-          <video id="reference-video" controls playsinline preload="metadata" poster="https://transcendent-melba-53609f.netlify.app/assets/videos/spoon-reference-poster.jpg" aria-label="User-supplied 61-second clip of Polygons Design fold-flat measuring spoons">
-            <source src="https://transcendent-melba-53609f.netlify.app/assets/videos/spoon-reference.mp4" type="video/mp4">
-            Your browser does not support embedded video. <a href="https://transcendent-melba-53609f.netlify.app/assets/videos/spoon-reference.mp4">Open the supplied clip directly.</a>
-          </video>
-        </div>
-        <p class="video-status" role="status">Native video player · user controls · no YouTube embed. <a href="https://transcendent-melba-53609f.netlify.app/assets/videos/spoon-reference.mp4" target="_blank" rel="noopener noreferrer">Open the supplied 61-second clip in a new tab</a>.</p>
+<section class="section paper" id="technology">
+ <div class="inner">
+  <div class="section-head reveal"><div class="secno">07 / Technology-led tracks</div><div><h2>F6–F11: investigate the wider product or system.</h2><p class="lede">These examples move from one tiny action to a larger product workflow. Two reference products make the idea concrete: a cordless vacuum used across different places, and a connected oral-care device that combines brushing, camera-assisted targeting, liquid jetting and app guidance.</p></div></div>
+  <div class="tech-hero-grid">
+    <article class="tech-product reveal">
+      <span class="tag gold">Reference A · Access across spaces</span>
+      <h3>Dyson V8 Absolute cordless vacuum</h3>
+      <p class="sub">A portable powered cleaning system: one motor-and-battery unit, plus different tools for floors, furniture, narrow gaps and car interiors. A clear example of a core device adapted to multiple tasks.</p>
+      <figure class="product-image" style="margin:14px 0 0"><img src="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/leap-petite-global/products/floorcare/sticks/285l/pdp/gallery/285L_1_gallery_versatility_FH_ATHT.jpg?%24responsive%24=&cropPathE=desktop&fit=stretch%2C1&wid=1040" alt="Dyson cordless vacuum being used around the home" loading="lazy"><figcaption>Illustrative home-use image. Official model specifications: <a href="https://www.dyson.in/vacuum-cleaners/cord-free/dyson-v8/overview/dyson-v8-absolute-vacuum" target="_blank" rel="noopener noreferrer">Dyson V8 Absolute</a>.</figcaption></figure>
+      <div class="fact-pills"><span>115 AW stated suction</span><span>Up to 40 min stated runtime*</span><span>Handheld conversion</span><span>Crevice tool + attachments</span></div>
+      <ul class="feature-list"><li><strong>Why it matters:</strong> cordless power and purpose-made attachments support a range of tasks, including awkward spaces, upholstery and car cleaning.</li><li><strong>What it still asks the user to do:</strong> charge it, select/attach the right tool, empty the bin and maintain the filter. Dyson recommends monthly filter cleaning.</li><li><strong>What to test:</strong> real runtime on the needed mode, reach in the particular gap, weight, dust capacity, noise, tool changes and cleaning time.</li></ul>
+      <div class="manufacturer-note">*Manufacturer specification, not an independent comparative test. Dyson states up to 40 minutes on suction mode 1 with a non-motorised tool; actual runtime varies. This product is a vacuum, not a blower. Its usefulness in homes and car interiors is documented; use in a café or large commercial vehicle would require context-specific testing.</div>
+    </article>
+    <article class="tech-product reveal">
+      <span class="tag gold">Reference B · Guided precision</span>
+      <h3>Dyson CameraJet electric toothbrush</h3>
+      <p class="sub">A higher-complexity system that combines a toothbrush, a macro camera, a liquid jet, machine-learning targeting and a connected app. It illustrates capability transformation—not automatically a better or validated outcome.</p>
+      <figure class="product-image" style="margin:14px 0 0"><img src="https://insidedentistry.net/media/vrmfou4q/dyson-camerajet_1440_810.jpg" alt="Dyson CameraJet toothbrush system and connected app view" loading="lazy"><figcaption>Product and app reference; see <a href="https://www.dyson.com/discover/news/latest/introducing-camerajet" target="_blank" rel="noopener noreferrer">Dyson’s official CameraJet announcement</a>.</figcaption></figure>
+      <div class="fact-pills"><span>100k-pixel macro camera*</span><span>Live gap targeting*</span><span>Liquid jet*</span><span>App + coverage feedback*</span></div>
+      <ul class="feature-list"><li><strong>What the company says it does:</strong> camera-assisted detection of gaps between teeth and a targeted jet of mouthrinse during brushing; the MyDyson app offers live view, guided cleaning, coverage mapping and personalised feedback.</li><li><strong>Privacy detail:</strong> Dyson says the camera is active during live view/auto-jetting and that images are not recorded or stored on the device or in the cloud.</li><li><strong>What to verify:</strong> targeting accuracy, clinical outcomes, usability, cleaning and maintenance, liquid leakage risk, robustness, cost, accessibility and whether app advice changes user behaviour.</li></ul>
+      <div class="manufacturer-note">*These are manufacturer-described features, not independent clinical proof. Dyson’s 30 September 2026 update disclosed a production-batch issue with jet tubes that could cause water seepage in a small number of products and a temporary stock disruption. This is a valuable reminder: adding sophisticated capability does not remove reliability and service risks. <a href="https://www.dyson.com/discover/inside-dyson/statements/dyson-camerajet-update" target="_blank" rel="noopener noreferrer">Manufacturer update</a>.</div>
+    </article>
+  </div>
+
+  <div class="micro-banner reveal" style="margin-top:28px"><b>THE SIX TECHNOLOGY-LED TRACKS</b><span>EXAMPLES ARE QUESTIONS TO INVESTIGATE, NOT CLAIMS OF DEFECT</span></div>
+  <div class="f6f11-grid">
+    <article class="ftech reveal"><span class="fcode">F6</span><h4>Capture &amp; Recall</h4><p><strong>Question:</strong> what is missed, captured too late or hard to retrieve?</p><p><strong>Example:</strong> a person remembers that a useful comment was made in a meeting but cannot quickly find the exact moment. NEO 1 illustrates the recording/searchable-memory approach; it does not prove every recall problem is solved.</p><div class="test">TEST: search time · missed details · accuracy · consent</div></article>
+    <article class="ftech reveal"><span class="fcode">F7</span><h4>Data → Action</h4><p><strong>Question:</strong> what work remains after a summary, alert or output appears?</p><p><strong>Example:</strong> NEO 1 can produce action items; Dyson CameraJet's app offers coverage mapping and guidance. Investigate whether the user knows the next step and actually completes it.</p><div class="test">TEST: ownership · due date · completion · usefulness</div></article>
+    <article class="ftech reveal"><span class="fcode">F8</span><h4>Context &amp; Accuracy</h4><p><strong>Question:</strong> what must be checked before a system output can be trusted?</p><p><strong>Example:</strong> an AI transcript may need a name or number verified. A camera-targeting system's detection claims also need testing across real users and settings.</p><div class="test">TEST: error types · corrections · false targets</div></article>
+    <article class="ftech reveal"><img src="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/leap-petite-global/dynamic-media/vacuums/sticks/285L/primary/394483-01.png?scl=1" alt="Dyson cordless vacuum body and cleaner head" loading="lazy"><span class="fcode">F9</span><h4>Access &amp; Reach</h4><p><strong>Question:</strong> what is difficult to reach, clean, carry or use in a constrained space?</p><p><strong>Example:</strong> the Dyson V8 has a crevice tool for narrow gaps and a low-reach adapter for areas under furniture. Check the actual gap and attachment; no tool reaches everywhere.</p><div class="test">TEST: reach · weight · attachment changes · access time</div></article>
+    <article class="ftech reveal"><span class="fcode">F10</span><h4>Setup &amp; Maintenance</h4><p><strong>Question:</strong> what recurring setup or upkeep gets in the way?</p><p><strong>Example:</strong> a cordless vacuum needs charging and filter maintenance; a camera/jet toothbrush adds charging, brush replacement, liquid and cleaning routines.</p><div class="test">TEST: setup time · charge interval · maintenance burden</div></article>
+    <article class="ftech reveal"><span class="fcode">F11</span><h4>Interoperability &amp; Handoff</h4><p><strong>Question:</strong> where do tools fail to pass information or actions to one another smoothly?</p><p><strong>Example to investigate:</strong> a commitment starts in a message, then someone manually copies it into a calendar and a task app. A connected product may combine several parts, but integration quality must be measured.</p><div class="test">TEST: duplicate entry · lost context · failed handoff</div></article>
+  </div>
+  <div class="callout reveal" style="margin-top:17px"><strong>Do not mix F5 and F11.</strong> F5 begins with a person's friction and asks how technology affects the wider task and what human work remains. F11 specifically investigates whether tools, apps or physical/digital systems hand information or actions over smoothly.</div>
+ </div>
+</section>
+
+<section class="section white" id="video-case">
+ <div class="inner">
+  <div class="section-head reveal"><div class="secno">08 / Applied video case</div><div><h2>Use the example to learn a design move—not to copy a product.</h2><p class="lede">Your supplied fold-flat measuring-spoon clip sits after the friction framework and before ETHIC's own candidate audit. The video is an external reference, not an ETHIC product or proof of ETHIC's commercial thesis.</p></div></div>
+  <div class="cards2">
+    <div class="reveal">
+      <video controls playsinline preload="metadata" poster="https://transcendent-melba-53609f.netlify.app/assets/videos/spoon-reference-poster.jpg" aria-label="User-supplied Polygons Design fold-flat measuring spoon video" style="width:100%;max-height:660px;border-radius:12px;background:#09090b;border:1px solid #38363d"><source src="https://transcendent-melba-53609f.netlify.app/assets/videos/spoon-reference.mp4" type="video/mp4">Your browser does not support this video. <a href="https://transcendent-melba-53609f.netlify.app/assets/videos/spoon-reference.mp4">Open the supplied clip</a>.</video>
+      <p class="source-note">Native video controls · no YouTube embed. Media is served from the existing Netlify asset path.</p>
+    </div>
+    <div class="panel reveal">
+      <span class="tag">Worked example · external product</span><h3 style="margin-top:12px">Six measures. Two fold-flat tools. Compact storage.</h3>
+      <p>The key observation is not that the spoon is “innovative” in the abstract. It is that a familiar task—measuring an ingredient—has been redesigned around the number of separate pieces and the space needed to store them.</p>
+      <div class="worked-list" style="margin-top:15px">
+        <div class="worked-step" style="background:#f6f4f2;border-color:#e2ded9"><span class="num">1</span><div><b style="color:#252329">The job</b><p style="color:#66636b">Measure standard amounts of an ingredient.</p></div></div>
+        <div class="worked-step" style="background:#f6f4f2;border-color:#e2ded9"><span class="num">2</span><div><b style="color:#252329">The design move</b><p style="color:#66636b">Two fold-flat tools cover six measuring sizes and flatten again for storage.</p></div></div>
+        <div class="worked-step" style="background:#f6f4f2;border-color:#e2ded9"><span class="num">3</span><div><b style="color:#252329">The research question</b><p style="color:#66636b">What repeated handling or storage work is removed, and what does the user still need to do?</p></div></div>
       </div>
-      <div class="video-copy">
-        <span class="tag">External design reference · not an ETHIC product</span>
-        <h3 style="margin-top:12px">A familiar task, reworked around storage and handling.</h3>
-        <div class="worked-example video-lesson">
-          <div><b>1 · Existing job</b><p>Measure ingredients in more than one standard quantity.</p></div>
-          <div><b>2 · Design move</b><p>Two fold-flat tools provide six measuring sizes and flatten for storage.</p></div>
-          <div><b>3 · Question to ask</b><p>Which repeated handling or storage step has this configuration removed?</p></div>
-          <div><b>4 · What not to assume</b><p>The example does not prove ETHIC has found a product, and it is not automatically a blueprint to copy.</p></div>
-        </div>
-        <div class="claim-note"><strong>Sales-claim boundary:</strong> the clip includes a “$4 million in sales” statement. This page does not treat it as audited revenue, profit, verified unit economics or evidence of ETHIC’s traction. The clip is an external learning reference. Confirm redistribution rights before public distribution.</div>
-        <p class="small-note">Company reference: <a href="https://www.getpolygons.com/" target="_blank" rel="noopener noreferrer">Polygons Design</a>. This case is separate from ETHIC’s C1–C5 candidate research.</p>
+      <p class="source-note"><strong>Claim boundary:</strong> the clip includes a sales figure. This site does not treat an on-screen statement as audited revenue, profit or verified unit economics. Product reference: <a href="https://www.getpolygons.com/" target="_blank" rel="noopener noreferrer">Polygons Design</a>.</p>
+    </div>
+  </div>
+ </div>
+</section>
+
+<section class="section paper" id="candidates">
+ <div class="inner">
+  <div class="section-head reveal"><div class="secno">09 / Earlier candidate audit</div><div><h2>C1–C5 are five specific ideas—not the F1–F11 taxonomy.</h2><p class="lede">Earlier notes called these candidate ideas “F1–F5”. That reused the same numbers as the friction framework and caused confusion. This page labels the ideas C1–C5. The F-code identifies the problem type; the C-code identifies the particular idea.</p></div></div>
+  <div class="candidate-board">
+    <article class="candidate lead reveal"><div class="mini-art"><img src="https://shop.r10s.jp/lavett-shop/cabinet/r704i/5mm-b0d2w3w89l_1.jpg" alt="An existing commercial cable organiser" loading="lazy"></div><div><div class="candidate-id">C1 · Leading candidate</div><span class="tag red">P1 not cleared</span><span class="tag">Provisional track: F1</span><h3>Cable anchor that shifts or peels under pull</h3><p>The hypothesis is narrower than “cables are messy”: a mount may move or detach when a cable is pulled. “ForceBase / Kinetic Cable Anchor” are working names only.</p><p><strong>Next:</strong> observe the specific failure, test attachment and surface conditions under repeated pulls, compare at least three existing solutions and ask users whether the residual gap is important.</p><div class="state-text">NOT USER-VALIDATED · NOT APPROVED FOR MANUFACTURE</div></article>
+    <article class="candidate reveal"><div class="candidate-id">C2</div><span class="tag silver">Deprioritised</span><h3>Bin liner slips into the bin</h3><p>Existing low-cost solutions are crowded and commodity-like. Reopen only if new evidence reveals a specific gap that current options do not address.</p></article>
+    <article class="candidate reveal"><div class="candidate-id">C3</div><span class="tag silver">Not cleared</span><h3>Temporary tool-resting surface</h3><p>The working concept name “Kinetic Tray Pad” belongs to earlier ideation. The use case may be narrow and prior-art proximity is a concern. No patentability conclusion has been made.</p></article>
+    <article class="candidate reveal"><div class="candidate-id">C4</div><span class="tag silver">Deprioritised</span><h3>Power brick dragged by its cord</h3><p>Earlier evidence suggested a cable pull can move the brick, but the evidence is old and differentiation is unclear. Do not revive it from that observation alone.</p></article>
+    <article class="candidate reveal"><div class="candidate-id">C5</div><span class="tag silver">Deprioritised</span><h3>Hanger slides along a line in wind</h3><p>Evidence was weak. Stop unless direct, repeated observations show a meaningful consequence and an unmet need.</p></article>
+  </div>
+  <p class="source-note reveal">“Deprioritised” does not mean a problem is solved everywhere. It means the current evidence does not justify making it a priority. Candidate-to-track mappings remain provisional until the observed context is checked.</p>
+ </div>
+</section>
+
+<section class="section white" id="fusion">
+ <div class="inner">
+  <div class="section-head reveal"><div class="secno">10 / Three different concepts</div><div><h2>Do not confuse problem types with a product-design ambition.</h2><p class="lede">Two tracks use ideas that sound similar, and a third “fusion” is a separate design thesis. Their questions are different.</p></div></div>
+  <div class="fusion-grid">
+    <article class="fusion-card reveal"><span class="tag">F5 · Problem type</span><h3>Human task + technology</h3><p>A person has a friction; an existing technology responds. Study the whole workflow and the work the person still does. NEO 1 is one reference case, not an assumed failed product.</p></article>
+    <article class="fusion-card reveal"><span class="tag gold">F11 · Problem type</span><h3>Tool-to-tool handoff</h3><p>Two apps, devices or physical/digital tools do not transfer information or actions smoothly. Example to investigate: a user manually copies a commitment from chat to calendar and task list.</p></article>
+    <article class="fusion-card reveal"><span class="tag green">ETHIC · Design thesis</span><h3>Simplicity + capability transformation</h3><p>A future product may combine the clarity and manufacturability of a simple tool with a meaningful new ability. This is not the F5 track and not the F11 interoperability problem.</p></article>
+  </div>
+  <div class="pattern-merge reveal">
+    <div class="pattern-box"><span class="micro">PATTERN 01</span><b>Commercial simplicity</b><p>Clear task, understandable use, controlled cost, few unnecessary parts.</p></div><div class="plus" aria-hidden="true">+</div><div class="pattern-box"><span class="micro">PATTERN 02</span><b>Capability transformation</b><p>A familiar form enables a genuinely useful new capability or outcome.</p></div>
+  </div>
+  <div class="callout reveal" style="margin-top:15px"><strong>ETHIC's hero-product hypothesis:</strong> find one product that is easy to understand and viable to make, while delivering a meaningful change in what the user can do. It does <em>not</em> mean literally attaching a cable organiser to a wearable recorder. The final product, demand and business case are still unproven.</div>
+ </div>
+</section>
+
+<section class="section paper" id="aim">
+ <div class="inner">
+  <div class="section-head reveal"><div class="secno">11 / What ETHIC is aiming for</div><div><h2>A repeatable way to find, prove and scale useful interventions.</h2><p class="lede">ETHIC does not need to be the most futuristic company. The ambition is to select problems that are real, repeated, important and poorly served—and build the smallest effective solution that can be tested under the available capital.</p></div></div>
+  <div class="strategy-grid">
+    <article class="strategy-card reveal"><span class="tag">Working differentiation thesis</span><h3 style="margin-top:12px">Where ETHIC intends to be different</h3><ul><li>Begin with observed human behaviour and the user's task, not a gadget looking for a use case.</li><li>Find the current workaround and precisely state the residual gap.</li><li>Prefer a simple solution where it is sufficient; add electronics, AI or connectivity only when the added capability earns its cost.</li><li>Put evidence gates before prototype spending and manufacturing commitment.</li><li>Design for use, errors, maintenance and the full context—not novelty alone.</li></ul><div class="callout" style="margin-top:15px"><strong>Evidence boundary:</strong> these are intended principles, not a proven competitive advantage. They become differentiation only when ETHIC repeatedly executes them and customers value the result.</div></article>
+    <article class="strategy-card reveal"><span class="tag">Adjacent references · not a direct rival list</span><h3 style="margin-top:12px">What current products teach us</h3><p style="font-size:12px;color:var(--muted);line-height:1.75">These references are chosen to study distinct product-design moves. They do not mean ETHIC competes head-to-head with every brand or that these products fail.</p>
+      <div class="reference-list" style="grid-template-columns:repeat(2,minmax(0,1fr));margin-top:15px">
+        <div class="reference-item"><img src="https://shop.r10s.jp/lavett-shop/cabinet/r704i/5mm-b0d2w3w89l_1.jpg" alt="Cable holder" loading="lazy"><div><strong>Cable organisers</strong><p>A proven simple product category; inspect where a specific setup may still fail.</p><a href="https://www.upliftdesk.com/cable-management-clips/" target="_blank" rel="noopener noreferrer">Reference ↗</a></div></div>
+        <div class="reference-item"><img src="https://i5.walmartimages.com/asr/ad1c9cd6-a31e-49a1-8e6f-c026d496d4bd.ee9a4c1db173172ded1aba1763b7201a.jpeg?odnBg=FFFFFF&odnHeight=768&odnWidth=768" alt="Caulking Finger product" loading="lazy"><div><strong>Caulking Finger</strong><p>A purpose-shaped tool for a narrow task.</p><a href="https://www.walmart.com/search?q=the+caulking+finger" target="_blank" rel="noopener noreferrer">Reference ↗</a></div></div>
+        <div class="reference-item"><img src="https://shop.neosapien.ai/cdn/shop/t/4/assets/double-neo.png?v=67222249636087248081749142858" alt="NEO 1 wearable AI notetaker" loading="lazy"><div><strong>NEO 1</strong><p>One capability integrated into a wider information workflow.</p><a href="https://shop.neosapien.ai/products/neo-1" target="_blank" rel="noopener noreferrer">Reference ↗</a></div></div>
+        <div class="reference-item"><img src="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/leap-petite-global/dynamic-media/vacuums/sticks/285L/primary/394483-01.png?scl=1" alt="Dyson V8 cordless vacuum" loading="lazy"><div><strong>Dyson V8</strong><p>A portable power unit with attachments for different cleaning tasks.</p><a href="https://www.dyson.in/vacuum-cleaners/cord-free/dyson-v8/overview/dyson-v8-absolute-vacuum" target="_blank" rel="noopener noreferrer">Reference ↗</a></div></div>
+        <div class="reference-item"><img src="https://insidedentistry.net/media/vrmfou4q/dyson-camerajet_1440_810.jpg" alt="Dyson CameraJet connected oral-care device" loading="lazy"><div><strong>Dyson CameraJet</strong><p>A complex combination of sensors, liquid delivery and app guidance.</p><a href="https://www.dyson.com/discover/news/latest/introducing-camerajet" target="_blank" rel="noopener noreferrer">Reference ↗</a></div></div>
       </div>
-    </div>
+    </article>
   </div>
+ </div>
 </section>
 
-<section class="section" id="candidates">
-  <div class="inner">
-    <div class="section-head"><div class="secno">06 / Candidate audit</div><div><h2>C1–C5 are the five specific ideas reviewed earlier.</h2><p class="section-intro">These are individual candidate ideas—not the F1–F11 friction categories. The track tells us what kind of friction is involved; C1–C5 identifies the particular idea.</p></div></div>
-    <div class="note candidate-note"><strong>Keep the numbering separate:</strong> F1 is the Fit &amp; Hold track. C1 is the cable-anchor candidate. C2–C5 are other candidate ideas. The shared number is not a shared identity.</div>
-    <div class="candidate-board">
-      <article class="candidate-card lead">
-        <div class="candidate-top"><span class="candidate-id">C1</span><span class="tag amber">Leading current candidate</span><span class="tag">Provisional track: F1</span></div>
-        <div class="candidate-content"><figure class="product-figure compact"><img src="https://content.etilize.com/Alternate-Image2/1068644651.jpg" alt="Existing desk-edge cable clip shown as a current solution" loading="lazy"><figcaption>Example of a current cable clip—not the proposed ETHIC design. <a href="https://com.hamster.ca/en/cavoline-clip-2-cable-clips-840765" target="_blank" rel="noopener noreferrer">Source</a>.</figcaption></figure><div><h3>Cable mount that shifts or peels under pull</h3><p>Working hypothesis: a cable's pull may cause an anchor to migrate from its position. “ForceBase / Kinetic Cable Anchor” are old working names, not an established product.</p><p><strong>Next:</strong> observe it; measure the failure; test pull direction, surface, attachment and repeated cycles; compare alternatives; then ask users whether the remaining gap matters.</p><p class="candidate-state">P1 NOT CLEARED · not user-validated · not approved for manufacture</p></div></div>
-      </article>
-      <article class="candidate-card"><div class="candidate-top"><span class="candidate-id">C2</span><span class="tag">Deprioritised</span><span class="tag">Provisional track: F1</span></div><h3>Bin liner slips into the bin</h3><p>The liner doesn't stay in position. Existing low-cost solutions are crowded and commodity-like; reopen only if a distinct, evidenced gap appears.</p></article>
-      <article class="candidate-card"><div class="candidate-top"><span class="candidate-id">C3</span><span class="tag">Not cleared</span><span class="tag">Provisional track: F2</span></div><h3>Temporary tool-resting surface</h3><p>A tool needs a place to rest between actions. “Kinetic Tray Pad” is a working concept name. The use case may be narrow and prior-art proximity is a concern; no patent conclusion has been made.</p></article>
-      <article class="candidate-card"><div class="candidate-top"><span class="candidate-id">C4</span><span class="tag">Deprioritised</span><span class="tag">Provisional track: F1</span></div><h3>Power brick dragged by its cord</h3><p>A cable pull can drag or drop a power brick. The evidence is older and differentiation was unclear; do not revive it on that old observation alone.</p></article>
-      <article class="candidate-card"><div class="candidate-top"><span class="candidate-id">C5</span><span class="tag">Deprioritised</span><span class="tag">Provisional track: F1</span></div><h3>Hanger slides along a line in wind</h3><p>A hanger may move along a line outdoors. Evidence was weak; stop unless repeatable observations show a meaningful consequence and unmet need.</p></article>
+<section class="section dark" id="founder">
+ <div class="inner">
+  <div class="founder reveal">
+    <div class="founder-photo"><img src="assets/founder-v-sai-manoj.webp" alt="V. Sai Manoj, founder-led development of ETHIC" loading="lazy"></div>
+    <div>
+      <div class="founder-kicker">Founder-led development</div><h2>V. Sai Manoj</h2>
+      <p>ETHIC is being developed around a practical combination: a growth-and-operations mindset, interest in real user behaviour, and disciplined decisions under capital constraints. The priority is not to claim a breakthrough early—it is to establish a defensible route from observation to a useful product.</p>
+      <div class="founder-points"><span>Behaviour-first discovery</span><span>Operations &amp; growth lens</span><span>Capital-conscious prototyping</span><span>Evidence before scale</span></div>
     </div>
-    <p class="taxonomy-note">Track assignments are provisional mappings from the descriptions on record. Confirm them from the real task and context. “Deprioritised” means it is not worth prioritising given the current evidence—not that the problem is solved everywhere.</p>
   </div>
+  <h3 style="font-size:22px;margin-top:35px">Current targets—not results achieved</h3>
+  <div class="kpi-grid reveal">
+    <div class="kpi"><small>First-prototype envelope</small><strong>₹11.5–12.5k</strong><span>Planning target, not spend or funding secured</span></div>
+    <div class="kpi"><small>Relevant user interviews</small><strong>20–30</strong><span>Target per candidate/product; not yet achieved</span></div>
+    <div class="kpi"><small>Concept validation</small><strong>≤ 90 days</strong><span>Target timeline, not a guarantee</span></div>
+    <div class="kpi"><small>Prototype → paid test</small><strong>≥ 10%</strong><span>Initial conversion target</span></div>
+    <div class="kpi"><small>Gross margin</small><strong>≥ 50%</strong><span>Target, before commercial validation</span></div>
+    <div class="kpi"><small>Repeat / referral</small><strong>≥ 20%</strong><span>Target after viable launch</span></div>
+    <div class="kpi"><small>Product return rate</small><strong>&lt; 5%</strong><span>Target, not measured</span></div>
+    <div class="kpi"><small>IP candidates</small><strong>1+</strong><span>For a major validated concept; not a patent claim</span></div>
+  </div>
+ </div>
 </section>
 
-<section class="section alt" id="fusion">
-  <div class="inner">
-    <div class="section-head"><div class="secno">07 / Three meanings—keep apart</div><div><h2>“Fusion” is used in two different ways here. They are not the same.</h2><p class="section-intro">F5 is a friction category. Pattern 01 + Pattern 02 is a possible product-design direction. F11 is about tools handing work to each other. The word may sound similar, but each asks a different question.</p></div></div>
-    <div class="three-fusions">
-      <article class="fusion-card f5-fusion"><span class="tag amber">F5 · Problem type</span><h3>Human task + technology</h3><p><strong>Question:</strong> what difficulty does a person face, how does a technology respond, and what human work may remain?</p><p><strong>Reference:</strong> NEO 1's conversation capture. The discovery is about a defined workflow, not an assumption that the device is defective.</p></article>
-      <article class="fusion-card"><span class="tag">F11 · Problem type</span><h3>Tool + tool handoff</h3><p><strong>Question:</strong> where do devices, apps or physical/digital tools fail to exchange information or complete a handoff smoothly?</p><p><strong>Reference:</strong> copying a commitment from a chat into a calendar and task list by hand.</p></article>
-      <article class="fusion-card"><span class="tag green">Pattern 01 + Pattern 02 · Design thesis</span><h3>Commercial simplicity + capability transformation</h3><p><strong>Question:</strong> could an easy-to-understand, low-complexity product also create a genuinely useful change in what the person can do?</p><p>This is the proposed ETHIC “hero-product” thesis—not F5, not F11, and not a final product concept.</p></article>
-    </div>
-    <div class="archetypes" style="margin-top:18px">
-      <article class="archetype"><span class="a-no">PATTERN 01</span><h3>Commercial simplicity</h3><p>Small, clear, cost-conscious, easy to understand and feasible to prototype. A cable organiser is an example of the product class—not a validated ETHIC product.</p><ul><li>Obvious job and use</li><li>Minimal parts and complexity</li><li>Potentially suitable for tight first-product capital</li><li>Still has to be differentiated and tested</li></ul></article>
-      <article class="archetype"><span class="a-no">PATTERN 02</span><h3>Capability transformation</h3><p>A familiar, wearable or portable form delivers a noticeably different capability. NEO 1 is a reference used to study this pattern—not an ETHIC-owned product.</p><ul><li>Clear ability or outcome change</li><li>Added complexity must be justified by need</li><li>Look at the whole workflow, not just the device</li><li>No claim that copying this approach is the answer</li></ul></article>
-    </div>
-    <div class="fusion-row"><div><span class="label">01 · SIMPLICITY</span><h3>Easy to understand and build</h3><p>Can the user grasp it quickly, and can a first version realistically be tested?</p></div><div class="plus" aria-hidden="true">+</div><div><span class="label">02 · TRANSFORMATION</span><h3>A meaningful capability change</h3><p>Does it materially improve what the user can do—not just add features?</p></div></div>
-    <div class="note" style="margin-top:14px"><strong>The hypothesis—not the answer:</strong> ETHIC may one day find a product that combines commercial simplicity with a meaningful capability change. This does not mean physically combining a cable organiser with NEO 1. It is a testable design direction; the winning product has not been found or validated.</div>
+<section class="section white" id="next">
+ <div class="inner">
+  <div class="section-head reveal"><div class="secno">12 / Where work stops today</div><div><h2>The method is clearer. The product still has to earn its place.</h2><p class="lede">The current achievement is a structured way to evaluate opportunities—not proof that a product has been validated, is patentable or is ready to scale.</p></div></div>
+  <div class="roadmap reveal">
+    <article class="roadstep"><small>STEP 01</small><h3>Observe C1</h3><p>Record a real cable-anchor failure in context. Count instances; distinguish what is seen from what is inferred.</p></article>
+    <article class="roadstep"><small>STEP 02</small><h3>Bench-test the cause</h3><p>Test surface, attachment, pull direction, force and repeated cycles. Keep results and failures measurable.</p></article>
+    <article class="roadstep"><small>STEP 03</small><h3>Compare real options</h3><p>Review at least three alternatives, identify what each already does well and state one residual gap.</p></article>
+    <article class="roadstep"><small>STEP 04</small><h3>Qualify, then decide</h3><p>Check unmet need, ETHIC fit, broader potential, a clear intervention and prototype feasibility before spending further.</p></article>
   </div>
+  <div class="final-state reveal"><span class="tag red">Current exact status</span><h3 style="margin-top:12px">C1 is leading. P1 has not cleared. P2 remains unclaimed.</h3><p>User validation, paid validation, unit economics, patentability and commercial scale are not established. The next move is direct observation and testing—not prematurely manufacturing a product or calling it a breakthrough.</p></div>
+  <div class="callout reveal" style="margin-top:16px"><strong>MANRA evidence labels:</strong> <b>OBSERVED</b> means directly witnessed or documented in a specific setting. <b>HYPOTHESIS</b> means plausible but not yet established. <b>VERIFIED</b> means the specific claim is supported by suitable checks. A promising picture or a web search alone does not make a product validated.</div>
+ </div>
 </section>
 
-<section class="section" id="qualification">
-  <div class="inner">
-    <div class="section-head"><div class="secno">08 / Qualification gates</div><div><h2>P1 and P2 are internal MANRA gates—not industry certifications.</h2><p class="section-intro">The friction track says what kind of problem is being investigated. The candidate code names the specific idea. Pattern 01/02 describes a possible product design. P1/P2 asks whether an opportunity has earned the next stage. These labels answer different questions.</p></div></div>
-    <div class="grid2">
-      <article class="statusbox"><span class="tag red">Current status · Not cleared</span><h3 style="margin-top:12px">P1 · Physical Intelligence</h3><p>Use when the physical intervention itself is central. Every requirement below must have evidence. C1 is the leading candidate, but it has not passed this gate.</p><div class="bigstatus">P1: NOT CLEARED / UNCLAIMED</div></article>
-      <article class="statusbox"><span class="tag">Current status · Unclaimed</span><h3 style="margin-top:12px">P2 · Technology Intelligence</h3><p>Use when technological differentiation is central to the product. Do not add technology merely to make a concept appear advanced.</p><div class="bigstatus">P2: UNCLAIMED</div></article>
-    </div>
-    <div class="gate">
-      <article class="gatecard"><span class="n">REQUIREMENT 01</span><h3>Unresolved gap</h3><p>A real friction remains after fair comparison with existing solutions and workarounds.</p></article>
-      <article class="gatecard"><span class="n">REQUIREMENT 02</span><h3>Strong ETHIC fit</h3><p>The opportunity expresses the human-behaviour-first philosophy, not just a clever object.</p></article>
-      <article class="gatecard"><span class="n">REQUIREMENT 03</span><h3>Scalable potential</h3><p>The behavioural problem and intervention could make sense beyond one unusual incident or one tiny niche.</p></article>
-      <article class="gatecard"><span class="n">REQUIREMENT 04</span><h3>Clear intervention</h3><p>There is a specific physical change to test—not an idea that is still only a broad complaint.</p></article>
-      <article class="gatecard"><span class="n">REQUIREMENT 05</span><h3>Prototype feasibility</h3><p>A realistic first test fits the ₹11,500–₹12,500 target prototype envelope.</p></article>
-    </div>
-    <div class="note" style="margin-top:15px"><strong>When one candidate genuinely clears P1:</strong> stop broad searching and focus on validation. “We got P1” means evidence has satisfied the gate—not that we simply like the idea.</div>
+<section class="section paper" id="sources">
+ <div class="inner">
+  <div class="section-head reveal"><div class="secno">Reference desk</div><div><h2>Source trail and evidence boundaries.</h2><p class="lede">Product features below are attributed to their manufacturers. Historical facts use museum or public reference sources. Illustrations help explain a question; they are not proof of demand, commercial success or product failure.</p></div></div>
+  <div class="sources reveal">
+    <div class="source-row"><b>Tooth powder, paste and oral-care history</b><a href="https://americanhistory.si.edu/collections/object/nmah_738122" target="_blank" rel="noopener noreferrer">Smithsonian · Colgate tooth powder and toothpaste format history</a><br><a href="https://www.loc.gov/everyday-mysteries/browse-all-questions/item/who-invented-the-toothbrush-and-when-was-it-invented/" target="_blank" rel="noopener noreferrer">Library of Congress · Toothbrush milestones</a></div>
+    <div class="source-row"><b>Cable management</b><a href="https://www.upliftdesk.com/cable-management-clips/" target="_blank" rel="noopener noreferrer">UPLIFT · Cable clips</a><br><a href="https://www.command.in/3M/en_IN/p/pc/cord-organization/" target="_blank" rel="noopener noreferrer">3M Command · Cord organisation</a></div>
+    <div class="source-row"><b>Caulking Finger</b><a href="https://www.walmart.com/search?q=the+caulking+finger" target="_blank" rel="noopener noreferrer">Retail product reference</a><br>Use as a narrow-task illustration; no claim is made that the category has no alternatives.</div>
+    <div class="source-row"><b>NEO 1</b><a href="https://shop.neosapien.ai/products/neo-1" target="_blank" rel="noopener noreferrer">NeoSapien · Official product details</a><br>Manufacturer-described feature set; no defect is assumed.</div>
+    <div class="source-row"><b>Dyson V8 Absolute</b><a href="https://www.dyson.in/vacuum-cleaners/cord-free/dyson-v8/overview/dyson-v8-absolute-vacuum" target="_blank" rel="noopener noreferrer">Dyson India · Model, runtime, tools and maintenance</a></div>
+    <div class="source-row"><b>Dyson CameraJet</b><a href="https://www.dyson.com/discover/news/latest/introducing-camerajet" target="_blank" rel="noopener noreferrer">Dyson · Product announcement and features</a><br><a href="https://www.dyson.com/discover/inside-dyson/statements/dyson-camerajet-update" target="_blank" rel="noopener noreferrer">Dyson · 30 September 2026 production update</a></div>
   </div>
-</section>
-
-<section class="section alt" id="current">
-  <div class="inner">
-    <div class="section-head"><div class="secno">09 / Exact stop point</div><div><h2>What is true now—and what is not.</h2><p class="section-intro">The honest current achievement is a more structured method for selecting the first intervention. The product breakthrough, demand and commercial results remain unproven.</p></div></div>
-    <div class="proof-grid">
-      <article class="proof"><span class="tag green">Established in the working record</span><h3>Strategic direction</h3><p>ETHIC's intended identity is Behavior Engineering. MANRA supports discovery and qualification. The friction taxonomy and candidate-selection logic are documented.</p></article>
-      <article class="proof"><span class="tag amber">Hypothesis / candidate</span><h3>C1 · Cable anchoring</h3><p>The strongest current candidate. It still needs direct observation, bench testing, comparison with alternatives, user evidence and P1 qualification.</p></article>
-      <article class="proof"><span class="tag red">Not proven</span><h3>Product and business proof</h3><p>User validation and paid validation are incomplete; unit economics and commercial proof are not established; patentability is not established; scale is not approved.</p></article>
-    </div>
-    <h3 style="margin-top:26px">What comes next, in order</h3>
-    <ol class="plainlist">
-      <li><strong>Observe:</strong> document the cable-anchor failure in a real, repeatable context. A single example is a signal, not a universal problem.</li>
-      <li><strong>Test the mechanism:</strong> bench-test pull direction, force, surface compatibility, adhesive/attachment behaviour and repeat cycles. Record results rather than assuming the cause.</li>
-      <li><strong>Compare:</strong> inspect existing cable holders and other solutions. State exactly what they solve and what remains.</li>
-      <li><strong>Talk to users:</strong> use a five-person quick screen first; ask neutrally, record frequency and consequence, and score reach, pain and gap. For stronger validation, expand to roughly 20–30 relevant interviews per product as a planning target.</li>
-      <li><strong>Qualify:</strong> check all five P1 requirements. If it fails, narrow the problem or stop. Do not manufacture to rescue a weak hypothesis.</li>
-      <li><strong>Prototype and validate:</strong> only after the evidence gate, use the smallest test that can disprove or support the proposed intervention; then assess paid adoption and unit economics.</li>
-    </ol>
-    <div class="note"><strong>Quick five-person screen (screening only, not market proof):</strong> Reach—at least 3 of 5 independently describe the same friction before prompting; Pain—average 3.5/5 or evidence of repeated burden; Gap—name one specific step the best current solution still leaves to the user, supported by an observation or test. 3/3 → proceed to deeper study; 2/3 → narrow and retest; 0–1/3 → stop or rethink.</div>
-  </div>
-</section>
-
-<section class="section" id="capital">
-  <div class="inner">
-    <div class="section-head"><div class="secno">10 / Capital discipline</div><div><h2>The first product is a wedge—not the destination.</h2><p class="section-intro">The initial plan is to begin under tight capital discipline. The goal is not to build a giant catalogue at once; it is to select the best first intervention under today's constraints, prove value, learn and reinvest if the economics support it.</p></div></div>
-    <div class="grid2">
-      <article class="card"><span class="tag">Target prototype envelope</span><h3 style="font-size:29px;margin-top:12px">₹11,500–₹12,500</h3><p>This is a planning target for a first prototype/test, not money spent, funding secured or a production budget. The broader early planning range was about ₹11,000–₹13,000.</p></article>
-      <article class="card"><span class="tag">Reinvestment hypothesis</span><h3 style="margin-top:12px">Learn → earn → reinvest</h3><p>If Product 1 can solve a real problem and sell at viable economics, its profit, customer learning and operational knowledge can help fund Product 2. Each step must be earned; the flywheel is an ambition, not an achieved operating model.</p></article>
-    </div>
-    <div class="capital-loop" aria-label="Potential ETHIC reinvestment cycle"><span>First capital</span><b>→</b><span>Smallest test</span><b>→</b><span>Customer evidence</span><b>→</b><span>Sale</span><b>→</b><span>Profit, if any</span><b>→</b><span>Learning + reinvestment</span><b>↻</b></div>
-    <div class="note"><strong>Targets, not achievements:</strong> 20–30 relevant user interviews per product; at least 10% initial prototype-to-paid conversion; gross margin target ≥50%; repeat/referral target ≥20%; return-rate target &lt;5%; concept validation target ≤90 days; at least one IP candidate for a major validated concept. None is being claimed as achieved. Five-person screening and later validation are separate stages.</div>
-  </div>
-</section>
-
-<section class="section alt" id="evidence">
-  <div class="inner">
-    <div class="section-head"><div class="secno">11 / Evidence rules</div><div><h2>Use the right word for the strength of the evidence.</h2><p class="section-intro">Clear language is a core part of MANRA. It prevents a plausible story from turning into an unsupported product claim.</p></div></div>
-    <div class="grid3">
-      <article class="card"><span class="tag">Tier 1</span><h3 style="margin-top:11px">Observed</h3><p>Someone directly saw the behaviour or a repeatable test recorded it. It is a signal—not yet proof that the gap is important or widespread.</p></article>
-      <article class="card"><span class="tag amber">Tier 2</span><h3 style="margin-top:11px">Hypothesis</h3><p>A reasonable explanation of why it may happen or why a design may help. It still needs testing, comparison or corroboration.</p></article>
-      <article class="card"><span class="tag green">Tier 3</span><h3 style="margin-top:11px">Verified</h3><p>Supported by measurements, repeatable tests, user evidence or other reliable corroboration relevant to the specific claim.</p></article>
-    </div>
-    <div class="bigline"><span>Observed</span><b>≠</b><span>Proven</span><b>·</b><span>Qualified</span><b>≠</b><span>Validated</span><b>·</b><span>Validated</span><b>≠</b><span>Scale-ready</span></div>
-    <div class="note"><strong>ETHIC's ethical boundary:</strong> behaviour engineering should improve the user's ability to achieve their own useful goal, with clear value and informed control. It must not depend on deception, coercion or hidden manipulation.</div>
-  </div>
+ </div>
 </section>
 </main>
 
 <footer class="footer">
-  <div class="footerinner">
-    <div>
-      <div class="footerbrand"><img src="assets/ethic-fingerprint-mark.webp" width="36" height="36" alt=""><strong>ETHIC</strong><span style="font-size:10px;letter-spacing:.12em;color:#c3b59c">× MANRA · STRATEGIC REFERENCE</span></div>
-      <p><strong style="color:#eadfc9">ETHIC is the company. MANRA is the intelligence system.</strong> The current achievement is a stronger discovery and decision process. No product is being represented as validated, patentable or ready to scale.</p>
-    </div>
-    <div class="footstatus">Current status<br>P1 not cleared · P2 unclaimed<br>C1 leading candidate · not validated</div>
-  </div>
-  <div class="footerbottom"><span>Working strategic reference · not a product launch announcement</span><span>Keep labels, claims and status aligned with evidence.</span></div>
+ <div class="footerinner">
+  <div><div class="footerbrand"><img src="assets/ethic-logo-compact.webp" alt=""><strong>ETHIC × MANRA</strong></div><p><strong style="color:#ebe9ef">ETHIC is the company. MANRA is the intelligence system.</strong> This is a strategic reference to a company in development. The aim is to find, verify and implement useful interventions around human behaviour—without confusing an idea, a validated product and a scalable business.</p></div>
+  <div class="footstatus">C1 leading candidate<br>P1 not cleared · P2 unclaimed<br>Commercial validation not established</div>
+ </div>
+ <div class="footerbottom"><span>Founder-led working reference · not a product launch claim</span><span>Black · Silver · White · Restrained burgundy</span></div>
 </footer>
 
 <script>
 (() => {
-  const menu = document.getElementById("menu");
-  const links = document.getElementById("links");
-  menu.addEventListener("click", () => {
-    const open = links.classList.toggle("open");
-    menu.setAttribute("aria-expanded", String(open));
-  });
-  links.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
-    links.classList.remove("open");
-    menu.setAttribute("aria-expanded", "false");
-  }));
+  const menu=document.getElementById("menu");
+  const nav=document.getElementById("navlinks");
+  if(menu&&nav){menu.addEventListener("click",()=>{const open=nav.classList.toggle("open");menu.setAttribute("aria-expanded",String(open));});nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("open");menu.setAttribute("aria-expanded","false");}));}
+  const reduced=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const reveals=document.querySelectorAll(".reveal");
+  if(!reduced&&"IntersectionObserver" in window){
+    const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("visible");io.unobserve(e.target);}}),{threshold:.10,rootMargin:"0px 0px -30px 0px"});
+    reveals.forEach(el=>io.observe(el));
+  }else reveals.forEach(el=>el.classList.add("visible"));
+  if(!reduced&&window.matchMedia("(pointer:fine)").matches){
+    document.querySelectorAll(".lift,.story-card,.hero-logo-card").forEach(card=>{
+      card.addEventListener("pointermove",ev=>{const r=card.getBoundingClientRect();const x=(ev.clientX-r.left)/r.width-.5;const y=(ev.clientY-r.top)/r.height-.5;card.style.transform="perspective(900px) rotateY("+(x*3)+"deg) rotateX("+(-y*2)+"deg) translateY(-2px)";});
+      card.addEventListener("pointerleave",()=>{card.style.transform="";});
+    });
+  }
 })();
 </script>
 </body>
