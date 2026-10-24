@@ -95,6 +95,29 @@ section{position:relative}.section{padding:80px 22px}.section.white{background:#
 .hero-bottom{background:rgba(7,7,7,.7)!important}
 .status strong{color:#dedbd5!important}
 
+
+/* Full friction map: research-to-decision layer */
+.friction-map{background:#eeede9}
+.friction-map .map-intro{max-width:820px;color:var(--muted);font-size:15px}
+.track-band{display:flex;align-items:center;gap:12px;margin:30px 0 16px;padding:13px 16px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.track-band b{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--burg2)}
+.track-band span{font-size:12px;color:var(--muted)}
+.friction-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.friction-card{background:#fff;border:1px solid #d4d1cb;border-radius:12px;overflow:hidden;display:grid;grid-template-columns:minmax(130px,.78fr) minmax(0,1.5fr);min-height:250px}
+.friction-card img{width:100%;height:100%;min-height:250px;object-fit:cover;background:#deddd8}
+.friction-card .fc-copy{padding:18px}
+.fc-kicker{font:10px ui-monospace,monospace;letter-spacing:.13em;text-transform:uppercase;color:#76685e}
+.friction-card h3{font-size:19px;line-height:1.2;margin:8px 0}
+.friction-card p{font-size:12px;line-height:1.65;margin:8px 0;color:#55514c}
+.friction-card p strong{color:#2b2622}
+.fc-row{border-top:1px solid #e7e4de;padding-top:8px;margin-top:9px!important}
+.fc-row b{display:block;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#76685e;margin-bottom:2px}
+.fc-row a{color:#655044;text-decoration:underline;text-underline-offset:2px}
+.fc-state{display:inline-block;margin-top:7px;padding:4px 7px;border:1px solid #d5d1ca;border-radius:4px;font-size:9px;letter-spacing:.06em;text-transform:uppercase;color:#655b52}
+.friction-map .research-note{margin-top:22px;padding:18px 20px;border-left:3px solid #87776b;background:#e4e1db;color:#4d4741;font-size:13px}
+@media(max-width:850px){.friction-grid{grid-template-columns:1fr}.friction-card{grid-template-columns:minmax(110px,.6fr) minmax(0,1.4fr)}}
+@media(max-width:520px){.friction-card{grid-template-columns:1fr}.friction-card img{height:180px;min-height:180px}.friction-card .fc-copy{padding:15px}.track-band{align-items:flex-start;flex-direction:column;gap:4px}}
+
 </style>
 </head>
 <body>
@@ -288,7 +311,71 @@ section{position:relative}.section{padding:80px 22px}.section.white{background:#
  </div>
 </section>
 
-<section class="section white" id="video-case">
+
+<section class="section friction-map" id="friction-map">
+  <div class="section-inner">
+    <div class="section-head"><div class="section-num">08 / Research map F1–F11</div><div class="section-title"><h2>One taxonomy. Eleven research questions. No assumed winners.</h2><p class="map-intro">A friction code names the kind of resistance being investigated; it is not a product, a market-size claim or proof that a gap exists. Every example below separates the human task, the current workaround or technology, what that response already solves, and the residual gap MANRA must test before ETHIC builds anything.</p></div></div>
+
+    <div class="track-band"><b>F1–F4 · Micro-frictions</b><span>Small, observable, recurring human actions in ordinary routines.</span></div>
+    <div class="friction-grid">
+      <article class="friction-card">
+        <img src="https://www.uessentials.co/cdn/shop/files/1_805ad8b0-c368-4f32-a59c-0130b90fbf34.png?v=1741835252" alt="Commercial desk-edge cable clips holding cables in place" loading="lazy">
+        <div class="fc-copy"><div class="fc-kicker">F1 · Fit & hold</div><h3>Force-induced migration</h3><p><strong>Friction:</strong> a cable mount may shift, peel or release when a cable is pulled from an awkward angle.</p><p class="fc-row"><b>Existing response / what it solves</b>Adhesive clips, screw-mounted holders and cable channels guide or retain loose leads in a specific setup.</p><p class="fc-row"><b>Residual gap / MANRA intelligence</b>Test surface, adhesive, pull direction, load, repeat cycles and failure mode against at least three existing solutions; interview users about consequence and frequency.</p><span class="fc-state">Leading candidate · not cleared</span></div>
+      </article>
+      <article class="friction-card">
+        <img src="https://i.ebayimg.com/images/g/y9kAAeSwQq5oTtED/s-l1200.jpg" alt="Small hand tool used for smoothing and finishing caulk" loading="lazy">
+        <div class="fc-copy"><div class="fc-kicker">F2 · Position & access</div><h3>Where can I place it for a moment?</h3><p><strong>Friction:</strong> a cook, technician or maker repeatedly holds, moves or rearranges a tool because a safe, reachable resting position is missing.</p><p class="fc-row"><b>Existing response / what it solves</b>Workbenches, trays, stands and designated tool zones provide a place to set items down.</p><p class="fc-row"><b>Residual gap / MANRA intelligence</b>Observe a real task and test whether repositioning causes measurable delay, contamination, damage or risk. Do not invent a “universal” tray without a bounded setting.</p><span class="fc-state">Illustrative task · needs observation</span></div>
+      </article>
+      <article class="friction-card">
+        <img src="https://www.uessentials.co/cdn/shop/files/1_805ad8b0-c368-4f32-a59c-0130b90fbf34.png?v=1741835252" alt="Cable organiser showing one way to separate and retrieve leads" loading="lazy">
+        <div class="fc-copy"><div class="fc-kicker">F3 · Tangle & retrieve</div><h3>Mixed, tangled or hard to identify</h3><p><strong>Friction:</strong> several similar leads stored together become tangled, buried or difficult to identify at the moment they are needed.</p><p class="fc-row"><b>Existing response / what it solves</b>Labels, ties, separate compartments and cable organisers can improve separation and identification.</p><p class="fc-row"><b>Residual gap / MANRA intelligence</b>Distinguish tangling from misidentification, reach and storage overload. Measure retrieval time and error rate before proposing a new object.</p><span class="fc-state">Crowded space · define the exact gap</span></div>
+      </article>
+      <article class="friction-card">
+        <img src="https://ids.si.edu/ids/deliveryService?id=NMAH-AHB2013q075256" alt="Historical toothpaste tube and carton illustrating a familiar product format" loading="lazy">
+        <div class="fc-copy"><div class="fc-kicker">F4 · Repeated effort</div><h3>A small action repeated until it feels normal</h3><p><strong>Friction:</strong> a person repeatedly wipes, re-wraps, reconnects, adjusts or dispenses during a routine, with the extra effort becoming invisible.</p><p class="fc-row"><b>Existing response / what it solves</b>Purpose-designed formats and tools can simplify handling. The tooth-powder-to-paste/tube timeline is a useful format-evolution case, not proof of one universal historical cause.</p><p class="fc-row"><b>Residual gap / MANRA intelligence</b>Count the repeated actions and time; compare task outcomes and mess, control, cost and upkeep. Verify history independently rather than inferring causation from chronology.</p><span class="fc-state">Measure repetition · avoid hindsight claims</span></div>
+      </article>
+    </div>
+
+    <div class="track-band"><b>F5 · Human friction + technology</b><span>A bounded workflow-level bridge—not simply another small nuisance and not an assumed product defect.</span></div>
+    <div class="friction-grid">
+      <article class="friction-card">
+        <img src="https://shop.neosapien.ai/cdn/shop/files/first_fold_image_black.jpg?v=1748789281&width=1800" alt="NEO 1 wearable AI notetaker shown in an everyday conversation context" loading="lazy">
+        <div class="fc-copy"><div class="fc-kicker">F5 · Fusion track</div><h3>Listening while trying to remember and act</h3><p><strong>Human friction:</strong> during a meeting, class, site visit or customer conversation, a person tries to listen, retain details and remember commitments simultaneously.</p><p class="fc-row"><b>Existing technology / what it solves</b>NEO 1 is marketed as a wearable AI notetaker for capturing conversations and helping organise searchable memories, summaries and follow-ups.</p><p class="fc-row"><b>Residual gap / MANRA intelligence</b>Study consent, capture quality, retrieval, verification, ownership and completion of follow-up actions across the whole workflow. If the current setup works well, record that and stop.</p><span class="fc-state">Reference case · no defect assumed</span></div>
+      </article>
+    </div>
+
+    <div class="track-band"><b>F6–F11 · Technology-led / macro frictions</b><span>Bounded product, information or system workflows—not vague complaints about technology.</span></div>
+    <div class="friction-grid">
+      <article class="friction-card">
+        <img src="https://shop.neosapien.ai/cdn/shop/files/Black_9cf12abc-9c61-41d3-a47f-514eb1ba0788.png?v=1789282275&width=1202" alt="NEO 1 wearable AI notetaker product reference" loading="lazy">
+        <div class="fc-copy"><div class="fc-kicker">F6 · Capture & recall</div><h3>Information missed or hard to retrieve</h3><p><strong>Friction:</strong> a key detail is missed in the moment, captured too late or difficult to find afterwards.</p><p class="fc-row"><b>Existing response / what it solves</b>Notes, recordings, search and AI-assisted memory can preserve information beyond unaided recall.</p><p class="fc-row"><b>Residual gap / MANRA intelligence</b>Test capture completeness, search success, retrieval time, consent and failure cases in real contexts; don't equate recording with reliable memory.</p><span class="fc-state">Test the workflow, not the marketing claim</span></div>
+      </article>
+      <article class="friction-card">
+        <img src="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/gallery/oral-care/electric-toothbrush/camerajet/WEB-682-GALLERY09.jpg" alt="Connected oral-care system illustrating guided feedback in a physical task" loading="lazy">
+        <div class="fc-copy"><div class="fc-kicker">F7 · Data to action</div><h3>An output is produced—but the work remains</h3><p><strong>Friction:</strong> a summary, alert, recording or score is generated, yet the user still must decide what to do, assign an owner and complete the next step.</p><p class="fc-row"><b>Existing response / what it solves</b>Task lists, reminders, guided feedback and app workflows can translate information into suggested actions.</p><p class="fc-row"><b>Residual gap / MANRA intelligence</b>Track the handoff from output to completed action: missed tasks, duplicate entry, time-to-completion and who remains accountable.</p><span class="fc-state">Completion is the outcome</span></div>
+      </article>
+      <article class="friction-card">
+        <img src="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/products/primary/673029-01.png?%24responsive%24=&fmt=png-alpha" alt="Dyson CameraJet oral-care device, a reference for context and guided feedback" loading="lazy">
+        <div class="fc-copy"><div class="fc-kicker">F8 · Context & accuracy</div><h3>Output that needs checking or correction</h3><p><strong>Friction:</strong> a user must verify names, numbers, context or recommendations before trusting an output.</p><p class="fc-row"><b>Existing response / what it solves</b>Context-aware sensors, visual feedback, editable records and source review can help users detect mistakes.</p><p class="fc-row"><b>Residual gap / MANRA intelligence</b>Record correction frequency, severity and confidence calibration; test varied users and conditions. Never present a manufacturer claim as independent validation.</p><span class="fc-state">Accuracy is context-dependent</span></div>
+      </article>
+      <article class="friction-card">
+        <img src="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/leap-petite-global/products/floorcare/sticks/285l/pdp/gallery/285L_1_gallery_versatility_FH_ATHT.jpg?%24responsive%24=&cropPathE=desktop&fit=stretch%2C1&wid=1040" alt="Cordless vacuum used across home spaces with different attachments" loading="lazy">
+        <div class="fc-copy"><div class="fc-kicker">F9 · Access & reach</div><h3>Capability cannot reach the actual task</h3><p><strong>Friction:</strong> a tool is difficult to bring into a constrained space, carry between locations or use at the required angle.</p><p class="fc-row"><b>Existing technology / what it solves</b>Cordless tools and task-specific attachments improve mobility and access in selected situations.</p><p class="fc-row"><b>Residual gap / MANRA intelligence</b>Test reach, clearance, weight, runtime and manoeuvrability in the actual setting. A home-use example does not automatically validate café, vehicle or industrial use.</p><span class="fc-state">Use-context specific</span></div>
+      </article>
+      <article class="friction-card">
+        <img src="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/leap-petite-global/dynamic-media/vacuums/sticks/285L/primary/394483-01.png?scl=1&wid=1200" alt="Cordless vacuum hardware, a reference for charging and maintenance requirements" loading="lazy">
+        <div class="fc-copy"><div class="fc-kicker">F10 · Setup & maintenance</div><h3>Upkeep limits real-world use</h3><p><strong>Friction:</strong> setup, charging, cleaning, emptying, storage or maintenance becomes a recurring barrier to use.</p><p class="fc-row"><b>Existing technology / what it solves</b>Docking, replaceable parts, accessible filters and simpler maintenance routines can reduce upkeep burden.</p><p class="fc-row"><b>Residual gap / MANRA intelligence</b>Measure setup and maintenance time, failure to maintain, consumable cost and performance loss over time—not just initial unboxing.</p><span class="fc-state">Lifecycle matters</span></div>
+      </article>
+      <article class="friction-card">
+        <img src="https://shop.neosapien.ai/cdn/shop/files/Black_9cf12abc-9c61-41d3-a47f-514eb1ba0788.png?v=1789282275&width=1202" alt="Wearable information-capture device as one end of a digital workflow" loading="lazy">
+        <div class="fc-copy"><div class="fc-kicker">F11 · Fusion / interoperability</div><h3>Tools do not hand work off cleanly</h3><p><strong>Friction:</strong> information or actions must be manually copied between devices, apps or physical and digital tools.</p><p class="fc-row"><b>Existing response / what it solves</b>Integrations, export formats, automations and shared task systems can reduce repeated entry.</p><p class="fc-row"><b>Residual gap / MANRA intelligence</b>Map the exact handoff, permissions, format loss, duplicate work and failure recovery. Keep F11 distinct from F5: F11 is tool-to-tool interoperability; F5 starts with a human task fused with technology.</p><span class="fc-state">Bound the handoff before proposing integration</span></div>
+      </article>
+    </div>
+    <div class="research-note"><strong>MANRA's operating loop:</strong> Observe the unofficial second interface → define the task and context → benchmark current products and workarounds → test the residual gap → classify evidence as Observed, Hypothesis or Verified → recommend proceed, narrow or stop. <strong>ETHIC's role:</strong> build only after the gap, usefulness, prototype feasibility and commercial case survive the relevant gates. F1 remains a candidate, not a cleared P1; P2 remains unclaimed.</div>
+  </div>
+</section>
+
+<section id="video-case">
  <div class="inner">
   <div class="section-head reveal"><div class="secno">08 / Applied video case</div><div><h2>Use the example to learn a design move—not to copy a product.</h2><p class="lede">Your supplied fold-flat measuring-spoon clip sits after the friction framework and before ETHIC's own candidate audit. The video is an external reference, not an ETHIC product or proof of ETHIC's commercial thesis.</p></div></div>
   <div class="cards2">
