@@ -446,8 +446,13 @@ section{position:relative}.section{padding:80px 22px}.section.white{background:#
   <div class="section-head reveal"><div class="secno">10 / Applied video case</div><div><h2>Use the example to learn a design move—not to copy a product.</h2><p class="lede">Your supplied fold-flat measuring-spoon clip sits after the friction framework and before ETHIC's own candidate audit. The video is an external reference, not an ETHIC product or proof of ETHIC's commercial thesis.</p></div></div>
   <div class="cards2">
     <div class="reveal">
-      <div class="video-frame" style="position:relative;width:100%;aspect-ratio:9/16;max-height:660px;overflow:hidden;border-radius:12px;background:#211b18;border:1px solid #a6a8a8"><iframe src="https://www.youtube-nocookie.com/embed/0HK_r5Ld72Q?rel=0" title="Polygons Design fold-flat measuring spoons — product demonstration" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe></div>
-      <p class="source-note">Officially published Polygons Design product video · embedded from the publisher's YouTube video. The originally supplied local MP4 is not present in this GitHub repository, so this replaces the broken Netlify asset path rather than pretending that file is uploaded.</p>
+      <div class="video-frame" style="position:relative;width:100%;aspect-ratio:9/16;max-height:660px;overflow:hidden;border-radius:12px;background:#211b18;border:1px solid #a6a8a8">
+        <video id="supplied-spoon-video" src="assets/videos/spoon-reference.mp4" poster="assets/videos/spoon-reference-poster.jpg" controls playsinline preload="metadata" aria-label="User-supplied measuring-spoon design reference" style="display:none;position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#211b18"></video>
+        <div id="polygons-video-fallback" style="position:absolute;inset:0">
+          <iframe src="https://www.youtube-nocookie.com/embed/0HK_r5Ld72Q?rel=0" title="Separate published Polygons Design product demonstration" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>
+        </div>
+      </div>
+      <p class="source-note">Primary reference: the supplied 61-second short, “This unique spoon made $4 Million in sales.” The local MP4 and poster are staged in the ETHIC media bundle; once placed at <code>assets/videos/spoon-reference.mp4</code> and <code>assets/videos/spoon-reference-poster.jpg</code>, the page automatically prioritises your clip. Until then, the embedded YouTube video is a separate publisher demonstration—not a claim that it is the same file.</p>
     </div>
     <div class="panel reveal">
       <span class="tag">Worked example · external product</span><h3 style="margin-top:12px">Six measures. Two fold-flat tools. Compact storage.</h3>
@@ -576,6 +581,13 @@ section{position:relative}.section{padding:80px 22px}.section.white{background:#
   const menu=document.getElementById("menu");
   const nav=document.getElementById("navlinks");
   if(menu&&nav){menu.addEventListener("click",()=>{const open=nav.classList.toggle("open");menu.setAttribute("aria-expanded",String(open));});nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("open");menu.setAttribute("aria-expanded","false");}));}
+  const suppliedVideo=document.getElementById("supplied-spoon-video");
+  const externalVideo=document.getElementById("polygons-video-fallback");
+  if(suppliedVideo&&externalVideo){
+    suppliedVideo.addEventListener("loadedmetadata",()=>{suppliedVideo.style.display="block";externalVideo.style.display="none";},{once:true});
+    suppliedVideo.addEventListener("error",()=>{suppliedVideo.style.display="none";externalVideo.style.display="block";});
+    suppliedVideo.load();
+  }
   const reduced=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const reveals=document.querySelectorAll(".reveal");
   if(!reduced&&"IntersectionObserver" in window){
