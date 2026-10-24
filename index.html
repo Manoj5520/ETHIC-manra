@@ -118,6 +118,35 @@ section{position:relative}.section{padding:80px 22px}.section.white{background:#
 @media(max-width:850px){.friction-grid{grid-template-columns:1fr}.friction-card{grid-template-columns:minmax(110px,.6fr) minmax(0,1.4fr)}}
 @media(max-width:520px){.friction-card{grid-template-columns:1fr}.friction-card img{height:180px;min-height:180px}.friction-card .fc-copy{padding:15px}.track-band{align-items:flex-start;flex-direction:column;gap:4px}}
 
+
+/* Editorial, product-led portfolio treatment inspired by contemporary product-design case studies */
+.portfolio-stories{background:#f7f6f3;color:#27231f;border-top:1px solid #dad8d3;border-bottom:1px solid #dad8d3}
+.portfolio-stories .section-head{margin-bottom:34px}
+.portfolio-stories .story-list{display:flex;flex-direction:column;gap:25px}
+.portfolio-stories .story-row{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);background:#fff;border:1px solid #dedbd5;overflow:hidden;min-height:370px}
+.portfolio-stories .story-row.reverse .story-media{order:2}
+.portfolio-stories .story-row.reverse .story-copy{order:1}
+.portfolio-stories .story-media{position:relative;background:#e6e5e1;min-height:320px;display:flex;flex-direction:column}
+.portfolio-stories .story-media img{width:100%;height:100%;min-height:320px;max-height:470px;object-fit:cover}
+.portfolio-stories .story-media.contain img{object-fit:contain;padding:16px;background:#efeeeb}
+.portfolio-stories .story-media.double{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#d4d1cb}
+.portfolio-stories .story-media.double figure{margin:0;min-width:0;background:#eeede9;display:flex;flex-direction:column}
+.portfolio-stories .story-media.double img{height:100%;min-height:250px;max-height:390px;object-fit:contain;padding:12px}
+.portfolio-stories .story-media figcaption{font-size:10px;letter-spacing:.055em;color:#5e5952;background:#efeeeb;padding:10px 13px;border-top:1px solid #d9d6cf}
+.portfolio-stories .story-copy{padding:clamp(24px,4vw,48px);display:flex;flex-direction:column;justify-content:center}
+.portfolio-stories .story-kicker{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#76665b;font-weight:700}
+.portfolio-stories .story-copy h3{font-size:clamp(25px,3vw,38px);line-height:1.08;letter-spacing:-.035em;margin:13px 0 17px;color:#29231f;max-width:16ch}
+.portfolio-stories .story-copy p{font-size:14px;color:#5d5751;line-height:1.8;margin:0 0 13px}
+.portfolio-stories .story-copy .research-question{border-top:1px solid #dedbd5;padding-top:13px;color:#34302b}
+.portfolio-stories .story-copy .story-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.portfolio-stories .story-copy .story-meta span{border:1px solid #d1cdc5;padding:5px 8px;color:#655a50;font-size:9px;letter-spacing:.08em;text-transform:uppercase}
+.portfolio-stories .story-copy .image-integrity{font-size:11px;color:#746d65;font-style:italic}
+.portfolio-stories .story-rail{display:flex;align-items:center;gap:12px;border-bottom:1px solid #d8d5cf;padding-bottom:13px;margin-bottom:19px}
+.portfolio-stories .story-rail b{font-size:11px;color:#4d3b31;letter-spacing:.12em}
+.portfolio-stories .story-rail span{font-size:11px;color:#777068}
+@media(max-width:780px){.portfolio-stories .story-row{grid-template-columns:1fr}.portfolio-stories .story-row.reverse .story-media,.portfolio-stories .story-row.reverse .story-copy{order:initial}.portfolio-stories .story-media,.portfolio-stories .story-media img{min-height:240px;max-height:360px}.portfolio-stories .story-media.double img{min-height:190px}.portfolio-stories .story-copy{padding:24px}}
+@media(max-width:480px){.portfolio-stories .story-media.double{grid-template-columns:1fr}.portfolio-stories .story-media.double img{min-height:180px;max-height:245px}}
+
 </style>
 </head>
 <body>
@@ -127,7 +156,7 @@ section{position:relative}.section{padding:80px 22px}.section.white{background:#
     <a class="nav-brand" href="#top" aria-label="ETHIC × MANRA home"><span><strong>ETHIC × MANRA</strong><small>Behavior Engineering · Strategic Reference</small></span></a>
     <button class="menu" id="menu" type="button" aria-expanded="false" aria-controls="navlinks">Menu ☰</button>
     <nav class="navlinks" id="navlinks" aria-label="Main navigation">
-      <a href="#meaning">What is ETHIC?</a><a href="#story">The shift</a><a href="#evolution">Evolution</a><a href="#micro">F1–F4</a><a href="#f5">F5 / NEO 1</a><a href="#technology">F6–F11</a><a href="#candidates">C1–C5</a><a href="#aim">Where next?</a>
+      <a href="#meaning">What is ETHIC?</a><a href="#story">The shift</a><a href="#evolution">Evolution</a><a href="#micro">F1–F4</a><a href="#f5">F5 / NEO 1</a><a href="#technology">F6–F11</a><a href="#field-notes">Field notes</a><a href="#candidates">C1–C5</a><a href="#aim">Where next?</a>
     </nav>
   </div>
 </header>
@@ -312,6 +341,40 @@ section{position:relative}.section{padding:80px 22px}.section.white{background:#
 </section>
 
 
+
+<section class="section portfolio-stories" id="field-notes">
+ <div class="inner">
+  <div class="section-head reveal"><div class="secno">08 / Selected field notes</div><div><h2>Real objects. Real workarounds. Questions worth testing.</h2><p class="lede">A product-design portfolio should show the object and explain the thinking behind it. These references are not presented as ETHIC inventions: they show how MANRA separates what an existing solution already does from what still needs evidence.</p></div></div>
+  <div class="story-rail"><b>OBSERVE → UNDERSTAND → TEST</b><span>Reference cases, not claims of validation</span></div>
+  <div class="story-list">
+   <article class="story-row reveal">
+    <div class="story-media"><img src="assets/research/f1-cable-before-after.webp" alt="User-supplied before-and-after reference showing loose desk cables and a mounted cable tray" loading="lazy"><figcaption>Supplied visual reference · cable management before and after</figcaption></div>
+    <div class="story-copy"><div class="story-kicker">F1 / Fit & hold · Leading candidate family</div><h3>A cable holder is not solved until it stays where it is placed.</h3><p>Clips, adhesive mounts and under-desk trays already manage and conceal cables. The photograph shows a visual improvement after installation; it does not prove that a particular mount fails under pull.</p><p class="research-question"><strong>MANRA question:</strong> Does the mount itself move, peel or release when the cable is tugged? Test substrate, attachment method, pull angle, load and repeated cycles before defining a product.</p><div class="story-meta"><span>Existing category</span><span>C1 leading candidate</span><span>P1 not cleared</span></div></div>
+   </article>
+   <article class="story-row reverse reveal">
+    <div class="story-media"><img src="https://i.ebayimg.com/images/g/y9kAAeSwQq5oTtED/s-l1200.jpg" alt="The Caulking Finger hand tool for smoothing and finishing caulk" loading="lazy"><figcaption>Existing example · The Caulking Finger</figcaption></div>
+    <div class="story-copy"><div class="story-kicker">Friction pattern · Hand/tool interface</div><h3>A purpose-built tool can replace an awkward hand-made workaround.</h3><p>The Caulking Finger is an existing tool designed to smooth and finish caulk while reducing direct finger contact. It makes a small task-specific intervention easy to understand: shape the contact surface and grip around the job.</p><p class="research-question"><strong>MANRA question:</strong> Which users, materials, bead sizes and finishing conditions actually benefit? Compare cleanup, control, durability, reach and comfort before treating any residual gap as an opportunity.</p><div class="story-meta"><span>Existing product</span><span>Design reference</span><span>Not an ETHIC product</span></div></div>
+   </article>
+   <article class="story-row reveal">
+    <div class="story-media double">
+     <figure><img src="https://ids.si.edu/ids/deliveryService?id=NMAH-AHB2014q040231" alt="Historical Colgate dental powder bottle from the Smithsonian collection" loading="lazy"><figcaption>Historic reference · dental powder</figcaption></figure>
+     <figure><img src="https://ids.si.edu/ids/deliveryService?id=NMAH-AHB2013q075256" alt="Historic toothpaste tube and carton from the Smithsonian collection" loading="lazy"><figcaption>Historic reference · toothpaste format</figcaption></figure>
+    </div>
+    <div class="story-copy"><div class="story-kicker">Format evolution · Behavior and routine</div><h3>Sometimes the opportunity is a better fit with the routine—not a new category.</h3><p>Powder and paste formats offer a useful comparison of how a familiar job can be packaged and handled differently. The images illustrate different formats; by themselves they do not establish a single causal history or prove that convenience alone drove the change.</p><p class="research-question"><strong>MANRA question:</strong> What did each format make easier or harder—measuring, dosing, carrying, storing, dispensing and repeat use? Use product records and user evidence before making historical or causal claims.</p><div class="story-meta"><span>Historical example</span><span>Format lens</span><span>Not proof of causation</span></div></div>
+   </article>
+   <article class="story-row reverse reveal">
+    <div class="story-media"><img src="assets/research/f6-car-vacuum-reference.webp" alt="User-supplied reference photograph of a handheld vacuum removing crumbs from a car seat" loading="lazy"><figcaption>Supplied visual reference · localised car-seat cleaning</figcaption></div>
+    <div class="story-copy"><div class="story-kicker">F6–F11 / Technology-led research</div><h3>Capability only matters when it works at the point of need.</h3><p>A handheld vacuum makes localised cleaning possible without bringing a full-size cleaner into the car. It already solves much of the basic pickup task; a photo of use is not evidence that the category is deficient.</p><p class="research-question"><strong>MANRA question:</strong> Observe access around seat seams, one-handed control, crumb pickup, emptying, charging and storage. Identify a repeatable residual task before proposing another tool or attachment.</p><div class="story-meta"><span>Existing technology</span><span>Workflow study</span><span>Not a cleared candidate</span></div></div>
+   </article>
+   <article class="story-row reveal">
+    <div class="story-media contain"><img src="assets/research/f6-dyson-concept-reference.webp" alt="User-supplied concept-style rendering of a toothbrush with a Dyson wordmark; not verified as an official Dyson product" loading="lazy"><figcaption>Supplied concept visual · not verified as an official Dyson product image</figcaption></div>
+    <div class="story-copy"><div class="story-kicker">Physical + digital task · Concept versus product evidence</div><h3>Adding technology is the beginning of a question—not the conclusion.</h3><p>This supplied image is treated as a concept-style visual only. It is not represented as an official Dyson product. A separate real-world reference is <a href="https://www.dyson.com/discover/news/latest/introducing-camerajet" target="_blank" rel="noopener noreferrer">Dyson CameraJet</a>, which can inform research into guidance and feedback during brushing.</p><p class="research-question"><strong>MANRA question:</strong> What information changes the user’s next action? Does it arrive at the right moment, remain understandable, respect privacy and improve the routine enough to justify added cost and upkeep?</p><div class="story-meta"><span>Concept image labelled</span><span>Separate official reference</span><span>Evidence still required</span></div></div>
+   </article>
+  </div>
+  <div class="callout callout reveal" style="margin-top:26px"><strong>Research boundary:</strong> examples inspire questions; they do not establish novelty, market size, product-market fit or a cleared ETHIC candidate. F1 remains a candidate family—not a cleared P1. P2 remains unclaimed.</div>
+ </div>
+</section>
+
 <section class="section friction-map" id="friction-map">
   <div class="section-inner">
     <div class="section-head"><div class="section-num">08 / Research map F1–F11</div><div class="section-title"><h2>One taxonomy. Eleven research questions. No assumed winners.</h2><p class="map-intro">A friction code names the kind of resistance being investigated; it is not a product, a market-size claim or proof that a gap exists. Every example below separates the human task, the current workaround or technology, what that response already solves, and the residual gap MANRA must test before ETHIC builds anything.</p></div></div>
@@ -377,7 +440,7 @@ section{position:relative}.section{padding:80px 22px}.section.white{background:#
 
 <section id="video-case">
  <div class="inner">
-  <div class="section-head reveal"><div class="secno">08 / Applied video case</div><div><h2>Use the example to learn a design move—not to copy a product.</h2><p class="lede">Your supplied fold-flat measuring-spoon clip sits after the friction framework and before ETHIC's own candidate audit. The video is an external reference, not an ETHIC product or proof of ETHIC's commercial thesis.</p></div></div>
+  <div class="section-head reveal"><div class="secno">09 / Applied video case</div><div><h2>Use the example to learn a design move—not to copy a product.</h2><p class="lede">Your supplied fold-flat measuring-spoon clip sits after the friction framework and before ETHIC's own candidate audit. The video is an external reference, not an ETHIC product or proof of ETHIC's commercial thesis.</p></div></div>
   <div class="cards2">
     <div class="reveal">
       <div class="video-frame" style="position:relative;width:100%;aspect-ratio:9/16;max-height:660px;overflow:hidden;border-radius:12px;background:#211b18;border:1px solid #a6a8a8"><iframe src="https://www.youtube-nocookie.com/embed/0HK_r5Ld72Q?rel=0" title="Polygons Design fold-flat measuring spoons — product demonstration" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe></div>
