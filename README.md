@@ -79,7 +79,9 @@ The media bundle also preserves the supplied F1–F5, F6–F11, cable, toothpast
 - Repository: https://github.com/Manoj5520/ETHIC-manra
 - Intended GitHub Pages URL: https://manoj5520.github.io/ETHIC-manra/
 - Static site; the publish directory is the repository root.
-- GitHub Actions is configured, but the latest Pages deployment attempts have failed because GitHub Pages has not yet been enabled for this repository. To enable it, open [Settings → Pages](https://github.com/Manoj5520/ETHIC-manra/settings/pages), choose **GitHub Actions** under Build and deployment, and save. Then rerun the workflow from [GitHub Actions](https://github.com/Manoj5520/ETHIC-manra/actions).
-- The personal portfolio repository `Manoj5520/manoj5520.github.io` has not been changed.
+- **Shared MANRA 231999 assistant:** this page loads the same voice assistant script and widget stylesheet from the personal portfolio root: `https://manoj5520.github.io/manra.js` and `https://manoj5520.github.io/manra-widget.css`. The assistant mounts its own launcher and panel on this page.
+- Voice intent: **“Open my portfolio”** navigates to `https://manoj5520.github.io/`. Public ETHIC information is answered from the project reference. **VM-PRIME remains a manual access hand-off** and is never opened automatically.
+- Voice input/output depends on browser speech support and microphone permission. The shared site currently uses portfolio/project-grounded responses; a secure AI backend is still required for unrestricted, open-ended model reasoning.
+- GitHub Pages is **not yet published** for this repository. The live URL currently returns 404. The latest recorded deployment failed at **Configure GitHub Pages** because the GitHub Actions integration could not create the Pages site (`Resource not accessible by integration`); the website upload/deploy steps were skipped. To enable publishing, open [Settings → Pages](https://github.com/Manoj5520/ETHIC-manra/settings/pages), choose **GitHub Actions** under Build and deployment, and save. Then run the workflow from [GitHub Actions](https://github.com/Manoj5520/ETHIC-manra/actions).
 
 Do not treat the Pages URL as live until a deployment succeeds.
